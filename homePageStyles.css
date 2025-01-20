@@ -1,28 +1,5 @@
-body {
-	margin: 0;
-	padding: 0;
-	color: rgb(155, 155, 155);
-	font-family: 'Inter', sans-serif;
-}
-a {
-	text-decoration: none;
-	color: inherit;
-}
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 15px;
-}
-header ul {
-	background-color: transparent;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	gap: 15px;
-}
+@import url('css/globalStyles.css');
+
 header button {
 	border-style: none;
 	border-radius: 20px;
@@ -35,12 +12,9 @@ header button {
 	font-weight: bold;
 	font-size: 15px;
 }
-#endHeaderContent ul {
-	display: flex;
-	align-items: center;
-}
+
 #backGroundDiv {
-	width: auto;
+	width: 100%;
 	height: fit-content;
 	background: rgb(255, 255, 255);
 	background: -moz-linear-gradient(
@@ -65,18 +39,13 @@ header button {
 
 #mainDiv {
 	display: flex;
-	width: auto;
-	height: auto;
-	justify-content: space-between;
-	padding-left: 150px;
-	padding-right: 50px;
-}
-#mainDiv #leftDiv {
-	display: flex;
 	flex-direction: column;
-	padding-top: 100px;
-	width: 630px;
-	font-size: xx-large;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+video {
+	width: 100%;
 }
 
 #mainDiv #leftDiv h4 {
@@ -95,6 +64,7 @@ header button {
 #mainDiv #leftDiv h1 {
 	padding: 0;
 	margin: 0;
+	font-weight: 400;
 	color: black;
 }
 #mainDiv #leftDiv h1 span {
@@ -134,87 +104,45 @@ header button {
 	border-style: none;
 }
 #mainDiv #rightDiv {
-	margin-left: 150px;
-	width: 1300px;
-	height: auto;
+	width: fit-content;
+	height: fit-content;
 	padding-top: 30px;
 }
-footer {
-	width: auto;
-	padding-right: 150px;
-	padding-left: 150px;
-}
-#rightList,
-#leftList {
-	background-color: transparent;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-}
-#footerUpperDiv {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
 
-#footerBottomDiv {
-	display: flex;
-	width: auto;
-	justify-content: start;
-	align-content: center;
-	padding-top: 5px;
-	padding-bottom: 30px;
-	font-size: small;
-}
-#footerLine {
-	width: auto;
-	border-top: 1.5px solid rgba(143, 143, 143, 0.2);
-}
-
-#rightList li,
-#leftList li {
-	padding-right: 20px;
-}
-#footerBottomDiv p {
-	background-image: linear-gradient(
-		111deg,
-		rgba(110, 203, 238, 1) 0%,
-		rgba(129, 129, 129, 1) 54%,
-		rgba(255, 227, 98, 1) 100%
-	);
-	color: transparent;
-	background-clip: text;
-}
-#footerBottomDiv ul {
-	background-color: transparent;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-}
-#footerBottomDiv ul li {
-	padding-right: 10px;
-}
-header svg,
-footer #footerUpperDiv #rightList svg {
-	width: 17px;
-	height: 17px;
-}
-footer #footerUpperDiv #leftList svg {
-	color: rgb(83, 83, 83);
-
-	width: 45px;
-	height: 45px;
-}
 #mainDiv svg {
 	width: 100px;
 	height: 100px;
 }
-header #endHeaderContent ul li {
-	display: flex;
-	align-items: center;
+@media (min-width: 600px) {
+	#mainDiv {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		text-align: start;
+		width: fit-content;
+		gap: 50px;
+	}
+	#mainDiv #leftDiv {
+		width: 28%;
+		padding-top: 120px;
+		font-size: xx-large;
+	}
+	#mainDiv #leftDiv h4 {
+		font-size: large;
+		padding: 0;
+		margin: 0;
+		padding-top: 10px;
+		line-height: 150%;
+		font-weight: 100;
+		color: rgb(107, 107, 107);
+		width: 91%;
+	}
+	#mainDiv #leftDiv h1 {
+		width: 90%;
+	}
+	#mainDiv #rightDiv {
+		display: flex;
+		width: 45%;
+		padding-top: 80px;
+	}
 }

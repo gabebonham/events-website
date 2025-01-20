@@ -1,90 +1,133 @@
-* {
-	box-sizing: border-box;
-}
-body {
-	margin: 0;
-	padding: 0;
-	color: rgb(155, 155, 155);
-	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-		'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-		'Segoe UI Symbol', 'Noto Color Emoji';
-	height: 100vh;
-	width: 100vw;
-}
-button,
-input {
-	z-index: 10;
-}
-
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 15px;
-	padding-right: 15px;
-	width: 100vw;
-	margin: 0;
-	left: 0;
-	top: 0;
-}
-header #endHeaderContent ul li {
-	display: flex;
-	align-items: center;
-}
-header #endHeaderContent ul li svg {
-	width: 15px;
-	height: 15px;
-}
+@import url('../css/globalStyles.css');
+@import url('../css/stickyHeaderStyles.css');
 header svg {
 	width: 45px;
 	height: 45px;
 }
 
-header ul {
-	background-color: transparent;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	gap: 15px;
-	width: auto;
-}
-header button {
-	border-style: none;
-	border-radius: 20px;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	background: rgb(185, 185, 185, 0.2);
-	color: rgb(97, 97, 97);
-	font-weight: bold;
-	font-size: 15px;
-}
-#endHeaderContent ul {
-	display: flex;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-}
 #backGroundDiv {
+	padding: 0;
+	margin: 0;
 	background: linear-gradient(
 		180deg,
-		rgba(183, 204, 237, 1) 0%,
-		rgba(240, 243, 255, 1) 46%
+		rgba(204, 155, 211, 0.397) 0%,
+		rgba(183, 204, 237, 0.5) 10%,
+		rgba(240, 243, 255, 1) 20%
 	);
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 }
 #mainDiv {
 	display: flex;
+	justify-self: center;
+	flex-direction: column;
 	width: auto;
 	height: auto;
+	justify-items: center;
+}
+#eventsLocalsDiv {
+	width: 100%;
+}
+#localGrid {
+	width: 60%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 10px;
+	column-gap: 70px;
+}
+#eventsLocalsDiv ul li {
+	background-color: rgba(216, 216, 216, 0.473);
+	padding: 8px;
+	border-radius: 10px;
+}
+.circle {
+	background-color: blue;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+}
+.circle img {
+	width: 100%;
+	height: 100%;
+}
+.itemDiv {
+	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	padding-left: 150px;
-	padding-right: 50px;
+	padding: 0;
+	margin: 0;
+	gap: 30px;
+}
+.infoDiv {
+	gap: 0;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 70px;
+}
+#browseByCategoryDiv {
+	width: 100%;
+}
+#featuredCalendarsDiv {
+	width: 100%;
+}
+#browseByCategoryGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	justify-content: space-evenly;
+	row-gap: 50px;
+	column-gap: 50px;
+}
+.browseByCategoryCard {
+	display: flex;
+	line-height: 0;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 10px;
+	padding: 15px;
+}
+.browseByCategoryCard img {
+	width: 30%;
+}
+.browseByCategoryCard h1,
+.browseByCategoryCard p {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+#featuredCalendarsDiv {
+	padding-bottom: 30px;
+}
+#featuredCalendarsGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	justify-content: space-evenly;
+	row-gap: 50px;
+	column-gap: 50px;
+}
+.featuredCalendarsCard {
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+.featuredCalendarsCard .topDiv img {
+	border-radius: 10px;
+}
+.topDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+.topDiv span {
+	background-color: rgba(214, 214, 214, 0.438);
+	border-radius: 15px;
+	padding: 7px;
+}
+.midDiv {
+	padding-top: 5px;
+}
+.botDiv {
+	padding-top: 5px;
+	font-size: small;
 }

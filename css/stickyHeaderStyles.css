@@ -1,0 +1,6 @@
+header {
+	backdrop-filter: blur(10px);
+	position: sticky;
+	left: 0;
+	top: 0;
+}
