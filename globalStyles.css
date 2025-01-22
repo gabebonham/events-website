@@ -866,12 +866,545 @@ footer {
 /* background */
 /* specific */
 /* footer */
-/*  */
+/* Atlanta */
+#atlantaBackGroundDiv {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background-color: rgb(247, 247, 247);
+}
+#atlantaBackGroundDiv #topDiv,
+#atlantaBackGroundDiv header,
+#atlantaBackGroundDiv #signInButton {
+	color: white;
+}
+
+#atlantaBackGroundDiv header {
+	position: unset;
+	display: unset;
+	align-items: unset;
+	justify-content: unset;
+	padding-left: unset;
+	padding-right: unset;
+	padding-top: unset;
+	padding-bottom: unset;
+	margin: unset;
+	height: unset;
+	font-size: unset;
+	width: unset;
+}
+#atlantaBackGroundDiv #specialHeader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	margin: 0;
+	height: fit-content;
+	font-size: smaller;
+	width: 100%;
+	z-index: 10;
+	box-sizing: border-box;
+}
+
+#atlantaBackGroundDiv #topDiv {
+	padding: 0;
+	margin: 0;
+	background-image: url('https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=1080/discovery/atlanta-desktop.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 160px;
+	padding-bottom: 110px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+}
+#atlantaBackGroundDiv #topDiv #content {
+	max-width: 400px;
+}
+@media (min-width: 600px) {
+	#atlantaBackGroundDiv #topDiv {
+		padding-left: 16%;
+		justify-content: unset;
+		box-sizing: unset;
+	}
+}
+#atlantaBackGroundDiv #topDiv #content hr {
+	width: 100%;
+}
+
+#atlantaBackGroundDiv header svg {
+	width: 45px;
+	height: 45px;
+}
+#atlantaBackGroundDiv header #endHeaderContent svg {
+	width: 17px;
+	height: 17px;
+}
+#atlantaBackGroundDiv img {
+	width: 50px;
+	height: 50px;
+}
+
+#atlantaBackGroundDiv #topDiv svg {
+	width: 15px;
+	height: 15px;
+}
+
+#atlantaBackGroundDiv #bottomDiv svg {
+	width: 15px;
+	height: 15px;
+}
+
+#atlantaBackGroundDiv .line {
+	height: 100px;
+	width: 10px;
+	margin-left: 5px;
+	border-left: 5px dashed gray;
+}
+#atlantaBackGroundDiv #grayCircle {
+	border-radius: 100%;
+	background-color: rgba(236, 236, 236, 0.096);
+	width: fit-content;
+	height: fit-content;
+	outline: solid 1px rgba(255, 255, 255, 0.281);
+}
+#atlantaBackGroundDiv #blueCircle {
+	border-radius: 100%;
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+}
+#atlantaBackGroundDiv #bottomDiv {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv #header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv {
+	max-width: 650px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#atlantaBackGroundDiv #bottomDiv #rightDiv {
+	display: none;
+}
+
+#atlantaBackGroundDiv #eventsDiv {
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+}
+#atlantaBackGroundDiv .verticalLine {
+	height: 95%;
+	width: 5px;
+	border-left: 1px dashed gray;
+	margin-left: 2px;
+}
+#atlantaBackGroundDiv #lineCircle {
+	width: 5px;
+	height: 5px;
+	background-color: gray;
+	border-radius: 100%;
+}
+#atlantaBackGroundDiv #lineDiv {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	padding-top: 5px;
+}
+
+#atlantaBackGroundDiv #dateDiv {
+	padding: 0;
+	margin: 0;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-bottom: 30px;
+}
+#atlantaBackGroundDiv #dateDiv p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-bottom: 15px;
+}
+#atlantaBackGroundDiv .card {
+	border-radius: 15px;
+	background-color: white;
+	padding: 15px;
+	display: flex;
+	box-sizing: border-box;
+}
+#atlantaBackGroundDiv .card h2 {
+	font-size: 20px;
+}
+#atlantaBackGroundDiv .card .leftDiv {
+	width: 75%;
+}
+#atlantaBackGroundDiv .card .rightDiv {
+	width: 25%;
+}
+#atlantaBackGroundDiv .card .rightDiv img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+#atlantaBackGroundDiv .card .authorsDiv {
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-items: start;
+	margin: 0;
+}
+#atlantaBackGroundDiv .card .authorsDiv img {
+	height: 100%;
+	width: auto;
+	border-radius: 100%;
+	margin-right: -8px;
+	outline: solid 2px white;
+}
+#atlantaBackGroundDiv .card .usersDiv {
+	height: 20px;
+	display: flex;
+	align-items: center;
+}
+#atlantaBackGroundDiv .card .usersDiv img {
+	height: 100%;
+	width: auto;
+	border-radius: 100%;
+	margin-right: -8px;
+	outline: solid 2px white;
+}
+#atlantaBackGroundDiv .card .usersDiv .imgs {
+	display: inline-flex;
+	width: auto;
+	position: relative;
+	margin-right: 8px;
+	height: 100%;
+}
+#atlantaBackGroundDiv .card .authorsDiv .imgs {
+	display: inline-flex;
+	position: relative;
+	width: auto;
+	margin-right: 8px;
+	height: 100%;
+}
+#atlantaBackGroundDiv .card .cardFooter {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+#atlantaBackGroundDiv #calendarDiv #content {
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+	padding-bottom: 20px;
+}
+
+#atlantaBackGroundDiv #calendarDiv svg {
+	margin-left: -5px;
+	padding-bottom: 5px;
+	border-radius: 15px;
+}
+#atlantaBackGroundDiv #calendarDiv .horizontalLine {
+	width: 100%;
+	border-top: 1px dashed gray;
+	box-sizing: border-box;
+}
+#atlantaBackGroundDiv #calendarCard {
+	display: flex;
+	align-items: center;
+	font-size: small;
+	line-height: 1;
+}
+#atlantaBackGroundDiv #calendarCard #info {
+	padding-left: 10px;
+	font-size: 12px;
+}
+#atlantaBackGroundDiv #calendarDiv {
+	font-size: small;
+	padding-top: 20px;
+	padding-bottom: 90px;
+}
+#atlantaBackGroundDiv #calendarDiv #lineDiv {
+	font-size: small;
+	height: auto;
+	padding-top: 20px;
+}
+#atlantaBackGroundDiv #calendarDiv #lineDiv .verticalLine {
+	height: 100%;
+}
+#atlantaBackGroundDiv #calendarContent {
+	padding-left: 10px;
+}
+#atlantaBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul #lumaSvg {
+	display: unset;
+	padding: 0;
+	margin: 0;
+}
+#atlantaBackGroundDiv footer {
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+#atlantaBackGroundDiv footer #footerUpperDiv {
+	box-sizing: border-box;
+	width: 100%;
+}
+#atlantaBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul #starSvg {
+	display: none;
+	align-items: center;
+}
+#atlantaBackGroundDiv footer #footerBottomDiv ul {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+#atlantaBackGroundDiv footer #footerBottomDiv p {
+	display: unset;
+}
+#atlantaBackGroundDiv footer #footerBottomDiv {
+	padding-bottom: 90px;
+}
+#atlantaBackGroundDiv footer #footerCenterDiv {
+	display: unset;
+	padding: 0;
+	margin: 0;
+}
+@media (min-width: 500px) {
+	#atlantaBackGroundDiv footer {
+		width: 70%;
+		justify-self: center;
+	}
+	#atlantaBackGroundDiv footer hr {
+		width: 100%;
+	}
+	#atlantaBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul {
+		display: flex;
+		align-items: center;
+	}
+	#atlantaBackGroundDiv
+		footer
+		#footerUpperDiv
+		#footerLeftDiv
+		ul
+		#lumaSvg {
+		display: none;
+	}
+	#atlantaBackGroundDiv
+		footer
+		#footerUpperDiv
+		#footerLeftDiv
+		ul
+		#starSvg {
+		display: flex;
+		align-items: center;
+	}
+	#atlantaBackGroundDiv
+		footer
+		#footerUpperDiv
+		#footerLeftDiv
+		ul
+		#starSvg
+		svg {
+		width: 17px;
+		height: 17px;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	#atlantaBackGroundDiv footer #footerCenterDiv {
+		display: none;
+	}
+	#atlantaBackGroundDiv #footerBottomDiv ul {
+		display: none;
+	}
+
+	#atlantaBackGroundDiv #footerBottomDiv p {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	#atlantaBackGroundDiv #footerBottomDiv {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#atlantaBackGroundDiv #bottomDiv #rightDiv {
+		display: unset;
+		width: 200px;
+		margin-left: 60px;
+		font-size: small;
+		line-height: 1.5;
+	}
+	#atlantaBackGroundDiv #bottomDiv #rightDiv h2 {
+		line-height: 0.5;
+	}
+
+	#atlantaBackGroundDiv #bottomDiv #rightDiv #inputDiv {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding-bottom: 20px;
+	}
+	#atlantaBackGroundDiv #bottomDiv #rightDiv #inputDiv input {
+		border-radius: 20px;
+		height: 30px;
+	}
+	#atlantaBackGroundDiv #bottomDiv #rightDiv #inputDiv button {
+		border-radius: 20px;
+		height: 35px;
+	}
+	#atlantaBackGroundDiv #bottomDiv #rightDiv img {
+		width: 100%;
+		height: auto;
+		border-radius: 15px;
+	}
+}
 /* header */
 /* background */
 /* specific */
 /* footer */
-/*  */
+/* atlantaModal */
+
+#atlantaBackGroundDiv #eventModal {
+	display: none;
+
+	position: fixed;
+	border-radius: 15px;
+	background-color: white;
+	max-width: 650px;
+	right: 0;
+	top: 0;
+	margin: 15px;
+	padding: 0;
+	height: 550px;
+	z-index: 60;
+}
+#atlantaBackGroundDiv #eventModal #eventModalContent {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: rgb(245, 245, 245);
+	margin: 0;
+	overflow-y: auto;
+
+	height: 500px;
+	max-width: 650px;
+	padding: 15px;
+}
+#atlantaBackGroundDiv #eventModal svg {
+	width: 17px;
+	height: 17px;
+}
+#atlantaBackGroundDiv eventModal #header img {
+	width: 50%;
+	height: auto;
+	border-radius: 15px;
+}
+#atlantaBackGroundDiv #header #imgDiv {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+#atlantaBackGroundDiv #header #data img {
+	width: 17px;
+	height: 17px;
+}
+#atlantaBackGroundDiv #header #data #info img {
+	width: 40px;
+	height: 40px;
+	border-radius: 7px;
+}
+#atlantaBackGroundDiv #header #data #info #date,
+#atlantaBackGroundDiv #header #data #info #loc {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+#atlantaBackGroundDiv #header #data #info #date #data,
+#atlantaBackGroundDiv #header #data #info #loc #data {
+	padding-left: 15px;
+}
+#atlantaBackGroundDiv #header #data #info #date p,
+#atlantaBackGroundDiv #header #data #info #date h4,
+#atlantaBackGroundDiv #header #data #info #loc p,
+#atlantaBackGroundDiv #header #data #info #loc h4 {
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+}
+#atlantaBackGroundDiv #header #subscription {
+	border-radius: 15px;
+	background-color: white;
+}
+#atlantaBackGroundDiv #header #subscription #label {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: rgba(247, 247, 247, 0.356);
+	padding: 10px;
+}
+#atlantaBackGroundDiv #header #subscription #content {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: white;
+	padding: 10px;
+}
+#atlantaBackGroundDiv #header #subscription #content button {
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+	width: 100%;
+	border-width: 0;
+	height: 30px;
+}
+#atlantaBackGroundDiv #about ul {
+	list-style-type: disc;
+	margin: 20px;
+	padding-left: 20px;
+}
+#atlantaBackGroundDiv #authors img {
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+#atlantaBackGroundDiv #authors .author {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 5px;
+}
+#atlantaBackGroundDiv #eventModal #topTab {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+#atlantaBackGroundDiv #eventModal #topTab #start {
+	display: flex;
+}
+#atlantaBackGroundDiv #eventModal #topTab #start button {
+	display: flex;
+	align-items: center;
+}
 /* header */
 /* background */
 /* specific */
