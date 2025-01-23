@@ -46,8 +46,15 @@ a {
 	color: inherit;
 	display: flex;
 	align-items: center;
+	width: fit-content;
 }
-header {
+
+/* Headers */
+
+#loggedInHeader {
+	backdrop-filter: blur(10px);
+	left: 0;
+	top: 0;
 	position: static;
 	display: flex;
 	align-items: center;
@@ -60,6 +67,44 @@ header {
 	height: fit-content;
 	font-size: smaller;
 }
+#loggedInHeader #startHeaderContent {
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-between;
+}
+#loggedInHeader #startHeaderContent #headerLuma {
+	width: 45px;
+	height: 45px;
+	display: none;
+}
+#loggedInHeader #startHeaderContent #headerStar {
+	width: 20px;
+	height: 20px;
+}
+#loggedInHeader #endHeaderContent svg,
+#loggedInHeader #startHeaderContent #right svg {
+	width: 17px;
+	height: 17px;
+}
+
+#loggedInHeader #endHeaderContent #signIn,
+#loggedInHeader #endHeaderContent #exploreEvents {
+	display: none;
+}
+#loggedInHeader #endHeaderContent #profile img {
+	width: 25px;
+	height: 25px;
+}
+@media (min-width: 1075px) {
+	#loggedInHeader #startHeaderContent {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 450px;
+	}
+}
+/* end */
 #specialHeader {
 	backdrop-filter: blur(10px);
 	position: sticky;
@@ -67,10 +112,6 @@ header {
 	top: 0;
 }
 
-header svg {
-	width: 17px;
-	height: 17px;
-}
 header ul {
 	background-color: transparent;
 	list-style-type: none;
@@ -1409,7 +1450,11 @@ footer {
 /* background */
 /* specific */
 /* footer */
-/*  */
+
+/* Event */
+#eventBackGroundDiv {
+	background-color: #f4f5f6cc;
+}
 /* header */
 /* background */
 /* specific */
