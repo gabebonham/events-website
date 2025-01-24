@@ -66,6 +66,7 @@ a {
 	height: fit-content;
 	font-size: smaller;
 }
+
 #loggedInHeader #startHeaderContent {
 	display: flex;
 	align-items: center;
@@ -107,6 +108,7 @@ a {
 #loggedInHeader #endHeaderContent #profile img {
 	width: 25px;
 	height: 25px;
+	border-radius: 100%;
 }
 #loggedInHeader span,
 #loggedInHeader #time {
@@ -1427,6 +1429,7 @@ footer {
 	background-color: white;
 	padding: 10px;
 }
+
 #atlantaBackGroundDiv #header #subscription #content button {
 	border-radius: 15px;
 	color: white;
@@ -1481,9 +1484,8 @@ footer {
 #overviewBackGroundDiv {
 	background: linear-gradient(
 		180deg,
-		rgba(224, 196, 231, 0.7035189075630253) 0%,
-		rgba(171, 200, 231, 0.6783088235294117) 30%,
-		rgb(233, 233, 233) 50%
+		rgba(171, 200, 231, 0.6783088235294117) 0%,
+		rgb(233, 233, 233) 30%
 	);
 	background-attachment: fixed;
 	background-size: cover;
@@ -1517,7 +1519,17 @@ footer {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
+#overviewBackGroundDiv #secondHeader #content #bottom button {
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	background-color: rgba(247, 247, 247, 0.356);
+	border-width: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 #overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom {
 	display: flex;
 	justify-content: space-between;
@@ -1526,13 +1538,7 @@ footer {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-#overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom svg {
-	width: 17px;
-	height: 17px;
-	background-color: rgba(218, 218, 218, 0.281);
-	border-radius: 10px;
-	padding: 5px;
-}
+
 #overviewBackGroundDiv #mainDivWrapper #secondHeader {
 	position: sticky;
 	top: 0;
@@ -1543,6 +1549,7 @@ footer {
 #overviewBackGroundDiv #mainDivWrapper #secondHeader #content {
 	padding: 0;
 }
+
 #overviewBackGroundDiv #breadCrumbs #top {
 	display: flex;
 	align-items: center;
@@ -1809,6 +1816,9 @@ footer {
 	width: 60px;
 	height: auto;
 }
+#overviewBackGroundDiv #secondHeader #content #bottom span {
+	display: none;
+}
 @media (min-width: 600px) {
 	#overviewBackGroundDiv #mainDivWrapper {
 		width: 100%;
@@ -1823,10 +1833,12 @@ footer {
 		top: 0;
 		left: 0;
 		height: 90px;
-		width: 100%;
-		justify-items: center;
+		max-width: 760px;
 		backdrop-filter: blur(12px);
-		padding-right: 12%;
+
+		margin-left: auto;
+		margin-right: auto;
+
 		box-sizing: border-box;
 	}
 	#overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom {
@@ -1837,18 +1849,33 @@ footer {
 	}
 
 	#overviewBackGroundDiv #mainDivWrapper #secondHeader #content {
-		width: 600px;
+		width: 100%;
 	}
 	#overviewBackGroundDiv #breadCrumbs {
-		width: 100%;
-		justify-items: center;
-		padding-right: 12%;
+		max-width: 760px;
 		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
 	}
 	#overviewBackGroundDiv #breadCrumbs #top {
-		width: 600px;
 		padding: 0;
 		margin: 0;
+	}
+	#overviewBackGroundDiv #secondHeader #content #bottom span {
+		display: unset;
+	}
+	#overviewBackGroundDiv #mainDiv #cards #topCard,
+	#overviewBackGroundDiv #mainDiv #cards #bottomCard {
+		width: 50%;
+		margin: 15px;
+	}
+	#overviewBackGroundDiv #mainDiv #footer svg {
+		width: 40px;
+	}
+	#overviewBackGroundDiv #mainDiv #cards {
+		display: flex;
+		flex-direction: row;
 	}
 }
 /* header */
