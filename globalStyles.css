@@ -70,7 +70,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: calc((100% - 280px) / 2);
+	width: calc((100% - 240px) / 2);
 }
 #loggedInHeader #startHeaderContent #right {
 	display: flex;
@@ -1488,24 +1488,24 @@ footer {
 	background-attachment: fixed;
 	background-size: cover;
 }
-#overviewBackGroundDiv #mainDiv svg {
+#overviewBackGroundDiv #mainDivWrapper svg {
 	width: 17px;
 	height: 17px;
 }
-#overviewBackGroundDiv #mainDiv #status #header {
+#overviewBackGroundDiv #mainDivWrapper #status #header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-#overviewBackGroundDiv #mainDiv #status #header h2 {
+#overviewBackGroundDiv #mainDivWrapper #status #header h2 {
 	font-size: 18px;
 }
-#overviewBackGroundDiv #mainDiv #status {
+#overviewBackGroundDiv #mainDivWrapper #status {
 	padding-top: 20px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
-#overviewBackGroundDiv #mainDiv #status #header button {
+#overviewBackGroundDiv #mainDivWrapper #status #header button {
 	display: flex;
 	gap: 5px;
 	align-items: center;
@@ -1517,12 +1517,8 @@ footer {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-#overviewBackGroundDiv #mainDiv #header #top {
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 20px;
-}
-#overviewBackGroundDiv #mainDiv #secondHeader #bottom {
+
+#overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1530,24 +1526,41 @@ footer {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-#overviewBackGroundDiv #mainDiv #secondHeader #bottom svg {
+#overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom svg {
 	width: 17px;
 	height: 17px;
 	background-color: rgba(218, 218, 218, 0.281);
 	border-radius: 10px;
 	padding: 5px;
 }
-#overviewBackGroundDiv #mainDiv #secondHeader {
+#overviewBackGroundDiv #mainDivWrapper #secondHeader {
 	position: sticky;
 	top: 0;
 	left: 0;
-	height: 100px;
+	height: 80px;
 	backdrop-filter: blur(12px);
 }
-#overviewBackGroundDiv #mainDiv #header #top {
+#overviewBackGroundDiv #mainDivWrapper #secondHeader #content {
+	padding: 0;
+}
+#overviewBackGroundDiv #breadCrumbs #top {
 	display: flex;
 	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 0;
+	margin: 0;
 }
+#overviewBackGroundDiv #breadCrumbs #top p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#overviewBackGroundDiv #breadCrumbs #top svg {
+	width: 17px;
+	height: 17px;
+}
+
 #overviewBackGroundDiv #mainDiv #cards #topCard {
 	margin-left: 15px;
 	margin-right: 15px;
@@ -1562,19 +1575,20 @@ footer {
 	align-items: center;
 	gap: 10px;
 }
-#overviewBackGroundDiv #mainDiv #header p,
-#overviewBackGroundDiv #mainDiv #header h2 {
+#overviewBackGroundDiv #mainDivWrapper #header p,
+#overviewBackGroundDiv #mainDivWrapper #secondHeader #content h2 {
 	padding: 0;
+	padding-top: 5px;
 	line-height: 1.5;
 	margin: 0;
 }
-#overviewBackGroundDiv #mainDiv #nav {
+#overviewBackGroundDiv #mainDivWrapper #nav {
 	display: flex;
 	overflow-x: auto;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-#overviewBackGroundDiv #mainDiv #nav button {
+#overviewBackGroundDiv #mainDivWrapper #nav button {
 	background-color: transparent;
 	border-width: 0;
 	padding: 0;
@@ -1795,7 +1809,48 @@ footer {
 	width: 60px;
 	height: auto;
 }
+@media (min-width: 600px) {
+	#overviewBackGroundDiv #mainDivWrapper {
+		width: 100%;
+		justify-items: center;
+	}
+	#overviewBackGroundDiv #mainDiv {
+		max-width: 785px;
+		justify-self: center;
+	}
+	#overviewBackGroundDiv #mainDivWrapper #secondHeader {
+		position: sticky;
+		top: 0;
+		left: 0;
+		height: 90px;
+		width: 100%;
+		justify-items: center;
+		backdrop-filter: blur(12px);
+		padding-right: 12%;
+		box-sizing: border-box;
+	}
+	#overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom {
+		padding: 0;
+	}
+	#overviewBackGroundDiv #mainDivWrapper #secondHeader #nav {
+		padding: 0;
+	}
 
+	#overviewBackGroundDiv #mainDivWrapper #secondHeader #content {
+		width: 600px;
+	}
+	#overviewBackGroundDiv #breadCrumbs {
+		width: 100%;
+		justify-items: center;
+		padding-right: 12%;
+		box-sizing: border-box;
+	}
+	#overviewBackGroundDiv #breadCrumbs #top {
+		width: 600px;
+		padding: 0;
+		margin: 0;
+	}
+}
 /* header */
 /* background */
 /* specific */
