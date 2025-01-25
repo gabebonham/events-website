@@ -1882,7 +1882,217 @@ footer {
 /* background */
 /* specific */
 /* footer */
-/*  */
+/* Create */
+#createBackGroundDiv {
+	background: linear-gradient(
+		180deg,
+		rgba(224, 196, 231, 0.7035189075630253) 0%,
+		rgba(171, 200, 231, 0.6783088235294117) 63%
+	);
+	width: 100%;
+}
+#createBackGroundDiv #mainDiv {
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	padding-bottom: 90px;
+}
+#createBackGroundDiv #mainDiv #imgSection {
+	width: 100%;
+}
+#createBackGroundDiv #mainDiv #imgSection #img {
+	padding-bottom: 20px;
+}
+#createBackGroundDiv #mainDiv #imgSection img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+#createBackGroundDiv #mainDiv #imgSection #buttons {
+	display: flex;
+	gap: 10px;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons #left #leftDiv {
+	display: flex;
+	align-items: center;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons button {
+	display: flex;
+	border-radius: 10px;
+	border-width: 0;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons #right {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons #left {
+	width: 100%;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons #left #leftDiv {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons button #text p {
+	line-height: 1.2;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-items: start;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons svg {
+	width: 15px;
+	height: auto;
+}
+#createBackGroundDiv #mainDiv #imgSection #buttons img {
+	width: 50px;
+	height: auto;
+}
+#createBackGroundDiv #mainDiv #options1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#createBackGroundDiv #mainDiv #options1 img {
+	width: 15px;
+	height: auto;
+	border-radius: 100%;
+}
+#createBackGroundDiv #mainDiv #options1 button {
+	display: flex;
+	align-items: center;
+	border-width: 0;
+	border-radius: 10px;
+	gap: 10px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#createBackGroundDiv #mainDiv #options1 button svg {
+	width: 15px;
+	height: auto;
+}
+#createBackGroundDiv #mainDiv #options2 #optionsList svg {
+	width: 18px;
+	height: auto;
+}
+#createBackGroundDiv #mainDiv #options2 #optionsList .card {
+	display: flex;
+	align-items: start;
+	gap: 10px;
+	background-color: rgba(0, 0, 0, 0.082);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+#createBackGroundDiv #mainDiv #options2 #optionsList .card p {
+	padding: 0;
+	margin: 0;
+	line-height: 1.6;
+}
+#createBackGroundDiv #mainDiv #options2 #optionsList .card h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#createBackGroundDiv #mainDiv #options3 svg {
+	width: 15px;
+	height: auto;
+}
+#createBackGroundDiv #mainDiv #options3 #sections {
+	background-color: rgba(0, 0, 0, 0.082);
+	padding-left: 15px;
+	padding-right: 15px;
+
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+#createBackGroundDiv #mainDiv #options3 #sections .section {
+	display: flex;
+	justify-content: space-between;
+}
+#createBackGroundDiv #mainDiv #options3 #sections .section div {
+	display: flex;
+	gap: 10px;
+}
+#createBackGroundDiv #mainDiv #options3 #sections .section div p {
+	line-height: 1;
+}
+#createBackGroundDiv #mainDiv #options3 #sections .section #checkButton #back {
+	border-radius: 40px;
+	width: 40px;
+	height: 25px;
+	background-color: gray;
+	align-self: center;
+	padding: 0;
+}
+#createBackGroundDiv
+	#mainDiv
+	#options3
+	#sections
+	.section
+	#checkButton
+	#back
+	#innerCircle {
+	border-radius: 100%;
+	width: 22px;
+	height: 22px;
+	background-color: white;
+	align-self: center;
+	justify-self: start;
+	margin-left: 2px;
+}
+#createBackGroundDiv #mainDiv #options3 #sections hr {
+	padding: 0;
+	margin: 0;
+	width: 320px;
+	background-color: black;
+	outline-width: 0;
+	border-width: 0;
+	border-bottom-width: 1px;
+	border-bottom-color: gray;
+	justify-self: center;
+}
+#createBackGroundDiv #mainDiv #createButton {
+	width: 100%;
+	border-radius: 10px;
+	background-color: rgb(151, 75, 126);
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-width: 0;
+}
+@media (min-width: 600px) {
+	#createBackGroundDiv #mainDiv {
+		display: flex;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		gap: 30px;
+		align-items: start;
+	}
+	#createBackGroundDiv #mainDiv #imgSection {
+		max-width: 250px;
+	}
+	#createBackGroundDiv #mainDiv #optionsWrapper {
+		padding-top: 0;
+		margin-top: 0;
+		width: 450px;
+	}
+	#createBackGroundDiv #mainDiv #optionsWrapper #options1 {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
 /* header */
 /* background */
 /* specific */
