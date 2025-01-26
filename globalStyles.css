@@ -2010,8 +2010,6 @@ footer {
 }
 #createBackGroundDiv #mainDiv #options3 #sections {
 	background-color: rgba(0, 0, 0, 0.082);
-	padding-left: 15px;
-	padding-right: 15px;
 
 	border-radius: 10px;
 	margin-bottom: 20px;
@@ -2019,6 +2017,8 @@ footer {
 #createBackGroundDiv #mainDiv #options3 #sections .section {
 	display: flex;
 	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 #createBackGroundDiv #mainDiv #options3 #sections .section div {
 	display: flex;
@@ -2054,7 +2054,7 @@ footer {
 #createBackGroundDiv #mainDiv #options3 #sections hr {
 	padding: 0;
 	margin: 0;
-	width: 320px;
+	width: 100%;
 	background-color: black;
 	outline-width: 0;
 	border-width: 0;
@@ -2070,6 +2070,225 @@ footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-width: 0;
+}
+#createBackGroundDiv #mainDiv #options2 #fullscreencard {
+	display: none;
+}
+
+#inactiveBackGround {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.442);
+	overflow: hidden;
+}
+#inactiveBackGround #createModal {
+	display: none;
+
+	background-color: white;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 280px;
+	max-height: fit-content;
+	overflow: hidden;
+}
+#inactiveBackGround #createModal #icon {
+	width: 100%;
+	display: flex;
+	justify-items: start;
+}
+#inactiveBackGround #createModal #icon #circle {
+	background-color: rgba(180, 180, 180, 0.178);
+	border-radius: 100%;
+	width: fit-content;
+	padding: 5px;
+}
+#inactiveBackGround #createModal #icon #circle svg {
+	width: 30px;
+	height: auto;
+	padding: 5px;
+}
+
+#inactiveBackGround #createModal #checkButton #back {
+	border-radius: 40px;
+	width: 40px;
+	height: 23px;
+	background-color: gray;
+	align-self: center;
+	padding: 0;
+	padding-top: 2px;
+}
+#inactiveBackGround #createModal #checkButton #back #innerCircle {
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	align-self: center;
+	justify-self: start;
+	margin-left: 2px;
+}
+#inactiveBackGround #createModal #footer {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10px;
+}
+
+#inactiveBackGround #createModal #footer button {
+	width: 100%;
+	border-radius: 7px;
+	border-width: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#inactiveBackGround #createModal #description {
+	line-height: 1.4;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+#inactiveBackGround #createModal h2 {
+	line-height: 1;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+#inactiveBackGround #createModal #inpDiv input {
+	border-radius: 7px;
+	width: 100%;
+	height: 30px;
+	border-width: 1px;
+}
+#inactiveBackGround #createModal #inpDiv p {
+	padding: 0;
+	margin: 0;
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+#inactiveBackGround #createModal #bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 13px;
+	align-items: center;
+}
+#inactiveBackGround #createModal #footer #firstButton {
+	background-color: black;
+	color: white;
+}
+#createBackGroundDiv #templatesTab {
+	display: none;
+	position: fixed;
+	bottom: 0;
+
+	justify-content: center;
+	background-color: rgb(223, 220, 236);
+	color: white;
+
+	z-index: 100;
+	width: 100%;
+	height: fit-content;
+}
+#createBackGroundDiv #templatesTab #templates {
+	height: 100px;
+	width: 100%;
+	max-width: 700px;
+	display: flex;
+	justify-self: center;
+	overflow-x: auto;
+}
+#createBackGroundDiv #templatesTab #templates img {
+	height: auto;
+	width: 90px;
+	border-radius: 10px;
+}
+#createBackGroundDiv #templatesTab #templates .templateButton {
+	height: 70px;
+	width: 100px;
+	background-color: transparent;
+	border-width: 0;
+}
+#createBackGroundDiv #templatesTab #lineDiv {
+	height: auto;
+	width: fit-content;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#createBackGroundDiv #templatesTab #lineDiv hr {
+	height: 8px;
+	width: 60px;
+	border-radius: 5px;
+	background-color: rgb(155, 155, 155);
+	border-width: 0;
+}
+#createBackGroundDiv #templatesTab #bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	gap: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: fit-content;
+	gap: 10px;
+}
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+	border-width: 0;
+	background-color: rgba(128, 128, 128, 0.164);
+	width: 260px;
+	height: 40px;
+	box-sizing: border-box;
+}
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv button .right,
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv button .left {
+	display: flex;
+	align-items: center;
+}
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv button svg {
+	width: 17px;
+	height: auto;
+}
+#inactiveBackGround {
+	display: none;
+}
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv button svg {
+	width: 17px;
+	height: auto;
+}
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv #lCircle {
+	width: 17px;
+	height: 17px;
+	background-color: rgb(106, 195, 180);
+}
+#createBackGroundDiv #templatesTab #bottom .buttonsDiv #rCircle {
+	width: 17px;
+	height: 17px;
+	background-color: rgb(184, 184, 184);
+}
+@media (min-width: 1000px) {
+	#createBackGroundDiv #templatesTab #bottom {
+		flex-direction: row;
+	}
 }
 @media (min-width: 600px) {
 	#createBackGroundDiv #mainDiv {
@@ -2091,6 +2310,190 @@ footer {
 	#createBackGroundDiv #mainDiv #optionsWrapper #options1 {
 		padding-top: 0;
 		margin-top: 0;
+	}
+	#createBackGroundDiv #mainDiv #options2 #fullscreencard {
+		display: flex;
+		gap: 10px;
+		justify-content: space-between;
+		padding-bottom: 20px;
+	}
+	#createBackGroundDiv #mainDiv #options2 #fullscreencard #leftCard {
+		display: flex;
+		background-color: rgba(100, 100, 100, 0.048);
+		justify-content: space-between;
+		border-radius: 10px;
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		align-items: center;
+		height: fit-content;
+		width: 100%;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#left {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#left
+		#lineDiv {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		width: 10px;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#left
+		#lineDiv
+		#upCircle {
+		background-color: gray;
+		width: 9px;
+		height: 9px;
+		border-radius: 100%;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#left
+		#lineDiv
+		#downCircle {
+		width: 8px;
+		height: 8px;
+		border-radius: 100%;
+		border-width: 1px;
+		border-style: solid;
+		border-color: gray;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#left
+		#lineDiv
+		#line {
+		margin-left: 4px;
+		width: 9px;
+		height: 30px;
+		border-left: 1px dashed gray;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#left
+		#data
+		p {
+		margin: 0;
+		padding: 0;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#left
+		#data {
+		display: flex;
+		flex-direction: column;
+		justify-items: start;
+		gap: 20px;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#right {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#right
+		.dateTime {
+		display: flex;
+		gap: 1px;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#right
+		.dateTime
+		.date {
+		background-color: rgba(77, 77, 77, 0.075);
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		padding-left: 5px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 15px;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#leftCard
+		#right
+		.dateTime
+		.time {
+		background-color: rgba(77, 77, 77, 0.075);
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		padding-left: 10px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 10px;
+	}
+	#createBackGroundDiv #mainDiv #options2 #fullscreencard #rightCard {
+		background-color: rgba(100, 100, 100, 0.048);
+		border-radius: 10px;
+		padding-left: 10px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 10px;
+	}
+	#createBackGroundDiv #mainDiv #options2 #fullscreencard #rightCard p {
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+		width: 100px;
+		margin-top: 5px;
+	}
+	#createBackGroundDiv #mainDiv #options2 #fullscreencard #rightCard svg {
+		padding: 0;
+		margin: 0;
+		width: 15px;
+		height: auto;
+	}
+	#createBackGroundDiv #mainDiv #options3 #sections hr {
+		box-sizing: border-box;
+		max-width: 450px;
+		padding: 0;
+		margin: 0;
 	}
 }
 /* header */
