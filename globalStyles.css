@@ -47,7 +47,72 @@ a {
 	align-items: center;
 	width: fit-content;
 }
+header #startHeaderContent {
+	gap: 5px;
+}
 
+header #startHeaderContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: calc((100% - 240px) / 2);
+}
+header #startHeaderContent #right {
+	display: flex;
+	align-items: center;
+}
+header #startHeaderContent #right button {
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	border-color: transparent;
+	outline: none;
+	gap: 5px;
+	color: gray;
+}
+header #startHeaderContent #headerLuma {
+	width: 45px;
+	height: 45px;
+	display: none;
+}
+header #startHeaderContent #headerStar {
+	width: 20px;
+	height: 20px;
+}
+header #endHeaderContent svg,
+header #endHeaderContent #exploreEvents svg,
+header #startHeaderContent #right svg {
+	width: 17px;
+	height: 17px;
+}
+header ul {
+	background-color: transparent;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	height: fit-content;
+	font-size: smaller;
+}
+header #startHeaderContent #right,
+header #endHeaderContent #createEvent,
+header #endHeaderContent #search,
+header #endHeaderContent #bell,
+header #endHeaderContent #profile {
+	display: none;
+}
 /* Headers */
 
 #loggedInHeader {
@@ -130,16 +195,6 @@ a {
 	position: sticky;
 	left: 0;
 	top: 0;
-}
-
-header ul {
-	background-color: transparent;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	gap: 10px;
 }
 
 #signInButton {
