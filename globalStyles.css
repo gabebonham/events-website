@@ -47,6 +47,8 @@ a {
 	align-items: center;
 	width: fit-content;
 }
+
+/* Headers */
 header #startHeaderContent {
 	gap: 5px;
 }
@@ -113,8 +115,6 @@ header #endHeaderContent #bell,
 header #endHeaderContent #profile {
 	display: none;
 }
-/* Headers */
-
 #loggedInHeader {
 	backdrop-filter: blur(10px);
 	left: 0;
@@ -131,7 +131,13 @@ header #endHeaderContent #profile {
 	height: fit-content;
 	font-size: smaller;
 }
-
+#loggedInHeader #startHeaderContent #right,
+#loggedInHeader #endHeaderContent #createEvent,
+#loggedInHeader #endHeaderContent #search,
+#loggedInHeader #endHeaderContent #bell,
+#loggedInHeader #endHeaderContent #profile {
+	display: unset;
+}
 #loggedInHeader #startHeaderContent {
 	display: flex;
 	align-items: center;
@@ -182,21 +188,13 @@ header #endHeaderContent #profile {
 #loggedInHeader #startHeaderContent {
 	gap: 5px;
 }
+
 @media (min-width: 600px) {
 	#loggedInHeader span,
 	#loggedInHeader #time {
 		display: unset;
 	}
 }
-
-/* end */
-#specialHeader {
-	backdrop-filter: blur(10px);
-	position: sticky;
-	left: 0;
-	top: 0;
-}
-
 #signInButton {
 	background-color: rgba(189, 189, 189, 0.164);
 	border-style: none;
@@ -211,9 +209,9 @@ header #endHeaderContent #profile {
 	width: 17px;
 	height: 17px;
 }
-#firstLi {
-	display: none;
-}
+
+/* end */
+/* Footer */
 
 footer {
 	width: 100%;
@@ -223,9 +221,9 @@ footer {
 	padding-left: 10px;
 }
 #footerCenterDiv {
-	width: 40%;
+	width: 100%;
 	display: flex;
-	padding: 10px;
+	padding-left: 10px;
 }
 
 #footerCenterDiv ul li {
@@ -233,8 +231,6 @@ footer {
 	padding: 0;
 	display: flex;
 	line-height: 0;
-	margin-right: 15px;
-	padding-left: 10px;
 }
 #footerUpperDiv {
 	width: 100%;
@@ -292,6 +288,27 @@ footer {
 	width: 45px;
 	height: 45px;
 }
+footer #footerLeftDiv #starSvg svg {
+	color: rgb(83, 83, 83);
+
+	width: 17px;
+	height: 17px;
+}
+footer #footerLeftDiv #starSvg {
+	display: none;
+}
+footer #footerLeftDiv #lumaSvg svg {
+	color: rgb(83, 83, 83);
+
+	width: 45px;
+	height: 45px;
+}
+footer #footerLeftDiv #lumaSvg {
+	color: rgb(83, 83, 83);
+	display: unset;
+	width: 45px;
+	height: 45px;
+}
 #footerBottomDiv {
 	padding: 10px;
 }
@@ -306,12 +323,36 @@ footer {
 #footerBottomDiv p {
 	display: none;
 }
+#loggedFooter {
+}
+#footer1 {
+	max-width: 1100px;
+	justify-self: center;
+	box-sizing: border-box;
+}
+#footer2 {
+	max-width: 950px;
+	justify-self: center;
+	box-sizing: border-box;
+}
+#footer2 #footerBottomDiv {
+	display: flex;
+	justify-content: start;
+	padding-bottom: 60px;
+}
+#footer2 #footerBottomDiv ul {
+	display: none;
+}
+#footer2 #footerBottomDiv p {
+	display: unset;
+}
+#footer2 #footerBottomDiv a {
+	display: unset;
+}
+
 @media (min-width: 600px) {
 	#firstLi {
 		display: unset;
-	}
-	header ul {
-		gap: 15px;
 	}
 	.hiddenLi {
 		display: flex;
@@ -325,28 +366,38 @@ footer {
 		padding: 0;
 		margin: 0;
 	}
-}
 
+	footer #footerLine {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	#footer2 #footerUpperDiv #footerLeftDiv #lumaSvg {
+		display: none;
+	}
+	#footer2 #footerUpperDiv #footerLeftDiv #starSvg {
+		display: unset;
+	}
+	#footer2 #footerBottomDiv {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 60px;
+	}
+	#footer2 #footerBottomDiv ul {
+		display: none;
+	}
+	#footer2 #footerBottomDiv p {
+		display: unset;
+	}
+	#footer2 #footerBottomDiv a {
+		display: unset;
+	}
+	#footer2 #footerCenterDiv {
+		display: none;
+	}
+}
+/* end */
 /* Home */
-#homeBackGroundDiv #starSvg {
-	display: none;
-}
-#homeBackGroundDiv #lumaSvg {
-	display: unset;
-	padding-left: 5px;
-}
-#homeBackGroundDiv header button {
-	border-style: none;
-	border-radius: 20px;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	background: rgb(185, 185, 185, 0.2);
-	color: rgb(97, 97, 97);
-	font-weight: bold;
-	font-size: 15px;
-}
 
 #homeBackGroundDiv {
 	width: 100%;
@@ -448,17 +499,6 @@ footer {
 	width: 100px;
 	height: 100px;
 }
-
-#homeBackGroundDiv footer #footerCenterDiv ul {
-	display: flex;
-	font-size: small;
-}
-#homeBackGroundDiv footer #footerCenterDiv ul li {
-	gap: 0;
-	line-height: 0;
-	padding: 0;
-	margin: 0;
-}
 @media (min-width: 600px) {
 	#homeBackGroundDiv #mainDiv {
 		display: flex;
@@ -491,23 +531,6 @@ footer {
 		width: 45%;
 		padding-top: 80px;
 	}
-	#homeBackGroundDiv
-		#mainDiv
-		footer
-		#footerUpperDiv
-		#footerLeftDiv
-		ul
-		#starSvg {
-		display: none;
-	}
-
-	#homeBackGroundDiv #footerCenterDiv ul {
-		gap: 0px;
-	}
-	#homeBackGroundDiv footer {
-		width: 80%;
-		justify-self: center;
-	}
 }
 
 /* header */
@@ -525,14 +548,6 @@ footer {
 	height: 100vh;
 }
 
-#signInBackGroundDiv header #endHeaderContent svg {
-	width: 17px;
-	height: 17px;
-}
-#signInBackGroundDiv header svg {
-	width: 45px;
-	height: 45px;
-}
 #signInBackGroundDiv #cardDiv {
 	border-radius: 20px;
 	background-color: white;
@@ -662,29 +677,7 @@ footer {
 /* specific */
 /* footer */
 /* Discover */
-#discoverBackGroundDiv header svg {
-	width: 45px;
-	height: 45px;
-}
-#discoverBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul #starSvg {
-	display: none;
-}
-#discoverBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul #lumaSvg {
-	display: unset;
-}
-#discoverBackGroundDiv #footerBottomDiv ul {
-	display: none;
-}
-#discoverBackGroundDiv #footerBottomDiv p {
-	display: unset;
-}
-#discoverBackGroundDiv #footerCenterDiv {
-	font-size: small;
-	display: unset;
-}
-#discoverBackGroundDiv #footerCenterDiv ul {
-	gap: 0px;
-}
+
 #discoverBackGroundDiv {
 	margin: 0;
 	background: linear-gradient(
@@ -932,50 +925,6 @@ footer {
 		padding-top: 5px;
 		font-size: small;
 	}
-	#discoverBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul {
-		display: flex;
-		align-items: center;
-	}
-	#discoverBackGroundDiv
-		footer
-		#footerUpperDiv
-		#footerLeftDiv
-		ul
-		#lumaSvg {
-		display: none;
-	}
-	#discoverBackGroundDiv
-		footer
-		#footerUpperDiv
-		#footerLeftDiv
-		ul
-		#starSvg {
-		display: flex;
-		align-items: center;
-	}
-	#discoverBackGroundDiv
-		footer
-		#footerUpperDiv
-		#footerLeftDiv
-		ul
-		#starSvg
-		svg {
-		width: 17px;
-		height: 17px;
-		display: block;
-		margin: 0;
-		padding: 0;
-	}
-	#discoverBackGroundDiv footer #footerCenterDiv {
-		display: none;
-	}
-	#discoverBackGroundDiv #footerBottomDiv p {
-		display: flex;
-		justify-self: center;
-		padding-top: 0;
-		margin-top: 0;
-		padding-bottom: 30px;
-	}
 }
 
 /* header */
@@ -987,43 +936,10 @@ footer {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	background-color: rgb(247, 247, 247);
-}
-#atlantaBackGroundDiv #topDiv,
-#atlantaBackGroundDiv header,
-#atlantaBackGroundDiv #signInButton {
-	color: white;
 }
 
 #atlantaBackGroundDiv header {
-	position: unset;
-	display: unset;
-	align-items: unset;
-	justify-content: unset;
-	padding-left: unset;
-	padding-right: unset;
-	padding-top: unset;
-	padding-bottom: unset;
-	margin: unset;
-	height: unset;
-	font-size: unset;
-	width: unset;
-}
-#atlantaBackGroundDiv #specialHeader {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px 20px;
-	margin: 0;
-	height: fit-content;
-	font-size: smaller;
-	width: 100%;
-	z-index: 10;
-	box-sizing: border-box;
+	background-image: url('https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=1080/discovery/atlanta-desktop.jpg');
 }
 
 #atlantaBackGroundDiv #topDiv {
@@ -1058,14 +974,6 @@ footer {
 	width: 100%;
 }
 
-#atlantaBackGroundDiv header svg {
-	width: 45px;
-	height: 45px;
-}
-#atlantaBackGroundDiv header #endHeaderContent svg {
-	width: 17px;
-	height: 17px;
-}
 #atlantaBackGroundDiv img {
 	width: 50px;
 	height: 50px;
@@ -1269,100 +1177,7 @@ footer {
 #atlantaBackGroundDiv #calendarContent {
 	padding-left: 10px;
 }
-#atlantaBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul #lumaSvg {
-	display: unset;
-	padding: 0;
-	margin: 0;
-}
-#atlantaBackGroundDiv footer {
-	padding-left: 10px;
-	padding-right: 10px;
-	width: 100%;
-	box-sizing: border-box;
-}
-#atlantaBackGroundDiv footer #footerUpperDiv {
-	box-sizing: border-box;
-	width: 100%;
-}
-#atlantaBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul #starSvg {
-	display: none;
-	align-items: center;
-}
-#atlantaBackGroundDiv footer #footerBottomDiv ul {
-	display: none;
-	padding: 0;
-	margin: 0;
-}
-#atlantaBackGroundDiv footer #footerBottomDiv p {
-	display: unset;
-}
-#atlantaBackGroundDiv footer #footerBottomDiv {
-	padding-bottom: 90px;
-}
-#atlantaBackGroundDiv footer #footerCenterDiv {
-	display: unset;
-	padding: 0;
-	margin: 0;
-}
 @media (min-width: 500px) {
-	#atlantaBackGroundDiv footer {
-		width: 70%;
-		justify-self: center;
-	}
-	#atlantaBackGroundDiv footer hr {
-		width: 100%;
-	}
-	#atlantaBackGroundDiv footer #footerUpperDiv #footerLeftDiv ul {
-		display: flex;
-		align-items: center;
-	}
-	#atlantaBackGroundDiv
-		footer
-		#footerUpperDiv
-		#footerLeftDiv
-		ul
-		#lumaSvg {
-		display: none;
-	}
-	#atlantaBackGroundDiv
-		footer
-		#footerUpperDiv
-		#footerLeftDiv
-		ul
-		#starSvg {
-		display: flex;
-		align-items: center;
-	}
-	#atlantaBackGroundDiv
-		footer
-		#footerUpperDiv
-		#footerLeftDiv
-		ul
-		#starSvg
-		svg {
-		width: 17px;
-		height: 17px;
-		display: block;
-		margin: 0;
-		padding: 0;
-	}
-	#atlantaBackGroundDiv footer #footerCenterDiv {
-		display: none;
-	}
-	#atlantaBackGroundDiv #footerBottomDiv ul {
-		display: none;
-	}
-
-	#atlantaBackGroundDiv #footerBottomDiv p {
-		padding-top: 0;
-		margin-top: 0;
-	}
-	#atlantaBackGroundDiv #footerBottomDiv {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
 	#atlantaBackGroundDiv #bottomDiv #rightDiv {
 		display: unset;
 		width: 200px;
@@ -1429,7 +1244,7 @@ footer {
 	width: 17px;
 	height: 17px;
 }
-#atlantaBackGroundDiv eventModal #header img {
+#atlantaBackGroundDiv #eventModal #header img {
 	width: 50%;
 	height: auto;
 	border-radius: 15px;
@@ -1861,16 +1676,7 @@ footer {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-#overviewBackGroundDiv #mainDiv #footer {
-	display: flex;
-	align-items: center;
-	padding: 10px;
-	gap: 20px;
-}
-#overviewBackGroundDiv #mainDiv #footer svg {
-	width: 60px;
-	height: auto;
-}
+
 #overviewBackGroundDiv #secondHeader #content #bottom span {
 	display: none;
 }
@@ -1925,9 +1731,7 @@ footer {
 		width: 50%;
 		margin: 15px;
 	}
-	#overviewBackGroundDiv #mainDiv #footer svg {
-		width: 40px;
-	}
+
 	#overviewBackGroundDiv #mainDiv #cards {
 		display: flex;
 		flex-direction: row;
@@ -2191,19 +1995,6 @@ footer {
 	justify-self: start;
 	margin-left: 2px;
 }
-#inactiveBackGround #createModal #footer {
-	display: flex;
-	justify-content: space-evenly;
-	gap: 10px;
-}
-
-#inactiveBackGround #createModal #footer button {
-	width: 100%;
-	border-radius: 7px;
-	border-width: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
 #inactiveBackGround #createModal #description {
 	line-height: 1.4;
 	font-size: 14px;
@@ -2235,10 +2026,7 @@ footer {
 	padding-bottom: 13px;
 	align-items: center;
 }
-#inactiveBackGround #createModal #footer #firstButton {
-	background-color: black;
-	color: white;
-}
+
 #createBackGroundDiv #templatesTab {
 	display: none;
 	position: fixed;
@@ -2555,7 +2343,369 @@ footer {
 /* background */
 /* specific */
 /* footer */
-/*  */
+/* Event */
+
+#eventBackGroundDiv {
+	width: 100%;
+	height: fit-content;
+	background-color: rgb(235, 212, 212);
+	padding-left: auto;
+	padding-right: auto;
+}
+#eventBackGroundDiv #mainDiv {
+	max-width: 950px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+#eventBackGroundDiv #mainDiv #imgDiv {
+	width: 100%;
+	height: auto;
+	padding-left: auto;
+	padding-right: auto;
+	display: flex;
+	justify-content: center;
+}
+#eventBackGroundDiv #mainDiv #imgDiv img {
+	width: 300px;
+	height: auto;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+#eventBackGroundDiv #mainDiv #header {
+	padding-top: 40px;
+}
+
+#eventBackGroundDiv #mainDiv #header #top,
+#eventBackGroundDiv #mainDiv #header #bottom {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+#eventBackGroundDiv #mainDiv #header #top button,
+#eventBackGroundDiv #mainDiv #header #bottom button {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	background-color: rgba(189, 189, 189, 0.377);
+	border-radius: 8px;
+	border-width: 0;
+	gap: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 0;
+}
+#eventBackGroundDiv #mainDiv #header #bottom button p,
+#eventBackGroundDiv #mainDiv #header #top button p {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+#eventBackGroundDiv #mainDiv #header #top button img,
+#eventBackGroundDiv #mainDiv #header #bottom button img {
+	border-radius: 5px;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+}
+#eventBackGroundDiv #mainDiv #header #top svg,
+#eventBackGroundDiv #mainDiv #header #bottom svg {
+	width: 17px;
+	height: 17px;
+}
+#eventBackGroundDiv #mainDiv #info #date,
+#eventBackGroundDiv #mainDiv #info #location {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+#eventBackGroundDiv #mainDiv #info #date h4,
+#eventBackGroundDiv #mainDiv #info #location h4,
+#eventBackGroundDiv #mainDiv #info #date p,
+#eventBackGroundDiv #mainDiv #info #location p {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+}
+#eventBackGroundDiv #mainDiv #info #location svg {
+	width: 17px;
+	height: 17px;
+}
+#eventBackGroundDiv #mainDiv #info {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+#eventBackGroundDiv #mainDiv #info #location img,
+#eventBackGroundDiv #mainDiv #info #date img {
+	border-radius: 10px;
+}
+
+#eventBackGroundDiv #mainDiv #header #title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#eventBackGroundDiv #mainDiv #ticket {
+	background-color: white;
+	border-radius: 15px;
+	padding-top: 2px;
+	margin-bottom: 20px;
+}
+#eventBackGroundDiv #mainDiv #ticket #label {
+	background-color: rgba(165, 165, 165, 0.527);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 10px;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+#eventBackGroundDiv #mainDiv #ticket #label p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#eventBackGroundDiv #mainDiv #ticket svg {
+	width: 17px;
+	height: 17px;
+}
+#eventBackGroundDiv #mainDiv #ticket #body {
+	padding: 10px;
+}
+#eventBackGroundDiv #mainDiv #ticket #body #title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#eventBackGroundDiv #mainDiv #ticket #body p,
+#eventBackGroundDiv #mainDiv #ticket #body h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 2;
+}
+#eventBackGroundDiv #mainDiv .sectionTitle hr {
+	background-color: gray;
+	width: 100%;
+}
+#eventBackGroundDiv #mainDiv .sectionTitle h4 {
+	line-height: 1;
+	padding: 0;
+
+	margin: 0;
+}
+#eventBackGroundDiv #mainDiv #location h3,
+#eventBackGroundDiv #mainDiv #location p {
+	line-height: 1;
+}
+#eventBackGroundDiv #mainDiv #location #mapDiv,
+#eventBackGroundDiv #mainDiv #location #mapDiv iframe,
+#eventBackGroundDiv #mainDiv #location #mapDiv a {
+	width: 100%;
+	border-radius: 10px;
+	border-width: 0;
+	height: 200px;
+}
+#eventBackGroundDiv #mainDiv #location #info svg {
+	width: 17px;
+	height: 17px;
+}
+
+#eventBackGroundDiv #mainDiv #location #info #top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#eventBackGroundDiv #mainDiv #location #info #top #left {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	padding-bottom: 15px;
+}
+#eventBackGroundDiv #mainDiv #location #info #top #left,
+#eventBackGroundDiv #mainDiv #location #info #top #left #arrowText {
+	display: flex;
+}
+#eventBackGroundDiv #mainDiv #location #info #top #left img {
+	width: 25px;
+	height: 25px;
+	border-radius: 3px;
+}
+#eventBackGroundDiv #mainDiv #location #info #instaIcon {
+	padding-top: 10px;
+}
+#eventBackGroundDiv #mainDiv #hosted #top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#eventBackGroundDiv #mainDiv #hosted #top svg {
+	width: 17px;
+	height: 17px;
+}
+#eventBackGroundDiv #mainDiv #hosted #top img {
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+#eventBackGroundDiv #mainDiv #hosted #top #left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#eventBackGroundDiv #mainDiv #hosted #going #imgDiv img {
+	width: 23px;
+	height: 23px;
+	border-radius: 100%;
+	outline-width: 2px;
+	outline-style: solid;
+	outline-color: white;
+	margin-right: -10px;
+}
+#eventBackGroundDiv #mainDiv #hosted #going {
+	display: flex;
+	justify-items: start;
+	flex-direction: column;
+	padding-top: 10px;
+}
+#eventBackGroundDiv #mainDiv #hosted #going #imgDiv {
+	width: fit-content;
+}
+#eventBackGroundDiv #mainDiv #hosted hr {
+	width: 100%;
+	background-color: gray;
+}
+
+@media (min-width: 700px) {
+	#eventBackGroundDiv #mainDiv {
+		display: flex;
+		flex-direction: row;
+		justify-self: center;
+		gap: 30px;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection {
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info {
+		display: unset;
+	}
+	#eventBackGroundDiv #mainDiv #rightSection #location #info,
+	#eventBackGroundDiv #mainDiv #leftSection #header {
+		display: none;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #bottomSection {
+		display: unset;
+	}
+	#eventBackGroundDiv #mainDiv #rightSection #bottomSection {
+		display: none;
+	}
+
+	#eventBackGroundDiv #mainDiv #leftSection #bottomSection #hosted #top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#top
+		svg {
+		width: 17px;
+		height: 17px;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#top
+		img {
+		width: 25px;
+		height: 25px;
+		border-radius: 100%;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#top
+		#left {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#going
+		#imgDiv
+		img {
+		width: 23px;
+		height: 23px;
+		border-radius: 100%;
+		outline-width: 2px;
+		outline-style: solid;
+		outline-color: white;
+		margin-right: -10px;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#going {
+		display: flex;
+		justify-items: start;
+		flex-direction: column;
+		padding-top: 10px;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#going
+		#imgDiv {
+		width: fit-content;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #bottomSection #hosted hr {
+		width: 100%;
+		background-color: gray;
+	}
+
+	#eventBackGroundDiv #mainDiv #leftSection #info svg {
+		width: 17px;
+		height: 17px;
+	}
+
+	#eventBackGroundDiv #mainDiv #leftSection #info #top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #left {
+		display: flex;
+		gap: 15px;
+		align-items: center;
+		padding-bottom: 15px;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #left,
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #left #arrowText {
+		display: flex;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #left img {
+		width: 25px;
+		height: 25px;
+		border-radius: 3px;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #instaIcon {
+		padding-top: 10px;
+	}
+}
 /* header */
 /* background */
 /* specific */

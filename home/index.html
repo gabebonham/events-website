@@ -6,20 +6,14 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Luma</title>
-		<link rel="stylesheet" href="../globalStyles.css" />
-		<link
-			rel="icon"
-			href="../public/favicon.ico"
-			type="image/x-icon"
-		/>
+		<title>Document</title>
 	</head>
 	<body>
-		<div id="homeUserBackGroundDiv">
+		<div id="eventsBackGroundDiv">
 			<header id="loggedInHeader">
 				<div id="startHeaderContent">
 					<div id="left">
-						<a href="../index.html">
+						<a href="./index.html">
 							<svg
 								id="headerLuma"
 								xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +120,9 @@
 							/>
 						</li>
 						<li id="exploreEvents">
-							<a>
+							<a
+								href="./discover/index.html"
+							>
 								Explore Events
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +141,7 @@
 						</li>
 						<li id="signIn">
 							<a
-								href="../signIn/index.html"
+								href="./signIn/index.html"
 								><button
 									id="signInButton"
 								>
@@ -156,36 +152,175 @@
 					</ul>
 				</div>
 			</header>
+			<div id="mainWrapper">
+				<div id="mainDiv">
+					<div id="header">
+						<h1>Events</h1>
+						<div id="switchButton">
+							<p>Upcoming</p>
+							<div id="innerSwift">
+								<p>Past</p>
+							</div>
+						</div>
+						<div id="body">
+							<div id="lineDiv">
+								<div
+									id="circle"
+								></div>
+								<div
+									id="line"
+								></div>
+							</div>
+							<div id="cards">
+								<h4
+									id="date"
+								></h4>
+								<div id="card">
+									<div
+										id="left"
+									>
+										<div>
+											<p>
+												9:30
+												PM
+											</p>
+										</div>
+										<div>
+											<h1>
+												Event
+												Name
+											</h1>
+										</div>
+										<div
+											id="location"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 16 16"
+											>
+												<g
+													fill="none"
+													fill-rule="evenodd"
+												>
+													<path
+														fill="currentColor"
+														d="M7.277 8.487a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-1.5 0zm.75 3.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5"
+													></path>
+													<path
+														stroke="currentColor"
+														stroke-width="1.5"
+														d="M2.08 9.103C3.372 6.313 4.313 4.287 5.174 2.9 6.044 1.498 6.717.948 7.388.813a3.3 3.3 0 0 1 1.277 0c.671.135 1.344.685 2.214 2.087.86 1.387 1.802 3.414 3.094 6.203.582 1.256.98 2.12 1.185 2.828.194.673.187 1.122.017 1.557-.086.22-.273.53-.427.71-.318.368-.688.575-1.29.71-.644.145-1.485.192-2.728.258a51 51 0 0 1-5.407 0c-1.243-.066-2.083-.113-2.728-.258-.602-.135-.972-.342-1.29-.71a2.9 2.9 0 0 1-.427-.71c-.17-.435-.177-.884.017-1.557.204-.707.603-1.572 1.185-2.828Z"
+													></path>
+												</g>
+											</svg>
+											<p>
+												Location
+												Missing
+											</p>
+										</div>
+										<div
+											id="guests"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 16 16"
+											>
+												<path
+													fill="currentColor"
+													fill-rule="evenodd"
+													d="M9.75 1a.75.75 0 1 0 0 1.5c1.112 0 1.942.826 1.942 1.989 0 .561-.193.895-.431 1.218l-.107.14-.32.442a1.74 1.74 0 0 0-.296.939c0 .769.366 1.297.847 1.65.38.279.86.467 1.236.614h.001l.121.048c.444.176.756.318.969.506.168.149.288.338.288.704a.75.75 0 1 0 1.5 0c0-.808-.313-1.402-.794-1.827-.437-.387-.99-.611-1.411-.778l-.09-.036c-.427-.169-.719-.284-.931-.44-.168-.124-.235-.232-.235-.441 0-.003 0-.009.006-.027a.6.6 0 0 1 .058-.111c.054-.086.107-.154.181-.25l.185-.244c.339-.46.723-1.104.723-2.108C13.192 2.522 11.715 1 9.75 1m-3.429.75c-2.129 0-3.75 1.622-3.75 3.75 0 1.083.42 1.775.793 2.271l.203.263.208.282c.081.126.082.171.082.184 0 .25-.086.388-.292.537-.246.178-.582.308-1.052.491l-.106.041c-.47.183-1.072.424-1.546.836-.519.451-.86 1.083-.86 1.952 0 .681.31 1.224.765 1.622.435.38 1.004.634 1.591.81 1.176.353 2.655.46 3.966.46s2.789-.107 3.965-.46c.587-.176 1.156-.43 1.591-.81.455-.398.765-.942.765-1.622 0-.868-.342-1.5-.86-1.952-.474-.413-1.077-.654-1.546-.836l-.106-.041c-.47-.182-.806-.313-1.052-.491-.206-.149-.292-.287-.292-.537 0-.013.001-.057.082-.184a4 4 0 0 1 .208-.282l.203-.263c.373-.497.793-1.189.793-2.271 0-2.128-1.621-3.75-3.75-3.75zM4.071 5.5c0-1.3.95-2.25 2.25-2.25s2.25.95 2.25 2.25c0 .632-.223 1.011-.493 1.371l-.123.159-.35.475c-.16.249-.32.579-.32.995 0 .821.396 1.379.914 1.753.413.298.937.5 1.357.661l.137.053c.494.192.856.353 1.105.57.205.178.345.403.345.82 0 .177-.065.329-.253.494-.208.182-.549.357-1.034.502-.967.29-2.273.397-3.534.397s-2.568-.107-3.534-.397c-.485-.146-.826-.32-1.034-.502-.188-.164-.253-.317-.253-.494 0-.417.141-.642.345-.82.249-.217.611-.378 1.105-.57l.137-.053c.42-.161.944-.363 1.357-.661.517-.374.914-.932.914-1.753 0-.416-.16-.746-.32-.995a7 7 0 0 0-.35-.475l-.123-.159c-.27-.36-.493-.74-.493-1.371z"
+												></path>
+											</svg>
+											<p>
+												No
+												Guests
+											</p>
+										</div>
+										<button>
+											<p>
+												Manage
+												Event
+											</p>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												viewBox="0 0 24 24"
+											>
+												<path
+													d="M5 12h14M12 5l7 7-7 7"
+												></path>
+											</svg>
+										</button>
+									</div>
+									<div
+										id="right"
+									>
+										<img
+											src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8"
+											alt="Cover Image for gh"
+											fetchpriority="auto"
+											loading="lazy"
+											srcset="
+												https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=80,height=80/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8    80w,
+												https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=80,height=80/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8   160w,
+												https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=120,height=120/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8 120w,
+												https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=120,height=120/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8 240w,
+												https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=180,height=180/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8 180w,
+												https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,anim=false,background=white,quality=75,width=180,height=180/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8 360w
+											"
+											sizes="(max-width: 450px) 80px, (max-width: 1000px) 120px, 180px"
+											class="jsx-4068354093"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<footer>
 				<hr id="footerLine" />
 				<div id="footerUpperDiv">
 					<div id="footerLeftDiv">
 						<ul>
 							<li id="starSvg">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 130 130"
+								<a
+									href="../../index.html"
 								>
-									<path
-										fill="currentColor"
-										d="M133 67C96.282 67 66.5 36.994 66.5 0c0 36.994-29.782 67-66.5 67 36.718 0 66.5 30.006 66.5 67 0-36.994 29.782-67 66.5-67"
-									></path>
-								</svg>
-							</li>
-							<li id="lumaSvg">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 724 264"
-								>
-									<g
-										fill="currentColor"
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 130 130"
 									>
 										<path
-											d="M38.53 260.65H.43V27.86h38.1zM124.99 263.42c-42.25 0-66.48-22.96-66.48-63V89.33h38.1v108.28c0 23.61 8.7 32.39 32.12 32.39 30.35 0 42.73-14.54 42.73-50.17v-90.5h38.1v171.33h-36.54v-29.91c-4.99 22.98-27.12 32.67-48.03 32.67m347.2-2.77H434.4V149.87c0-22.5-7.01-30.87-25.88-30.87-24.28 0-37.11 14.45-37.11 41.79v99.86h-37.79V149.87c0-21.93-7.23-30.87-24.94-30.87-31.59 0-38.05 32.96-38.05 41.79v99.86h-38.1V89.33h36.54v29.96c6.49-21.02 27.02-33.71 47.72-33.71 20.69 0 38.09 7.9 45.64 33.71 10.13-26.76 28.35-33.71 50.15-33.71 37.88 0 59.61 18.88 59.61 51.81zm76.65 2.77c-52.62 0-61.55-33.45-61.55-50.52 0-20.1 8.83-38.21 27.93-45.55 8.41-3.11 16.52-5.43 24.84-7.1 7.33-1.47 18.64-3.03 26.91-4.17l2.73-.38c14.38-2 29.67-9.21 29.67-18.62 0-16-20.51-18.39-32.74-18.39-13.87 0-23.64 3.57-27.53 10.05-3.49 6.46-3.73 7.97-4.62 13.6l-.62 4.43h-38.1l.68-5.61c1.35-11.14 3.41-19.03 6.48-24.83 10.54-20.39 31.77-30.75 63.08-30.75 26.11 0 44.63 8.23 53.26 15.94 5.31 4.6 9.1 9.84 11.89 16.46 5.84 12.36 6.32 20.63 6.32 29.4v86.43c0 8.07.78 14.97 2.31 20.5l1.76 6.35h-38.91l-.7-4.19c-.5-2.96-.67-19.75-.88-26.23-8.99 23.61-28.27 33.18-52.21 33.18m50.53-93.72c-7.97 6.11-20.47 9.6-38.62 13.23-31.27 5.78-36.54 13.06-36.54 27.22 0 12.5 10.63 20.26 27.75 20.26 33.23 0 47.41-15.48 47.41-51.77zM723.57 64.19C688.46 64.19 660 35.73 660 .62c0 35.11-28.46 63.57-63.57 63.57 35.11 0 63.57 28.46 63.57 63.57 0-35.11 28.46-63.57 63.57-63.57"
+											fill="currentColor"
+											d="M133 67C96.282 67 66.5 36.994 66.5 0c0 36.994-29.782 67-66.5 67 36.718 0 66.5 30.006 66.5 67 0-36.994 29.782-67 66.5-67"
 										></path>
-									</g>
-								</svg>
+									</svg>
+								</a>
+							</li>
+							<li id="lumaSvg">
+								<a
+									href="../../index.html"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 724 264"
+									>
+										<g
+											fill="currentColor"
+										>
+											<path
+												d="M38.53 260.65H.43V27.86h38.1zM124.99 263.42c-42.25 0-66.48-22.96-66.48-63V89.33h38.1v108.28c0 23.61 8.7 32.39 32.12 32.39 30.35 0 42.73-14.54 42.73-50.17v-90.5h38.1v171.33h-36.54v-29.91c-4.99 22.98-27.12 32.67-48.03 32.67m347.2-2.77H434.4V149.87c0-22.5-7.01-30.87-25.88-30.87-24.28 0-37.11 14.45-37.11 41.79v99.86h-37.79V149.87c0-21.93-7.23-30.87-24.94-30.87-31.59 0-38.05 32.96-38.05 41.79v99.86h-38.1V89.33h36.54v29.96c6.49-21.02 27.02-33.71 47.72-33.71 20.69 0 38.09 7.9 45.64 33.71 10.13-26.76 28.35-33.71 50.15-33.71 37.88 0 59.61 18.88 59.61 51.81zm76.65 2.77c-52.62 0-61.55-33.45-61.55-50.52 0-20.1 8.83-38.21 27.93-45.55 8.41-3.11 16.52-5.43 24.84-7.1 7.33-1.47 18.64-3.03 26.91-4.17l2.73-.38c14.38-2 29.67-9.21 29.67-18.62 0-16-20.51-18.39-32.74-18.39-13.87 0-23.64 3.57-27.53 10.05-3.49 6.46-3.73 7.97-4.62 13.6l-.62 4.43h-38.1l.68-5.61c1.35-11.14 3.41-19.03 6.48-24.83 10.54-20.39 31.77-30.75 63.08-30.75 26.11 0 44.63 8.23 53.26 15.94 5.31 4.6 9.1 9.84 11.89 16.46 5.84 12.36 6.32 20.63 6.32 29.4v86.43c0 8.07.78 14.97 2.31 20.5l1.76 6.35h-38.91l-.7-4.19c-.5-2.96-.67-19.75-.88-26.23-8.99 23.61-28.27 33.18-52.21 33.18m50.53-93.72c-7.97 6.11-20.47 9.6-38.62 13.23-31.27 5.78-36.54 13.06-36.54 27.22 0 12.5 10.63 20.26 27.75 20.26 33.23 0 47.41-15.48 47.41-51.77zM723.57 64.19C688.46 64.19 660 35.73 660 .62c0 35.11-28.46 63.57-63.57 63.57 35.11 0 63.57 28.46 63.57 63.57 0-35.11 28.46-63.57 63.57-63.57"
+											></path>
+										</g>
+									</svg>
+								</a>
 							</li>
 							<li class="hiddenLi">
 								<p>
@@ -283,19 +418,24 @@
 						<li>Security</li>
 					</ul>
 					<p>
-						Host yout event with Luma<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="currentColor"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							viewBox="0 0 24 24"
+						<a
+							href="../../signIn/index.html"
 						>
-							<path
-								d="M7 17 17 7M7 7h10v10"
-							></path>
-						</svg>
+							Host yout event with
+							Luma<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M7 17 17 7M7 7h10v10"
+								></path>
+							</svg>
+						</a>
 					</p>
 				</div>
 			</footer>
