@@ -224,6 +224,7 @@ footer {
 	width: 100%;
 	display: flex;
 	padding-left: 10px;
+	box-sizing: border-box;
 }
 
 #footerCenterDiv ul li {
@@ -2710,7 +2711,176 @@ footer #footerLeftDiv #lumaSvg {
 /* background */
 /* specific */
 /* footer */
-/*  */
+/* home */
+#eventsBackGroundDiv {
+	background: linear-gradient(
+		180deg,
+		rgba(171, 200, 231, 0.6783088235294117) 0%,
+		rgba(224, 224, 224, 0.7035189075630253) 32%
+	);
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+}
+#eventsBackGroundDiv #mainDiv svg {
+	width: 17px;
+	height: 17px;
+}
+#eventsBackGroundDiv #mainWrapper {
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv {
+	width: 700px;
+	max-width: 700px;
+	margin: 0;
+	padding: 15px;
+	flex-shrink: 1;
+	padding-bottom: 80px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #header #switchButton {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	padding: 2px;
+	background-color: rgba(128, 128, 128, 0.192);
+	border-radius: 7px;
+	font-size: 13px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #header #switchButton p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #header #switchButton #innerSwift {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	background-color: white;
+	padding-left: 23px;
+	padding-top: 10px;
+	padding-right: 23px;
+	padding-bottom: 10px;
+	border-radius: 7px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #header #switchButton #leftP {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body {
+	display: flex;
+	align-items: start;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #lineDiv {
+	width: 19px;
+	height: 160px;
+	padding-top: 4px;
+	margin-right: 9px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #lineDiv #line {
+	border-left: 1px dashed gray;
+	margin-left: 8px;
+	height: 100%;
+}
+
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #lineDiv #circle {
+	border-radius: 100%;
+	width: 9px;
+	height: 9px;
+	background-color: gray;
+	margin-left: 4px;
+	margin-bottom: 4px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #card {
+	border-radius: 15px;
+	background-color: white;
+	margin: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #card #left h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #date {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	padding-bottom: 20px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #card #left #location,
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #card #left #guests,
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #card #left button {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #card #left p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #card #left button {
+	border-radius: 10px;
+	border-width: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #right {
+	padding-top: 10px;
+	border-radius: 10px;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #dateLeft {
+	display: none;
+}
+@media (min-width: 650px) {
+	#eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #date {
+		display: none;
+	}
+	#eventsBackGroundDiv #mainWrapper #mainDiv #body #dateLeft {
+		display: unset;
+	}
+	#eventsBackGroundDiv #mainWrapper #mainDiv #body {
+		gap: 20px;
+	}
+	#eventsBackGroundDiv #mainWrapper #mainDiv #body #dateLeft p,
+	#eventsBackGroundDiv #mainWrapper #mainDiv #body #dateLeft h4 {
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+		padding-bottom: 10px;
+		padding-right: 40px;
+	}
+}
 /* header */
 /* background */
 /* specific */
