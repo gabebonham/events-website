@@ -1935,99 +1935,6 @@ footer #footerLeftDiv #lumaSvg {
 	display: none;
 }
 
-#inactiveBackGround {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100vh;
-	z-index: 100;
-	background-color: rgba(0, 0, 0, 0.442);
-	overflow: hidden;
-}
-#inactiveBackGround #createModal {
-	display: none;
-
-	background-color: white;
-	border-radius: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	max-width: 280px;
-	max-height: fit-content;
-	overflow: hidden;
-}
-#inactiveBackGround #createModal #icon {
-	width: 100%;
-	display: flex;
-	justify-items: start;
-}
-#inactiveBackGround #createModal #icon #circle {
-	background-color: rgba(180, 180, 180, 0.178);
-	border-radius: 100%;
-	width: fit-content;
-	padding: 5px;
-}
-#inactiveBackGround #createModal #icon #circle svg {
-	width: 30px;
-	height: auto;
-	padding: 5px;
-}
-
-#inactiveBackGround #createModal #checkButton #back {
-	border-radius: 40px;
-	width: 40px;
-	height: 23px;
-	background-color: gray;
-	align-self: center;
-	padding: 0;
-	padding-top: 2px;
-}
-#inactiveBackGround #createModal #checkButton #back #innerCircle {
-	border-radius: 100%;
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	align-self: center;
-	justify-self: start;
-	margin-left: 2px;
-}
-#inactiveBackGround #createModal #description {
-	line-height: 1.4;
-	font-size: 14px;
-	padding: 0;
-	margin: 0;
-}
-#inactiveBackGround #createModal h2 {
-	line-height: 1;
-	margin-top: 15px;
-	margin-bottom: 10px;
-}
-#inactiveBackGround #createModal #inpDiv input {
-	border-radius: 7px;
-	width: 100%;
-	height: 30px;
-	border-width: 1px;
-}
-#inactiveBackGround #createModal #inpDiv p {
-	padding: 0;
-	margin: 0;
-	margin-top: 12px;
-	margin-bottom: 8px;
-}
-#inactiveBackGround #createModal #bottom {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 15px;
-	padding-bottom: 13px;
-	align-items: center;
-}
-
 #createBackGroundDiv #templatesTab {
 	display: none;
 	position: fixed;
@@ -2112,9 +2019,7 @@ footer #footerLeftDiv #lumaSvg {
 	width: 17px;
 	height: auto;
 }
-#inactiveBackGround {
-	display: none;
-}
+
 #createBackGroundDiv #templatesTab #bottom .buttonsDiv button svg {
 	width: 17px;
 	height: auto;
@@ -2885,3 +2790,1094 @@ footer #footerLeftDiv #lumaSvg {
 /* background */
 /* specific */
 /* footer */
+
+#inactiveBackGround {
+	position: unset;
+	display: unset;
+	justify-content: unset;
+	align-items: unset;
+	left: unset;
+	top: unset;
+	width: unset;
+	height: unset;
+	z-index: unset;
+	background-color: unset;
+	overflow: unset;
+}
+#inactiveBackGround {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.442);
+	overflow: hidden;
+}
+#inactiveBackGround svg {
+	width: 17px;
+	height: 17px;
+}
+#inactiveBackGround #createModal {
+	background-color: white;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	max-width: 280px;
+	max-height: fit-content;
+	overflow: hidden;
+}
+#inactiveBackGround #createModal #icon {
+	width: 100%;
+	display: flex;
+	justify-items: start;
+}
+#inactiveBackGround #createModal #icon #circle {
+	background-color: rgba(180, 180, 180, 0.178);
+	border-radius: 100%;
+	width: fit-content;
+	padding: 5px;
+}
+#inactiveBackGround #createModal #icon #circle svg {
+	width: 30px;
+	height: auto;
+	padding: 5px;
+}
+
+#inactiveBackGround #createModal #checkButton #back {
+	border-radius: 40px;
+	width: 40px;
+	height: 23px;
+	background-color: gray;
+	align-self: center;
+	padding: 0;
+	padding-top: 2px;
+}
+#inactiveBackGround #createModal #checkButton #back #innerCircle {
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	align-self: center;
+	justify-self: start;
+	margin-left: 2px;
+}
+#inactiveBackGround #createModal #description {
+	line-height: 1.4;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+#inactiveBackGround #createModal h2 {
+	line-height: 1;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+#inactiveBackGround #createModal #inpDiv input {
+	border-radius: 7px;
+	width: 100%;
+	height: 30px;
+	border-width: 1px;
+}
+#inactiveBackGround #createModal #inpDiv p {
+	padding: 0;
+	margin: 0;
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+#inactiveBackGround #createModal #bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 13px;
+	align-items: center;
+}
+#inactiveBackGround #approvalModal {
+	background-color: rgb(241, 241, 241);
+	position: absolute;
+	border-radius: 10px;
+	color: black;
+	width: 500px;
+	height: 550px;
+	right: 5px;
+	top: 10px;
+}
+
+#inactiveBackGround #approvalModal #header {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+	padding: 15px;
+}
+#inactiveBackGround #approvalModal #body {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	padding: 15px;
+}
+#inactiveBackGround #approvalModal #body textarea {
+	border-radius: 10px;
+	width: 100%;
+	border-color: gray;
+	height: 100px;
+}
+#inactiveBackGround #approvalModal #body #card {
+	border-radius: 10px;
+	background-color: white;
+	padding: 15px;
+}
+#inactiveBackGround #addQuestionModal svg {
+	width: 17px;
+	height: 17px;
+}
+#inactiveBackGround #addQuestionModal {
+	background-color: white;
+	position: absolute;
+	border-radius: 10px;
+	padding: 15px;
+}
+#inactiveBackGround #addQuestionModal #icon svg {
+	width: 35px;
+	height: 35px;
+}
+#inactiveBackGround #addQuestionModal #body {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 7px;
+}
+#inactiveBackGround #addQuestionModal #body button {
+	display: flex;
+	align-items: center;
+	background-color: rgba(233, 233, 233, 0.527);
+	border-radius: 5px;
+	border-width: 0;
+	gap: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 1;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#inactiveBackGround #shareModal {
+	background-color: white;
+	border-radius: 10px;
+	padding: 15px;
+	height: auto;
+}
+#inactiveBackGround #shareModal svg {
+	width: 35px;
+	height: 35px;
+}
+#inactiveBackGround #shareModal #body {
+	border-width: 0;
+	background-color: transparent;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 35px;
+	row-gap: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: fit-content;
+}
+#inactiveBackGround #shareModal #body button {
+	border-width: 0;
+	background-color: transparent;
+}
+#inactiveBackGround #shareModal #icon {
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(201, 201, 201, 0.555);
+}
+#inactiveBackGround #shareModal #footer div {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+#inactiveBackGround #shareModal #footer div input {
+	width: 100%;
+	border-radius: 5px;
+	height: 25px;
+	border-width: 1px;
+	border-color: rgba(128, 128, 128, 0.274);
+}
+#inactiveBackGround #shareModal #footer div button {
+	height: 100%;
+	border-radius: 5px;
+	border-width: 0;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#inactiveBackGround #shareModal #footer {
+	width: 100%;
+}
+#inactiveBackGround #addHostModal {
+	background-color: white;
+	border-radius: 15px;
+	padding: 20px;
+	width: 300px;
+}
+#inactiveBackGround #addHostModal #iconDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+#inactiveBackGround #addHostModal #iconDiv #icon {
+	background-color: rgba(221, 221, 221, 0.418);
+	border-radius: 100%;
+	padding: 10px;
+}
+#inactiveBackGround #addHostModal #iconDiv #icon svg {
+	width: 30px;
+	height: 30px;
+}
+#inactiveBackGround #addHostModal #inputDiv {
+	width: 100%;
+}
+#inactiveBackGround #addHostModal #inputDiv input {
+	width: 100%;
+	height: 30px;
+	border-width: 1px;
+	border-radius: 7px;
+	border-color: rgba(128, 128, 128, 0.377);
+}
+#inactiveBackGround #addHostModal #footer {
+	text-align: center;
+}
+
+#inactiveBackGround #inviteGuestsModal {
+	position: absolute;
+	background-color: white;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 100;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #emails img {
+	width: 20px;
+	height: 20px;
+}
+#inactiveBackGround #inviteGuestsModal #modalHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	width: 100%;
+	border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+#inactiveBackGround #inviteGuestsModal #modalHeader #right {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	box-sizing: border-box;
+}
+#inactiveBackGround #inviteGuestsModal #modalHeader button {
+	border-radius: 40px;
+	border-color: rgba(187, 187, 187, 0.342);
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+}
+#inactiveBackGround
+	#inviteGuestsModal
+	#modalHeader
+	#right
+	button
+	#headerCircle {
+	border-radius: 100%;
+	outline-color: rgb(187, 187, 187);
+	outline-style: solid;
+	outline-width: 2px;
+	border-width: 0;
+	background-color: white;
+	width: 11px;
+	height: 11px;
+	margin-right: 5px;
+}
+
+#inactiveBackGround #inviteGuestsModal #modalHeader h2 {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody {
+	display: flex;
+	border-bottom-right-radius: 10px;
+
+	border-bottom-left-radius: 10px;
+	box-sizing: border-box;
+
+	width: 100%;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+#inactiveBackGround #inviteGuestsModal #modalBody #left div p,
+#inactiveBackGround #inviteGuestsModal #modalBody #left h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #peopleInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left h4 {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left div {
+	gap: 10px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left button {
+	border-width: 0;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 15px;
+	gap: 10px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left hr {
+	padding: 0;
+	margin: 0;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left {
+	border-right: 1px solid rgba(201, 201, 201, 0.432);
+	padding-left: 15px;
+	padding-right: 20px;
+	padding-top: 15px;
+
+	display: flex;
+	box-sizing: border-box;
+
+	width: 100%;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #addEmailsTitle {
+	display: none;
+}
+
+#inactiveBackGround #inviteGuestsModal #modalBody #left #bottomTitle {
+	display: none;
+}
+
+#inactiveBackGround #inviteGuestsModal #modalBody #left #bottomInfo {
+	display: none;
+}
+
+#inactiveBackGround #inviteGuestsModal #modalBody #left .grow {
+	display: none;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left .shrink {
+	margin-right: 30px;
+	line-height: 1;
+}
+
+#inactiveBackGround #inviteGuestsModal #modalBody #bottomHr {
+	width: 100%;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left #topHr {
+	display: none;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left div {
+	display: flex;
+	align-items: center;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right {
+	display: flex;
+	flex-direction: column;
+	justify-items: start;
+	padding: 15px;
+	box-sizing: border-box;
+	width: 100%;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #inputDiv {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	gap: 10px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #inputDiv input {
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: rgba(206, 206, 206, 0.418);
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #inputDiv button {
+	padding-top: 8px;
+	width: 70px;
+	padding-bottom: 8px;
+	border-radius: 5px;
+	border-width: 0;
+	background-color: rgba(206, 206, 206, 0.418);
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #emails #emailIcon {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+#inactiveBackGround
+	#inviteGuestsModal
+	#modalBody
+	#right
+	#emails
+	#emailIcon
+	#circle {
+	background-color: gray;
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right h2 {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 6px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #emails {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right #emails div {
+	display: flex;
+	align-items: center;
+}
+#inactiveBackGround #inviteGuestsModal #footer #nextButtonDiv {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
+#inactiveBackGround #inviteGuestsModal #footer #nextButtonDiv button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-width: 0;
+	background-color: gray;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+@media (min-width: 600px) {
+	#inactiveBackGround {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 100;
+		background-color: rgba(0, 0, 0, 0.442);
+		overflow: hidden;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left #topHr {
+		display: unset;
+	}
+	#inactiveBackGround #inviteGuestsModal {
+		border-radius: 10px;
+		background-color: white;
+		width: 800px;
+		height: 500px;
+		position: relative;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right #emails img {
+		width: 20px;
+		height: 20px;
+	}
+
+	#inactiveBackGround
+		#inviteGuestsModal
+		#modalBody
+		#right
+		#addEmailsTitle {
+		display: flex;
+	}
+
+	#inactiveBackGround #inviteGuestsModal #modalBody #left #bottomTitle {
+		display: flex;
+	}
+
+	#inactiveBackGround #inviteGuestsModal #modalBody #left #bottomInfo {
+		display: flex;
+	}
+
+	#inactiveBackGround #inviteGuestsModal #modalBody #left .grow {
+		display: flex;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left .shrink {
+		display: none;
+	}
+
+	#inactiveBackGround #inviteGuestsModal #modalHeader {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		padding: 15px;
+		border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+	}
+	#inactiveBackGround #inviteGuestsModal #modalHeader #right {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalHeader button {
+		border-radius: 40px;
+		border-color: rgba(187, 187, 187, 0.342);
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+	}
+	#inactiveBackGround
+		#inviteGuestsModal
+		#modalHeader
+		#right
+		button
+		#headerCircle {
+		border-radius: 100%;
+		outline-color: rgb(187, 187, 187);
+		outline-style: solid;
+		outline-width: 2px;
+		border-width: 0;
+		background-color: white;
+		width: 11px;
+		height: 11px;
+		margin-right: 5px;
+	}
+
+	#inactiveBackGround #inviteGuestsModal #modalHeader h2 {
+		line-height: 1;
+		padding: 0;
+		margin: 0;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody {
+		display: flex;
+		border-bottom-right-radius: 10px;
+		height: 430px;
+		border-bottom-left-radius: 10px;
+		box-sizing: border-box;
+		flex-direction: row;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left div p,
+	#inactiveBackGround #inviteGuestsModal #modalBody #left h4 {
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left h4 {
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left div {
+		gap: 10px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left button {
+		border-width: 0;
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 15px;
+		gap: 10px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left hr {
+		padding: 0;
+		margin: 0;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left {
+		border-right: 1px solid rgba(201, 201, 201, 0.432);
+		padding-left: 15px;
+		padding-right: 20px;
+		padding-top: 15px;
+		height: 100%;
+		flex-direction: column;
+		width: 350px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left button p {
+		line-height: 1;
+		padding: 0;
+		margin: 0;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left div {
+		display: flex;
+		align-items: center;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right {
+		display: flex;
+		flex-direction: column;
+		justify-items: start;
+		padding: 15px;
+		width: 100%;
+		height: 100%;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right #inputDiv {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		gap: 10px;
+	}
+	#inactiveBackGround
+		#inviteGuestsModal
+		#modalBody
+		#right
+		#inputDiv
+		input {
+		width: 100%;
+		height: 30px;
+		border-radius: 5px;
+		border-width: 1px;
+		border-color: rgba(206, 206, 206, 0.418);
+	}
+	#inactiveBackGround
+		#inviteGuestsModal
+		#modalBody
+		#right
+		#inputDiv
+		button {
+		padding-top: 8px;
+		width: 70px;
+		padding-bottom: 8px;
+		border-radius: 5px;
+		border-width: 0;
+		background-color: rgba(206, 206, 206, 0.418);
+	}
+	#inactiveBackGround
+		#inviteGuestsModal
+		#modalBody
+		#right
+		#emails
+		#emailIcon {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+	}
+	#inactiveBackGround
+		#inviteGuestsModal
+		#modalBody
+		#right
+		#emails
+		#emailIcon
+		#circle {
+		background-color: gray;
+		border-radius: 100%;
+		width: 35px;
+		height: 35px;
+		display: flex;
+		justify-content: center;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right h2 {
+		line-height: 1;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 6px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right #emails {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right #emails div {
+		display: flex;
+		align-items: center;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #bottomHr {
+		display: none;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right #inputDiv svg {
+		display: none;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right #peopleInfo {
+		display: none;
+	}
+	#inactiveBackGround
+		#inviteGuestsModal
+		#modalBody
+		#right
+		#peopleInfo
+		#peopleInfoHr {
+		display: none;
+	}
+
+	#inactiveBackGround #inviteGuestsModal #footer {
+		box-sizing: border-box;
+		padding-bottom: 10px;
+	}
+}
+
+#inactiveBackGround #sendBlastModal {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 1000;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#inactiveBackGround #sendBlastModal #iconDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+#inactiveBackGround #sendBlastModal #iconDiv #icon {
+	border-radius: 100%;
+	background-color: gray;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#inactiveBackGround #sendBlastModal #iconDiv #exitIcon {
+	border-radius: 100%;
+	background-color: gray;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#inactiveBackGround #sendBlastModal #iconDiv svg {
+	width: 25px;
+	height: 25px;
+}
+#inactiveBackGround #sendBlastModal input {
+	width: 100%;
+	height: 30px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-color: rgba(209, 209, 209, 0.363);
+}
+#inactiveBackGround #sendBlastModal textarea {
+	width: 100%;
+	height: 80px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-color: rgba(209, 209, 209, 0.363);
+}
+#inactiveBackGround #sendBlastModal #header {
+	font-size: 14px;
+}
+#inactiveBackGround #sendBlastModal #recipients p,
+#inactiveBackGround #sendBlastModal #subject p,
+#inactiveBackGround #sendBlastModal #message p {
+	font-size: 14px;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 10px;
+}
+#inactiveBackGround #sendBlastModal #subject,
+#inactiveBackGround #sendBlastModal #message {
+	padding-top: 20px;
+}
+#inactiveBackGround #sendBlastModal #footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+}
+#inactiveBackGround #sendBlastModal #footer #left {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+#inactiveBackGround #sendBlastModal #footer button {
+	border-radius: 10px;
+	padding: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-width: 0;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	gap: 7px;
+}
+#inactiveBackGround #sendBlastModal #footer #left .grayBtn,
+#inactiveBackGround #sendBlastModal #footer #right .grayBtn {
+	background-color: rgba(216, 216, 216, 0.473);
+}
+#inactiveBackGround #sendBlastModal #footer #left .blackBtn {
+	background-color: black;
+	color: white;
+}
+@media (min-width: 450px) {
+	#inactiveBackGround #sendBlastModal {
+		width: 500px;
+		height: 500px;
+		border-radius: 15px;
+	}
+}
+
+#inactiveBackGround #addQuestion2Modal {
+	z-index: 100;
+	background-color: white;
+	border-radius: 15px;
+}
+#inactiveBackGround #addQuestion2Modal #iconDiv {
+	gap: 15px;
+}
+#inactiveBackGround #addQuestion2Modal #iconDiv #left {
+	background-color: gray;
+	padding: 8px;
+	border-radius: 5px;
+}
+#inactiveBackGround #addQuestion2Modal #body p {
+	padding: 0;
+	line-height: 1;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#inactiveBackGround #addQuestion2Modal #body #description {
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+#inactiveBackGround #addQuestion2Modal #body #requiredButtonDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#inactiveBackGround #addQuestion2Modal #body button {
+	background-color: black;
+	color: white;
+}
+#inactiveBackGround #addQuestion2Modal #modalTop #iconDiv #right h4,
+#inactiveBackGround #addQuestion2Modal #modalTop #iconDiv #right p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-bottom: 5px;
+}
+#inactiveBackGround #addQuestion2Modal input,
+#inactiveBackGround #addQuestion2Modal button {
+	width: 100%;
+	border-radius: 7px;
+	border-width: 1px;
+	border-color: rgba(202, 202, 202, 0.445);
+}
+#inactiveBackGround #addQuestion2Modal input {
+	height: 30px;
+}
+
+#inactiveBackGround #addQuestion2Modal button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#inactiveBackGround #addQuestion2Modal #body #checkButton #back {
+	border-radius: 40px;
+	width: 40px;
+	height: 25px;
+	background-color: gray;
+	align-self: center;
+	padding: 0;
+}
+#inactiveBackGround #addQuestion2Modal #body #checkButton #back #innerCircle {
+	border-radius: 100%;
+	width: 22px;
+	height: 22px;
+	background-color: white;
+	align-self: center;
+	justify-self: start;
+	margin-left: 2px;
+}
+#inactiveBackGround #addQuestion2Modal #modalTop {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
+}
+#inactiveBackGround #addQuestion2Modal #modalTop #top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#inactiveBackGround #addQuestion2Modal #modalTop #iconDiv {
+	display: flex;
+	align-items: center;
+}
+#inactiveBackGround #addQuestion2Modal #body {
+	padding: 20px;
+}
+
+#inactiveBackGround #editTicketModal {
+	background-color: white;
+	z-index: 100;
+	border-radius: 15px;
+	padding: 20px;
+}
+#inactiveBackGround #editTicketModal input {
+	width: 100%;
+	height: 30px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-color: rgba(175, 175, 175, 0.589);
+}
+#inactiveBackGround #editTicketModal #header h3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#inactiveBackGround #editTicketModal #iconDiv #icon svg {
+	width: 35px;
+	height: 35px;
+}
+#inactiveBackGround #editTicketModal p,
+#inactiveBackGround #editTicketModal h3,
+#inactiveBackGround #editTicketModal h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#inactiveBackGround #editTicketModal #iconDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+#inactiveBackGround #editTicketModal .inputDiv p {
+	padding-bottom: 5px;
+}
+#inactiveBackGround #editTicketModal .inputDiv {
+	padding-bottom: 10px;
+}
+#inactiveBackGround #editTicketModal .switchDiv {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#inactiveBackGround #editTicketModal #header p {
+	padding-bottom: 16px;
+}
+#inactiveBackGround #editTicketModal #dateTime {
+	display: flex;
+	align-items: center;
+}
+#inactiveBackGround #editTicketModal #dateTime #time {
+	background-color: white;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(196, 196, 196, 0.432);
+	width: 70px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: unset;
+	border-top-left-radius: unset;
+	border-bottom-left-radius: unset;
+}
+#inactiveBackGround #editTicketModal #dateTime input {
+	border-radius: 7px;
+	border-color: gray;
+	border-right: 1px solid gray;
+	border-top-right-radius: unset;
+	border-bottom-right-radius: unset;
+}
+#inactiveBackGround #editTicketModal #checkButton #back {
+	border-radius: 40px;
+	width: 40px;
+	height: 25px;
+	background-color: gray;
+	align-self: center;
+	padding: 0;
+}
+#inactiveBackGround #editTicketModal #checkButton #back #innerCircle {
+	border-radius: 100%;
+	width: 22px;
+	height: 22px;
+	background-color: white;
+	align-self: center;
+	justify-self: start;
+	margin-left: 2px;
+}
+#inactiveBackGround #editTicketModal #totalTicketsDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#inactiveBackGround #editTicketModal #totalTicketsDiv div {
+	padding-left: 40px;
+	background-color: white;
+	border: 1px solid rgba(199, 199, 199, 0.411);
+	border-radius: 7px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	padding-right: 15px;
+}
+#inactiveBackGround #editTicketModal button {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+	color: white;
+	border-radius: 7px;
+}
+
+#inactiveBackGround {
+	display: none;
+}
+#inactiveBackGround #addQuestion2Modal {
+	display: none;
+}
+#inactiveBackGround #sendBlastModal {
+	display: none;
+}
+
+#inactiveBackGround #createModal {
+	display: none;
+}
+
+#inactiveBackGround #approvalModal {
+	display: none;
+}
+#inactiveBackGround #editTicketModal {
+	display: none;
+}
+#inactiveBackGround #addQuestionModal {
+	display: none;
+}
+#inactiveBackGround #shareModal {
+	display: none;
+}
+#inactiveBackGround #addHostModal {
+	display: none;
+}
