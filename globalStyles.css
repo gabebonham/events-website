@@ -3068,6 +3068,7 @@ footer #footerLeftDiv #lumaSvg {
 	flex-direction: column;
 	z-index: 100;
 }
+
 #inactiveBackGround #inviteGuestsModal #modalBody #right #emails img {
 	width: 20px;
 	height: 20px;
@@ -3285,7 +3286,64 @@ footer #footerLeftDiv #lumaSvg {
 	align-items: center;
 	margin-right: 10px;
 }
-
+#inactiveBackGround #inviteGuestsModal #modalBody #right * {
+	display: none;
+	content-visibility: hidden;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right {
+	display: none;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 {
+	box-sizing: border-box;
+	width: 850px;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 p,
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 h4 {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	padding-top: 10px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 h4 {
+	padding-top: 20px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 #content {
+	padding-left: 120px;
+	padding-right: 120px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 {
+	box-sizing: border-box;
+	width: auto;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 button {
+	width: 250px;
+	border-width: 0;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #right2 button p {
+	line-height: unset;
+	padding: unset;
+	margin: unset;
+}
 @media (min-width: 600px) {
 	#inactiveBackGround {
 		position: absolute;
@@ -3534,6 +3592,68 @@ footer #footerLeftDiv #lumaSvg {
 	#inactiveBackGround #inviteGuestsModal #footer {
 		box-sizing: border-box;
 		padding-bottom: 10px;
+	}
+	#inactiveBackGround #addQuestion3Modal hr {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	#inactiveBackGround #inviteGuestsModal #modalBody #right * {
+		display: none;
+		content-visibility: hidden;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right {
+		display: none;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 {
+		box-sizing: border-box;
+		width: 850px;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 p,
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 h4 {
+		line-height: 1;
+		padding: 0;
+		margin: 0;
+		padding-top: 10px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 h4 {
+		padding-top: 20px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 #content {
+		padding-left: 175px;
+		padding-right: 175px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 {
+		box-sizing: border-box;
+		width: 850px;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 button {
+		width: 250px;
+		border-width: 0;
+		border-radius: 10px;
+		background-color: black;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #right2 button p {
+		line-height: unset;
+		padding: unset;
+		margin: unset;
 	}
 }
 
@@ -3809,7 +3929,7 @@ footer #footerLeftDiv #lumaSvg {
 	border-top-right-radius: unset;
 	border-bottom-right-radius: unset;
 }
-#inactiveBackGround #editTicketModal #checkButton #back {
+#checkButton #back {
 	border-radius: 40px;
 	width: 40px;
 	height: 25px;
@@ -3817,7 +3937,7 @@ footer #footerLeftDiv #lumaSvg {
 	align-self: center;
 	padding: 0;
 }
-#inactiveBackGround #editTicketModal #checkButton #back #innerCircle {
+#checkButton #back #innerCircle {
 	border-radius: 100%;
 	width: 22px;
 	height: 22px;
@@ -3852,7 +3972,2327 @@ footer #footerLeftDiv #lumaSvg {
 	border-radius: 7px;
 }
 
+#inactiveBackGround #addQuestion3Modal {
+	background-color: white;
+	border-radius: 15px;
+	width: 400px;
+	max-width: 400px;
+}
+#inactiveBackGround #addQuestion3Modal p,
+#inactiveBackGround #addQuestion3Modal h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#inactiveBackGround #addQuestion3Modal #modalTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#inactiveBackGround #addQuestion3Modal #iconDiv {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	gap: 20px;
+}
+#inactiveBackGround #addQuestion3Modal #body {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#inactiveBackGround #addQuestion3Modal #body .inpDiv h4 {
+	padding-bottom: 10px;
+}
+#inactiveBackGround #addQuestion3Modal #body .inpDiv input {
+	padding-bottom: 10px;
+	width: 100%;
+	border-radius: 7px;
+	height: 20px;
+	border-width: 1px;
+	border-color: rgba(196, 196, 196, 0.418);
+	margin-bottom: 15px;
+}
+#inactiveBackGround #addQuestion3Modal #body #description {
+	padding-bottom: 15px;
+}
+#inactiveBackGround #addQuestion3Modal #body #selectionType {
+	padding-bottom: 10px;
+}
+#inactiveBackGround #addQuestion3Modal #body #switchButton {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: gray;
+	align-items: center;
+	border-radius: 7px;
+	padding: 2px;
+}
+#inactiveBackGround #addQuestion3Modal #body #switchButton #innerButton {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	justify-content: center;
+	width: 100%;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	gap: 6px;
+}
+#inactiveBackGround #addQuestion3Modal #body #switchButton #left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	gap: 6px;
+}
+#inactiveBackGround #addQuestion3Modal #body #requiredDiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#inactiveBackGround #addQuestion3Modal button {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 7px;
+	background-color: black;
+	color: white;
+	border-width: 0;
+	width: 100%;
+}
+#blastBackGroundDiv {
+	background: linear-gradient(
+		180deg,
+		rgba(171, 200, 231, 0.6783088235294117) 0%,
+		rgba(224, 224, 224, 0.7035189075630253) 32%
+	);
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#blastBackGroundDiv #blastsWrapper {
+	width: 100%;
+	box-sizing: border-box;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv,
+#blastBackGroundDiv #blastsWrapper,
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #sendBlasts {
+	box-sizing: border-box;
+}
+#blastBackGroundDiv svg {
+	width: 17px;
+	height: 17px;
+}
+
+#blastBackGroundDiv p,
+#blastBackGroundDiv h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#blastBackGroundDiv p {
+	padding-bottom: 20px;
+
+	line-height: 1.5;
+}
+#blastBackGroundDiv h4 {
+	padding-top: 10px;
+}
+#blastBackGroundDiv #breadCrumbs #top {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-left: 17px;
+	padding-right: 17px;
+	box-sizing: border-box;
+}
+
+#blastBackGroundDiv #breadCrumbs #top p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#blastBackGroundDiv #blastsWrapper #secondHeader {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 100px;
+	backdrop-filter: blur(5px);
+	padding-right: 17px;
+	box-sizing: border-box;
+}
+#blastBackGroundDiv #blastsWrapper #secondHeader #content #bottom button {
+	display: flex;
+	align-items: center;
+	background-color: rgba(202, 202, 202, 0.39);
+	border-radius: 10px;
+	border-width: 0;
+}
+#blastBackGroundDiv #blastsWrapper #secondHeader #content button {
+	background-color: transparent;
+	border-radius: 10px;
+	border-width: 0;
+}
+#blastBackGroundDiv #blastsWrapper #secondHeader #content #bottom button span {
+	display: none;
+}
+#blastBackGroundDiv #blastsWrapper #secondHeader #content #bottom {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
+#blastBackGroundDiv #blastsWrapper #secondHeader #content #bottom h2 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 17px;
+}
+#blastBackGroundDiv #blastsWrapper #secondHeader #content #nav {
+	display: flex;
+	align-items: center;
+	overflow-x: auto;
+	gap: 10px;
+	width: 100%;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #firstInp {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	padding: 5px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	height: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 10px;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #firstInp input {
+	width: 100%;
+	border-width: 0;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #firstInp img {
+	width: 30px;
+	height: 30px;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #sendBlasts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px dashed gray;
+	border-radius: 10px;
+
+	text-align: center;
+	margin-left: 15px;
+	margin-top: 20px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	width: auto;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #sendBlasts img {
+	width: 150px;
+}
+
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #messages {
+	width: 100%;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #messages #cards .card {
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	gap: 15px;
+}
+
+#blastBackGroundDiv
+	#blastsWrapper
+	#blastsMainDiv
+	#messages
+	#cards
+	.card
+	.data
+	* {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	width: 250px;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #messages #cards {
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+
+	box-sizing: border-box;
+}
+#blastBackGroundDiv
+	#blastsWrapper
+	#blastsMainDiv
+	#messages
+	#cards
+	.card
+	.data
+	h4 {
+	padding-bottom: 10px;
+	padding-top: 17px;
+}
+#blastBackGroundDiv
+	#blastsWrapper
+	#blastsMainDiv
+	#messages
+	#cards
+	.card
+	.data
+	p {
+	padding-bottom: 10px;
+	line-height: 1.5;
+}
+#blastBackGroundDiv
+	#blastsWrapper
+	#blastsMainDiv
+	#messages
+	#cards
+	.card
+	.data
+	.innerButton,
+#blastBackGroundDiv
+	#blastsWrapper
+	#blastsMainDiv
+	#messages
+	#cards
+	.card
+	.outterButton {
+	background-color: gray;
+	border-radius: 7px;
+	border-width: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	width: fit-content;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #messages h3 {
+	padding-left: 17px;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv #messages #cards .card hr {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#blastBackGroundDiv #blastsWrapper #blastsMainDiv {
+	padding-bottom: 200px;
+}
+#blastBackGroundDiv
+	#blastsWrapper
+	#blastsMainDiv
+	#messages
+	#cards
+	.card
+	.outterButton {
+	display: none;
+}
+#blastBackGroundDiv
+	#blastsWrapper
+	#blastsMainDiv
+	#messages
+	#cards
+	.card
+	.data
+	.innerButton {
+	display: unset;
+}
+@media (min-width: 900px) {
+	#blastBackGroundDiv #blastsWrapper #blastsMainDiv {
+		width: 800px;
+		justify-self: center;
+	}
+	#blastBackGroundDiv #blastsWrapper #secondHeader {
+		justify-self: center;
+		width: 800px;
+	}
+	#blastBackGroundDiv #breadCrumbs {
+		width: 100%;
+	}
+	#blastBackGroundDiv #breadCrumbs #top {
+		width: 800px;
+		justify-self: center;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card
+		.data {
+		width: 100%;
+		display: flex;
+		justify-items: center;
+		flex-direction: column;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card
+		.data
+		.innerButton {
+		display: none;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card
+		.outterButton {
+		display: unset;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card
+		.data
+		p {
+		width: 100%;
+		padding: auto;
+		margin: auto;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 7px;
+		padding-top: 7px;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card
+		svg {
+		width: 20px;
+		height: 20px;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card
+		.data
+		p {
+		padding: 0;
+		margin: 0;
+		line-height: 1.5;
+		padding-bottom: 0;
+	}
+	#blastBackGroundDiv
+		#blastsWrapper
+		#blastsMainDiv
+		#messages
+		#cards
+		.card
+		.data
+		h4 {
+		padding: 0;
+		margin: 0;
+		line-height: 1.5;
+		padding-top: 5px;
+	}
+}
+#chooseImageModal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(248, 248, 248);
+	z-index: 100;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+#chooseImageModal svg {
+	width: 17px;
+	height: 17px;
+}
+#chooseImageModal p,
+#chooseImageModal h4 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#chooseImageModal #modalTop {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#chooseImageModal #dragDiv {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 7px;
+	background-color: rgba(206, 206, 206, 0.432);
+	border: 1px dashed gray;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#chooseImageModal #dragDiv h4 {
+	padding-bottom: 10px;
+}
+#chooseImageModal #inputWrapper #inputDiv {
+	margin-top: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	height: 30px;
+	border-radius: 7px;
+	background-color: white;
+	border: 1px solid gray;
+	align-items: center;
+	padding-left: 10px;
+	gap: 15px;
+}
+#chooseImageModal #inputWrapper #inputDiv input {
+	width: 100%;
+	border-width: 0;
+}
+#chooseImageModal #inputWrapper {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+#chooseImageModal #buttonsDiv {
+	display: flex;
+	overflow-x: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	gap: 10px;
+}
+#chooseImageModal #buttonsDiv button {
+	background-color: rgba(211, 211, 211, 0.336);
+	border-width: 0;
+	white-space: nowrap;
+	padding: 0;
+	border-radius: 30px;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#chooseImageModal #body {
+	display: flex;
+	justify-items: center;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow-y: auto;
+	max-height: 250px;
+}
+#chooseImageModal #body #categories {
+	display: grid;
+	padding-left: 20px;
+	padding-right: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	padding-top: 20px;
+	gap: 20px;
+}
+
+#chooseImageModal #body #categories .category::after {
+	content: 'Category';
+	justify-self: center;
+	backdrop-filter: blur(0.5rem) saturate(1.5) brightness(0.9);
+	background: linear-gradient(
+		rgba(242, 242, 242, 0.7) 0%,
+		rgb(242, 242, 242) 91.67%
+	);
+	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	right: 15px;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: rgb(255, 255, 255) 0px 0px 20px 0px inset,
+		rgb(255, 255, 255) 0px 0px 3px 0px inset,
+		rgba(0, 0, 0, 0.05) 0px -4px 4px 0px inset,
+		rgba(0, 0, 0, 0.25) 0px 0px 1px 0px,
+		rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+}
+#chooseImageModal #body #categories img {
+	width: 130px;
+	border-radius: 5px;
+}
+#chooseImageModal {
+	display: none;
+}
+#inactiveBackGround #chooseImageModalIn {
+	display: unset;
+}
+@media (min-width: 600px) {
+	#chooseImageModal {
+		display: none;
+	}
+	#inactiveBackGround #chooseImageModalIn {
+		width: 800px;
+		border-radius: 15px;
+		background-color: white;
+		z-index: 100;
+		height: 500px;
+		box-sizing: border-box;
+	}
+	#inactiveBackGround #chooseImageModalIn img {
+		width: 80px;
+		height: 80px;
+	}
+	#inactiveBackGroun #chooseImageModalIn svg {
+		width: 17px;
+		height: 17px;
+	}
+	#inactiveBackGroun #chooseImageModalIn p,
+	#inactiveBackGroun #chooseImageModalIn h4 {
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+	}
+
+	#inactiveBackGround #chooseImageModalIn #modalTop {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#inactiveBackGround #chooseImageModalIn #dragDiv {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		border-radius: 7px;
+		background-color: rgba(206, 206, 206, 0.432);
+		border: 1px dashed gray;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	#inactiveBackGround #chooseImageModalIn #dragDiv h4 {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	#inactiveBackGround #chooseImageModalIn #inputWrapper #inputDiv {
+		margin-top: 20px;
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		height: 30px;
+		border-radius: 7px;
+		background-color: white;
+		border: 1px solid gray;
+		align-items: center;
+		padding-left: 10px;
+		gap: 15px;
+	}
+	#inactiveBackGround #chooseImageModalIn #inputWrapper #inputDiv input {
+		width: 100%;
+		border-width: 0;
+	}
+	#inactiveBackGround #chooseImageModalIn #inputWrapper {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+	#inactiveBackGround #chooseImageModalIn #buttonsDiv {
+		display: flex;
+		overflow-x: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+		gap: 10px;
+		box-sizing: border-box;
+	}
+	#inactiveBackGround #chooseImageModalIn #buttonsDiv button {
+		background-color: transparent;
+		border-width: 0;
+		white-space: nowrap;
+		padding: 0;
+		border-radius: 30px;
+		padding: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#inactiveBackGround #chooseImageModalIn #body {
+		display: flex;
+		justify-items: center;
+		flex-direction: column;
+		padding-left: 30px;
+		padding-right: 40px;
+		overflow-y: auto;
+		max-height: 260px;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	#inactiveBackGround #chooseImageModalIn #body #categories {
+		display: grid;
+		grid-template-columns: repeat(3, 110px);
+		padding-top: 20px;
+		row-gap: 40px;
+		column-gap: 80px;
+		box-sizing: border-box;
+	}
+	#inactiveBackGround
+		#chooseImageModalIn
+		#body
+		#categories
+		.category
+		img {
+		width: 140px;
+		height: 140px;
+		border-radius: 10px;
+	}
+
+	#inactiveBackGround
+		#chooseImageModalIn
+		#body
+		#categories
+		.category::after {
+		content: 'Category';
+		justify-self: center;
+		backdrop-filter: blur(0.5rem) saturate(1.5) brightness(0.9);
+		background: linear-gradient(
+			rgba(242, 242, 242, 0.7) 0%,
+			rgb(242, 242, 242) 91.67%
+		);
+		padding-top: 30px;
+		padding-bottom: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		right: 15px;
+		position: relative;
+		border-radius: 15px;
+		box-shadow: rgb(255, 255, 255) 0px 0px 20px 0px inset,
+			rgb(255, 255, 255) 0px 0px 3px 0px inset,
+			rgba(0, 0, 0, 0.05) 0px -4px 4px 0px inset,
+			rgba(0, 0, 0, 0.25) 0px 0px 1px 0px,
+			rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+		text-align: center;
+	}
+	#inactiveBackGround #chooseImageModalIn #bottom {
+		display: flex;
+	}
+	#inactiveBackGround #chooseImageModalIn #bottom #buttonsDiv {
+		flex-direction: column;
+		height: 260px;
+		overflow-y: auto;
+		width: 250px;
+	}
+	#inactiveBackGround #chooseImageModalIn #bottom #buttonsDiv button {
+		display: flex;
+		justify-content: start;
+	}
+	#inactiveBackGround #chooseImageModalIn #bottom #body #topImg {
+		width: 100%;
+		height: 210px;
+		padding: 0;
+		margin: 0;
+		justify-self: center;
+	}
+}
+
+#breadCrumbs svg {
+	width: 17px;
+	height: 17px;
+}
+#breadCrumbs #top {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-left: 17px;
+	padding-right: 17px;
+	box-sizing: border-box;
+}
+
+#breadCrumbs #top p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#secondHeader {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 100px;
+	backdrop-filter: blur(5px);
+	padding-right: 17px;
+	box-sizing: border-box;
+}
+#secondHeader hr {
+	padding: 0;
+	margin: 0;
+}
+#secondHeader svg {
+	width: 17px;
+	height: 17px;
+}
+#secondHeader #content #bottom button {
+	display: flex;
+	align-items: center;
+	background-color: rgba(202, 202, 202, 0.39);
+	border-radius: 10px;
+	border-width: 0;
+}
+#secondHeader #content button {
+	background-color: transparent;
+	border-radius: 10px;
+	border-width: 0;
+}
+#secondHeader #content #bottom button span {
+	display: none;
+}
+#secondHeader #content #bottom {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
+#secondHeader #content #bottom h2 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 17px;
+}
+#secondHeader #content #nav {
+	display: flex;
+	align-items: center;
+	overflow-x: auto;
+	gap: 10px;
+	width: 100%;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+#moreBackGroundDiv {
+	width: 100%;
+}
+#moreBackGroundDiv hr {
+	width: 100%;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv svg {
+	width: 17px;
+	height: 17px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv {
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	width: 100%;
+	padding-bottom: 200px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #clone button {
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	border-width: 0;
+	background-color: black;
+	color: white;
+	width: 150px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	justify-content: center;
+	gap: 10px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #page #bottom #inputDiv button {
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	border-width: 0;
+	background-color: black;
+	color: white;
+	width: 150px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	justify-content: center;
+	gap: 10px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #embed #bottom button {
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	border-width: 0;
+	background-color: white;
+	color: black;
+	width: 150px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	justify-content: space-between;
+	gap: 10px;
+	white-space: nowrap;
+	width: 100%;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #embed #bottom button .left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #embed #bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #embed #codeWrapper pre {
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	width: 100%;
+}
+#moreBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#buttonDivWrapper
+	#buttonDiv
+	button {
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	border-width: 0;
+	background-color: black;
+	color: white;
+	width: 150px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	justify-content: center;
+	gap: 10px;
+}
+
+#moreBackGroundDiv #mainDivWrapper #mainDiv #buttonDivWrapper #buttonDiv {
+	padding: 15px;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid gray;
+	align-items: center;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+#moreBackGroundDiv #mainDivWrapper #mainDiv #bottomPage button {
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	border-width: 0;
+	background-color: red;
+	color: white;
+	width: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	justify-content: center;
+	gap: 10px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #page #learnMoreWrapper #learnMore {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0;
+	padding-bottom: 0;
+	border: 1px solid gray;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(196, 196, 196);
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #page #bottom #inputDiv #leftDiv,
+#moreBackGroundDiv #mainDivWrapper #mainDiv #page #bottom #inputDiv {
+	display: flex;
+	align-items: center;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #page #bottom #inputDiv #leftDiv {
+	border: 1px solid gray;
+	border-radius: 7px;
+	max-width: 250px;
+	width: 350px;
+}
+#moreBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#page
+	#bottom
+	#inputDiv
+	#leftDiv
+	#left {
+	border-right: 1px solid gray;
+	padding: 10px;
+}
+#moreBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#page
+	#bottom
+	#inputDiv
+	#leftDiv
+	#right {
+	padding-left: 10px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #page #bottom #inputDiv button {
+	padding-left: 0;
+	padding-right: 0;
+	width: 90px;
+	background-color: gray;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #page #bottom #inputDiv {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#moreBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#page
+	#learnMoreWrapper
+	#learnMore
+	button {
+	display: flex;
+	align-items: center;
+	background-color: rgb(197, 197, 197);
+	color: black;
+	border-width: 0;
+	border-radius: 7px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+@media (min-width: 600px) {
+	#mainDivWrapper #mainDiv {
+		max-width: 800px;
+	}
+	#mainDivWrapper {
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	#breadCrumbs #top {
+		max-width: 800px;
+		justify-self: center;
+	}
+	#secondHeader hr {
+		width: 100vw;
+		justify-self: center;
+	}
+	#secondHeader {
+		width: 100%;
+	}
+}
+#guestsBackGroundDiv {
+	background: linear-gradient(
+		180deg,
+		rgba(171, 200, 231, 0.6783088235294117) 0%,
+		rgba(224, 224, 224, 0.7035189075630253) 32%
+	);
+	box-sizing: border-box;
+	width: 100%;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv svg {
+	width: 17px;
+	height: 17px;
+}
+#guestsBackGroundDiv #mainDivWrapper {
+	box-sizing: border-box;
+	width: 100%;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv {
+	box-sizing: border-box;
+	width: 100%;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #actionsDiv #actions {
+	overflow-x: auto;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	width: auto;
+	padding-bottom: 20px;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #actionsDiv {
+	width: 100%;
+}
+
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #bottom #top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #bottom #top button {
+	border-radius: 7px;
+	border-width: 0;
+	background-color: gray;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #guestsDiv {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 150px;
+	width: 100%;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #guestsDiv svg {
+	width: 70px;
+	height: 70px;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #guestsDiv p {
+	font-size: smaller;
+}
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #guestsDiv p,
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #guestsDiv h2 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-bottom: 10px;
+}
+#guestsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button {
+	width: 180px;
+	border-width: 0;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: fit-content;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 50px;
+}
+
+#guestsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button
+	.right {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding: 0;
+	margin: 0;
+}
+#guestsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button
+	.right
+	* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2;
+	text-wrap: nowrap;
+}
+#guestsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button
+	.right
+	p {
+	font-size: smaller;
+}
+@media (min-width: 600px) {
+	#guestsBackGroundDiv #mainDivWrapper #mainDiv {
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	#guestsBackGroundDiv #mainDivWrapper #mainDiv #body {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	#guestsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#actionsDiv
+		#actions
+		button {
+		width: unset;
+		flex: 1;
+	}
+}
+#guestsBackGroundDiv #mainDivWrapper {
+	box-sizing: border-box;
+	width: 100%;
+}
+#insightsBackGroundDiv {
+	background: linear-gradient(
+		180deg,
+		rgba(171, 200, 231, 0.6783088235294117) 0%,
+		rgba(224, 224, 224, 0.7035189075630253) 32%
+	);
+}
+#insightsBackGroundDiv #mainDivWrapper #mainDiv {
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#insightsBackGroundDiv #mainDivWrapper {
+	box-sizing: border-box;
+}
+#insightsBackGroundDiv {
+	box-sizing: border-box;
+}
+#insightsBackGroundDiv #mainDivWrapper #mainDiv #body #pageView #graph {
+	border: 1px solid white;
+	border-radius: 10px;
+}
+#insightsBackGroundDiv #mainDivWrapper #mainDiv #body #pageView #graph svg {
+	display: flex;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#insightsBackGroundDiv #mainDivWrapper #mainDiv #body #pageView #header #top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#header
+	#top
+	h3 {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#header
+	#top
+	button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: gray;
+	border-radius: 5px;
+	border-width: 0;
+	gap: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#header
+	#top
+	button
+	svg {
+	width: 17px;
+	height: 17px;
+}
+
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#graph
+	#graphData
+	#graphDataTime
+	#snippets {
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#graph
+	#graphData
+	#graphDataTime
+	#snippets
+	.snippet {
+	margin-right: auto;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#graph
+	#graphData
+	#graphDataTime
+	#snippets
+	.snippet
+	p {
+	text-wrap: nowrap;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#graph
+	#graphData
+	#graphDataCities
+	div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#graph
+	#graphData
+	h3 {
+	padding: 0;
+	margin: 0;
+}
+
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	#registrationTop
+	button {
+	display: flex;
+	align-items: center;
+	background-color: gray;
+	border-width: 0;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	#registrationTop
+	button
+	svg {
+	width: 17px;
+	height: 17px;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	#registrationTop
+	button
+	p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	#registrationTop
+	button
+	p {
+	text-wrap: nowrap;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	#registrationImg {
+	width: 200px;
+	height: 160px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	justify-self: center;
+}
+
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	h3,
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	p {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+#insightsBackGroundDiv #mainDivWrapper #mainDiv #body #pageView {
+	padding-bottom: 130px;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	#description {
+	align-items: center;
+	text-align: center;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#registration
+	#registrationTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 10px;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#feedback
+	#feedbackImg
+	svg {
+	width: 170px;
+	height: 150px;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#feedback
+	#feedbackImg {
+	height: 100px;
+	text-align: center;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#feedback
+	#feedDescription {
+	text-align: center;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#graph
+	#graphData {
+	padding: 20px;
+}
+#insightsBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#pageView
+	#graph
+	#graphData
+	#desktopDiv
+	#graphLeft
+	#graphDataTime
+	#traffic {
+	display: none;
+}
+@media (min-width: 600px) {
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphLeft
+		#graphDataTime
+		#traffic {
+		display: flex;
+		flex-direction: column;
+	}
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData {
+		padding: 0;
+	}
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv {
+		display: flex;
+	}
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphLeft {
+		width: 100%;
+		padding: 20px;
+		padding-right: 10px;
+	}
+
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphRight {
+		width: 100%;
+		padding: 20px;
+		padding-left: 10px;
+	}
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphDataTime {
+		width: 100%;
+	}
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphRight {
+		border-left: 1px solid gray;
+	}
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphDataTime
+		#traffic
+		p,
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphDataTime
+		#traffic
+		h4,
+	#insightsBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#pageView
+		#graph
+		#graphData
+		#desktopDiv
+		#graphDataTime
+		#traffic
+		h3 {
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+		padding-bottom: 10px;
+	}
+}
+#registrationBackGroundDiv {
+	background: linear-gradient(
+		180deg,
+		rgba(171, 200, 231, 0.6783088235294117) 0%,
+		rgba(224, 224, 224, 0.7035189075630253) 32%
+	);
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button {
+	width: 180px;
+	border-width: 0;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: fit-content;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 50px;
+}
+
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button
+	.right {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding: 0;
+	margin: 0;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button
+	.right
+	* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2;
+	text-wrap: nowrap;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	button
+	.right
+	p {
+	font-size: smaller;
+}
+#registrationBackGroundDiv #mainDivWrapper #mainDiv svg {
+	width: 17px;
+	height: 17px;
+}
+#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #actionsDiv #actions {
+	overflow-x: auto;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	width: auto;
+	padding-bottom: 20px;
+}
+#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #actionsDiv {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+#registrationBackGroundDiv svg {
+	width: 17px;
+	height: 17px;
+}
+
+#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #tickets #ticketsTop {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 15px;
+	box-sizing: border-box;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsTop
+	#right {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsTop
+	#right
+	button {
+	background-color: gray;
+	border-radius: 7px;
+	display: flex;
+	gap: 10px;
+	border-width: 0;
+	padding: 7px 7px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsBodyWrapper {
+	padding: 0px 15px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsBodyWrapper
+	#ticketsBody {
+	padding: 10px 15px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsBodyWrapper
+	#ticketsBody
+	#ticketsBodyHeader {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsBodyWrapper
+	#ticketsBody
+	button {
+	width: 100%;
+	background-color: gray;
+	border-radius: 7px;
+	border-width: 0;
+	padding: 5px 0px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper {
+	padding: 0px 15px;
+}
+
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv {
+	border: 1px solid gray;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-top: 15px;
+	background-color: white;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	#ticketsDataDivTop,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	#ticketsDataDivBottom {
+	padding: 13px 13px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	p {
+	padding: 0;
+	margin: 0;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	#ticketsDataDivTop {
+	border-bottom: 1px solid gray;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	#ticketsDataDivTop
+	#ticketsDataTopLeft,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	#ticketsDataDivTop
+	#ticketsDataTopRight {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	#ticketsDataDivBottom
+	#ticketsDataBotLeft,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsDataWrapper
+	#ticketsDataDiv
+	#ticketsDataDivBottom
+	#ticketsDataBotRight {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #emailWrapper {
+	padding: 20px 15px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#emailWrapper
+	#email
+	button {
+	border-width: 0;
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 7px 10px;
+}
+#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #questions {
+	padding: 0 15px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalTop,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webTop,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalTop,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#custom
+	#customTop {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalBody
+	.entry,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalBody
+	.entry
+	.right,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalBody
+	.entry
+	.left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webBody
+	.entry,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webBody
+	.entry
+	.right,
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webBody
+	.entry
+	.left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webBody
+	.entry {
+	justify-content: space-between;
+	padding: 0 15px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalBody
+	.entry {
+	justify-content: space-between;
+	padding: 0 15px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webBody {
+	background-color: white;
+	border-radius: 10px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webBody
+	hr {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalBody
+	hr {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalBody {
+	background-color: white;
+	border-radius: 10px;
+}
+#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #custom button {
+	background-color: gray;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 1px 15px;
+	border-width: 0;
+}
+#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #custom {
+	padding-bottom: 100px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsBody
+	#leftExit {
+	display: flex;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#tickets
+	#ticketsBody
+	#rightExit {
+	display: none;
+}
+@media (min-width: 600px) {
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#actionsDiv
+		#actions
+		button {
+		width: unset;
+		flex: 1;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#actionsDiv
+		#actions {
+		overflow-x: auto;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		width: auto;
+		padding-bottom: 20px;
+	}
+	#registrationBackGroundDiv #mainDivWrapper #mainDiv #body #actionsDiv {
+		width: 100%;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#tickets
+		#ticketsBody {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		padding: 10px auto;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#tickets
+		#ticketsBodyWrapper
+		#ticketsBody
+		button {
+		width: 150px;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#tickets
+		#ticketsBodyWrapper
+		#ticketsBody
+		#ticketsBodyBottom
+		p {
+		padding: 0;
+		line-height: 1;
+		margin: 0;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#tickets
+		#ticketsBody
+		#leftExit {
+		display: none;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#tickets
+		#ticketsBody
+		#rightExit {
+		display: unset;
+		width: 17px;
+		height: 17px;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#personal
+		#personalBody {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-color: transparent;
+		gap: 15px;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#personal
+		#personalBody
+		.entry {
+		flex: 1;
+		background-color: white;
+		border-radius: 10px;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#personal
+		#personalBody
+		.entry
+		p {
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+		padding: 13px 0;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#web
+		#webBody
+		.entry
+		p {
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+		padding: 13px 0;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#web
+		#webBody
+		.entry {
+		flex: 1;
+		background-color: white;
+		border-radius: 10px;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#web
+		#webBody {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		gap: 15px;
+		background-color: transparent;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#web
+		#webBody
+		hr {
+		display: none;
+	}
+	#registrationBackGroundDiv
+		#mainDivWrapper
+		#mainDiv
+		#body
+		#questions
+		#personal
+		#personalBody
+		hr {
+		display: none;
+	}
+}
 #inactiveBackGround {
+	display: none;
+}
+#inviteModalEmails {
+	display: none;
+}
+#inviteModal {
+	display: none;
+}
+#inactiveBackGround #chooseImageModalIn {
+	display: none;
+}
+#inactiveBackGround #addQuestion3Modal {
+	display: none;
+}
+#inactiveBackGround #inviteGuestsModal {
 	display: none;
 }
 #inactiveBackGround #addQuestion2Modal {
