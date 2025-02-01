@@ -31,8 +31,9 @@ body {
 	padding: 0;
 	background: linear-gradient(
 		180deg,
-		rgba(171, 200, 231, 0.6783088235294117) 0%,
-		rgba(237, 240, 245, 0.704) 25%
+		rgba(226, 174, 195, 0.439093137254902) 0%,
+		rgba(171, 200, 231, 0.6783088235294117) 8%,
+		rgba(224, 224, 224, 0.7035189075630253) 32%
 	);
 	background-attachment: fixed;
 	background-size: cover;
@@ -1471,15 +1472,7 @@ footer #footerLeftDiv #lumaSvg {
 /* specific */
 /* footer */
 /* Overview */
-#overviewBackGroundDiv {
-	background: linear-gradient(
-		180deg,
-		rgba(171, 200, 231, 0.6783088235294117) 0%,
-		rgb(233, 233, 233) 30%
-	);
-	background-attachment: fixed;
-	background-size: cover;
-}
+
 #overviewBackGroundDiv #mainDivWrapper svg {
 	width: 17px;
 	height: 17px;
@@ -1489,13 +1482,25 @@ footer #footerLeftDiv #lumaSvg {
 	justify-content: space-between;
 	align-items: center;
 }
+#overviewBackGroundDiv #mainDivWrapper #status p {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
 #overviewBackGroundDiv #mainDivWrapper #status #header h2 {
 	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-bottom: 10px;
 }
 #overviewBackGroundDiv #mainDivWrapper #status {
 	padding-top: 20px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+#overviewBackGroundDiv #mainDivWrapper #status p {
+	padding-bottom: 15px;
 }
 #overviewBackGroundDiv #mainDivWrapper #status #header button {
 	display: flex;
@@ -1508,54 +1513,6 @@ footer #footerLeftDiv #lumaSvg {
 	padding-top: 7px;
 	padding-left: 10px;
 	padding-right: 10px;
-}
-#overviewBackGroundDiv #secondHeader #content #bottom button {
-	display: flex;
-	align-items: center;
-	border-radius: 10px;
-	background-color: rgba(247, 247, 247, 0.356);
-	border-width: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-#overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-#overviewBackGroundDiv #mainDivWrapper #secondHeader {
-	position: sticky;
-	top: 0;
-	left: 0;
-	height: 80px;
-	backdrop-filter: blur(12px);
-}
-#overviewBackGroundDiv #mainDivWrapper #secondHeader #content {
-	padding: 0;
-}
-
-#overviewBackGroundDiv #breadCrumbs #top {
-	display: flex;
-	align-items: center;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 0;
-	margin: 0;
-}
-#overviewBackGroundDiv #breadCrumbs #top p {
-	padding: 0;
-	margin: 0;
-	line-height: 1;
-}
-#overviewBackGroundDiv #breadCrumbs #top svg {
-	width: 17px;
-	height: 17px;
 }
 
 #overviewBackGroundDiv #mainDiv #cards #topCard {
@@ -1572,29 +1529,13 @@ footer #footerLeftDiv #lumaSvg {
 	align-items: center;
 	gap: 10px;
 }
-#overviewBackGroundDiv #mainDivWrapper #header p,
-#overviewBackGroundDiv #mainDivWrapper #secondHeader #content h2 {
+#overviewBackGroundDiv #mainDivWrapper #header p {
 	padding: 0;
 	padding-top: 5px;
 	line-height: 1.5;
 	margin: 0;
 }
-#overviewBackGroundDiv #mainDivWrapper #nav {
-	display: flex;
-	overflow-x: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-#overviewBackGroundDiv #mainDivWrapper #nav button {
-	background-color: transparent;
-	border-width: 0;
-	padding: 0;
-	margin: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 18px;
-	margin-right: 15px;
-}
+
 #overviewBackGroundDiv #mainDiv #cards #topCard {
 	background-color: white;
 	border-radius: 15px;
@@ -1609,6 +1550,7 @@ footer #footerLeftDiv #lumaSvg {
 	padding: 10px;
 	border-radius: 15px;
 	text-align: center;
+	color: rgb(19 21 23 / 36%);
 }
 #overviewBackGroundDiv #mainDiv #cards #bottomCard #title {
 	padding: 0;
@@ -1625,8 +1567,8 @@ footer #footerLeftDiv #lumaSvg {
 	margin: 0;
 }
 #overviewBackGroundDiv #mainDiv #cards #bottomCard svg {
-	width: 50px;
-	height: auto;
+	width: 20px;
+	height: 20px;
 	justify-self: center;
 
 	display: flex;
@@ -1670,17 +1612,20 @@ footer #footerLeftDiv #lumaSvg {
 	margin-top: 15px;
 }
 #overviewBackGroundDiv #mainDiv #invites #card svg {
-	width: 80px;
+	width: 40px;
 	height: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 10px;
 }
 #overviewBackGroundDiv #mainDiv #invites #card #text h2 {
 	font-size: 15px;
+	color: rgb(19 21 23 / 36%);
 }
 #overviewBackGroundDiv #mainDiv #invites #card #text p {
 	font-size: 13px;
 	line-height: 1.5;
+	color: rgb(19 21 23 / 36%);
 }
 #overviewBackGroundDiv #mainDiv #hosts {
 	padding-left: 15px;
@@ -1706,6 +1651,9 @@ footer #footerLeftDiv #lumaSvg {
 #overviewBackGroundDiv #mainDiv #hosts #description {
 	font-size: 14px;
 }
+#overviewBackGroundDiv #mainDiv #hosts #bottomDescription {
+	color: #b3b5b7;
+}
 #overviewBackGroundDiv #mainDiv #hosts #card {
 	background-color: white;
 	display: flex;
@@ -1730,8 +1678,8 @@ footer #footerLeftDiv #lumaSvg {
 }
 #overviewBackGroundDiv #mainDiv #hosts #card div #badge {
 	border-radius: 15px;
-	background-color: rgba(132, 209, 132, 0.644);
-	color: rgb(52, 212, 52);
+	background-color: #3cbd2c22;
+	color: #3cbd2c;
 	font-size: small;
 	padding: 5px;
 }
@@ -1771,6 +1719,9 @@ footer #footerLeftDiv #lumaSvg {
 	align-items: center;
 	color: rgba(42, 223, 42, 0.678);
 }
+#overviewBackGroundDiv #mainDiv #visibility #card #body #info #publicIcon svg {
+	color: rgba(42, 223, 42, 0.678);
+}
 #overviewBackGroundDiv #mainDiv #visibility #card #body #info {
 	display: flex;
 	align-items: center;
@@ -1796,56 +1747,31 @@ footer #footerLeftDiv #lumaSvg {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
-#overviewBackGroundDiv #secondHeader #content #bottom span {
-	display: none;
+#overviewBackGroundDiv #mainDiv #footer {
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	gap: 15px;
 }
+#overviewBackGroundDiv #mainDiv #footer p {
+	width: 100%;
+}
+
+#overviewBackGroundDiv #mainDiv #footer svg {
+	width: 20px;
+	height: 20px;
+}
+#overviewBackGroundDiv #mainDiv {
+	padding-bottom: 150px;
+}
+
 @media (min-width: 600px) {
-	#overviewBackGroundDiv #mainDivWrapper {
-		width: 100%;
-		justify-items: center;
-	}
-	#overviewBackGroundDiv #mainDiv {
-		max-width: 785px;
-		justify-self: center;
-	}
-	#overviewBackGroundDiv #mainDivWrapper #secondHeader {
-		position: sticky;
-		top: 0;
-		left: 0;
-		height: 90px;
-		max-width: 760px;
-		backdrop-filter: blur(12px);
-
-		margin-left: auto;
-		margin-right: auto;
-
-		box-sizing: border-box;
-	}
-	#overviewBackGroundDiv #mainDivWrapper #secondHeader #bottom {
-		padding: 0;
-	}
-	#overviewBackGroundDiv #mainDivWrapper #secondHeader #nav {
-		padding: 0;
+	#overviewBackGroundDiv #mainDiv #visibility #card #body #buttonsDiv {
+		display: flex;
+		align-items: center;
+		gap: 7px;
 	}
 
-	#overviewBackGroundDiv #mainDivWrapper #secondHeader #content {
-		width: 100%;
-	}
-	#overviewBackGroundDiv #breadCrumbs {
-		max-width: 760px;
-		box-sizing: border-box;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 20px;
-	}
-	#overviewBackGroundDiv #breadCrumbs #top {
-		padding: 0;
-		margin: 0;
-	}
-	#overviewBackGroundDiv #secondHeader #content #bottom span {
-		display: unset;
-	}
 	#overviewBackGroundDiv #mainDiv #cards #topCard,
 	#overviewBackGroundDiv #mainDiv #cards #bottomCard {
 		width: 50%;
