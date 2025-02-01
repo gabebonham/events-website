@@ -19,6 +19,9 @@ svg {
 .blackBtn {
 	background-color: #333537;
 }
+* {
+	border-color: rgb(19 21 23 / 8%);
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -5713,6 +5716,90 @@ footer #footerLeftDiv #lumaSvg {
 	width: auto;
 	padding-bottom: 20px;
 }
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	#rb
+	.left
+	svg {
+	color: #ab46dd;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	#rb
+	.left {
+	background-color: #ab46dd22;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	#mb
+	.left
+	svg {
+	color: #f8712b;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	#mb
+	.left {
+	background-color: #d9632622;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	#lb
+	.left
+	svg {
+	color: #3cbd2c;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	#lb
+	.left {
+	background-color: #3cbd2c22;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	.left {
+	padding: 7px;
+	border-radius: 10px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#actionsDiv
+	#actions
+	.left
+	svg {
+	width: 25px;
+	height: 25px;
+}
 #registrationBackGroundDiv #mainDivWrapper #mainDiv #body #actionsDiv {
 	width: 100%;
 	box-sizing: border-box;
@@ -5771,7 +5858,8 @@ footer #footerLeftDiv #lumaSvg {
 	#ticketsBodyWrapper
 	#ticketsBody {
 	padding: 10px 15px;
-	border: 1px solid gray;
+	border-style: solid;
+	border-width: 1px;
 	border-radius: 10px;
 	box-sizing: border-box;
 }
@@ -5816,7 +5904,8 @@ footer #footerLeftDiv #lumaSvg {
 	#tickets
 	#ticketsDataWrapper
 	#ticketsDataDiv {
-	border: 1px solid gray;
+	border-width: 1px;
+	border-style: solid;
 	border-radius: 10px;
 	box-sizing: border-box;
 	margin-top: 15px;
@@ -5862,7 +5951,7 @@ footer #footerLeftDiv #lumaSvg {
 	#ticketsDataWrapper
 	#ticketsDataDiv
 	#ticketsDataDivTop {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid rgb(19 21 23 / 8%);
 }
 #registrationBackGroundDiv
 	#mainDivWrapper
@@ -5928,6 +6017,36 @@ footer #footerLeftDiv #lumaSvg {
 }
 #registrationBackGroundDiv #mainDivWrapper #mainDiv #body #questions {
 	padding: 0 15px;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#personal
+	#personalTop
+	svg {
+	color: #3cbd2c;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#web
+	#webTop
+	svg {
+	color: #682fff;
+}
+#registrationBackGroundDiv
+	#mainDivWrapper
+	#mainDiv
+	#body
+	#questions
+	#custom
+	#customTop
+	svg {
+	color: #f8712b;
 }
 #registrationBackGroundDiv
 	#mainDivWrapper
@@ -6259,7 +6378,6 @@ footer #footerLeftDiv #lumaSvg {
 		#web
 		#webBody
 		.entry {
-		flex: 1;
 		background-color: white;
 		border-radius: 10px;
 	}
@@ -6272,7 +6390,7 @@ footer #footerLeftDiv #lumaSvg {
 		#webBody {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: start;
 		gap: 15px;
 		background-color: transparent;
 	}
