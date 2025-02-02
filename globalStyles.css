@@ -19,9 +19,14 @@ svg {
 .blackBtn {
 	background-color: #333537;
 	color: white;
+	font-size: 15px;
 }
 .blackBtn * {
 	color: white;
+}
+.blackBtn:hover {
+	background-color: #4e5257e7;
+	transition: background-color 0.3s ease;
 }
 
 * {
@@ -7170,6 +7175,30 @@ header #signIn:hover a button {
 	padding: 10px;
 	border-radius: 10px;
 }
+#calendarsBackGroundDiv
+	#mainWrapper
+	#mainDiv
+	#body
+	#topCard
+	#cardBottom
+	#left
+	button {
+	background-color: rgba(128, 128, 128, 0.322);
+	height: 5px;
+	width: 25px;
+	margin-right: 5px;
+}
+#calendarsBackGroundDiv
+	#mainWrapper
+	#mainDiv
+	#body
+	#topCard
+	#cardBottom
+	#left
+	button:hover {
+	transform: scaleY(2);
+	transition: transform 0.3s ease;
+}
 #calendarsBackGroundDiv #mainWrapper #mainDiv #body #subs #subsCard {
 	display: flex;
 	align-items: center;
@@ -7219,6 +7248,26 @@ header #signIn:hover a button {
 	#rightIconDes {
 	display: none;
 }
+#calendarsBackGroundDiv
+	#mainWrapper
+	#mainDiv
+	#body
+	#topCard
+	#imgDiv
+	#rightIcon {
+	cursor: pointer;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #users #usersCard {
+	outline: 1px solid transparent;
+	cursor: pointer;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #users #usersCard:hover {
+	transition: outline 0.3s ease;
+	outline: 1px solid rgba(160, 160, 160, 0.582);
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #subs #subsCard #bottom * {
+	color: rgb(19 21 23 / 36%);
+}
 @media (min-width: 600px) {
 	#calendarsBackGroundDiv
 		#mainWrapper
@@ -7230,6 +7279,21 @@ header #signIn:hover a button {
 		#cardDesHeader
 		#rightIconDes {
 		display: unset;
+		border-radius: 100%;
+		padding: 5px;
+		cursor: pointer;
+	}
+	#calendarsBackGroundDiv
+		#mainWrapper
+		#mainDiv
+		#body
+		#topCard
+		#cardContent
+		#cardDescription
+		#cardDesHeader
+		#rightIconDes:hover {
+		transition: background-color 0.3s ease;
+		background-color: rgba(138, 138, 138, 0.466);
 	}
 	#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard {
 		display: flex;
