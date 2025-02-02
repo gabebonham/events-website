@@ -377,6 +377,20 @@ header #endHeaderContent #profile {
 }
 /* end */
 /* Footer */
+li {
+	cursor: pointer;
+}
+footer #footerBottomDiv li:hover {
+	color: rgba(0, 0, 0, 0.603);
+	transition: color 0.3s ease, fill 0.3s ease;
+}
+.blackBtn2 {
+	cursor: pointer;
+}
+.blackBtn2:hover {
+	color: black;
+	transition: color 0.3s ease;
+}
 .hiddenLi:hover * {
 	color: rgba(0, 0, 0, 0.603);
 	transition: color 0.3s ease, fill 0.3s ease;
@@ -625,9 +639,16 @@ header #signIn:hover a button {
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
+	justify-self: center;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	align-items: center;
 }
 #homeBackGroundDiv video {
 	width: 100%;
+}
+#homeBackGroundDiv #footer1 {
+	max-width: 950px;
 }
 
 #homeBackGroundDiv #mainDiv #leftDiv h4 {
@@ -648,6 +669,7 @@ header #signIn:hover a button {
 	margin: 0;
 	font-weight: 400;
 	color: black;
+	font-size: 60px;
 }
 #homeBackGroundDiv #mainDiv #leftDiv h1 span {
 	background-image: -moz-linear-gradient(
@@ -685,10 +707,17 @@ header #signIn:hover a button {
 	border-radius: 10px;
 	border-style: none;
 }
+#homeBackGroundDiv #mainDiv #leftDiv a {
+	justify-self: center;
+}
 #homeBackGroundDiv #mainDiv #rightDiv {
 	width: fit-content;
 	height: fit-content;
 	padding-top: 30px;
+}
+#homeBackGroundDiv #mainDiv #leftDiv {
+	max-width: 400px;
+	padding-bottom: 20px;
 }
 
 #homeBackGroundDiv #mainDiv svg {
@@ -704,7 +733,7 @@ header #signIn:hover a button {
 		width: fit-content;
 		gap: 50px;
 	}
-	#homeBackGroundDiv #mainDiv #leftDiv {
+	#homeBackGroundDiv #mainDivlarge #leftDiv {
 		width: 28%;
 		padding-top: 120px;
 		font-size: xx-large;
@@ -724,7 +753,7 @@ header #signIn:hover a button {
 	}
 	#homeBackGroundDiv #mainDiv #rightDiv {
 		display: flex;
-		width: 45%;
+		max-width: 500px;
 		padding-top: 80px;
 	}
 }
