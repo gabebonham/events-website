@@ -913,15 +913,15 @@ header #signIn:hover a button {
 	grid-auto-flow: column;
 	column-gap: 40px;
 	grid-template-rows: repeat(3, 4rem);
+	padding-top: 20px;
 }
 #discoverBackGroundDiv #eventsLocalsDiv ul li {
-	background-color: rgba(216, 216, 216, 0.473);
 	padding: 8px;
 	border-radius: 10px;
-	margin-right: 50px;
+	color: rgb(19 21 23 / 36%);
 }
 #discoverBackGroundDiv .circle {
-	background-color: blue;
+	background-color: rgb(47, 124, 169);
 	border-radius: 100%;
 	width: 90px;
 	height: 50px;
@@ -933,9 +933,14 @@ header #signIn:hover a button {
 #discoverBackGroundDiv .itemDiv {
 	display: flex;
 	align-items: center;
-	padding: 0;
+	padding: 7px;
 	margin: 0;
 	gap: 5px;
+	border-radius: 7px;
+}
+#discoverBackGroundDiv .itemDiv:hover {
+	transition: background-color 0.3s ease;
+	background-color: rgba(128, 128, 128, 0.37);
 }
 #discoverBackGroundDiv .infoDiv {
 	gap: 0;
@@ -944,6 +949,9 @@ header #signIn:hover a button {
 	margin: 0;
 	padding: 0;
 	width: 70px;
+}
+#discoverBackGroundDiv .infoDiv .eventsCount {
+	color: rgb(19 21 23 / 36%);
 }
 #discoverBackGroundDiv #browseByCategoryDiv {
 	width: 100%;
@@ -966,7 +974,13 @@ header #signIn:hover a button {
 	width: 180px;
 	padding: 15px;
 	height: 100px;
+	cursor: pointer;
 	margin: 15px;
+}
+#discoverBackGroundDiv .browseByCategoryCard:hover {
+	transition: outline 0.3s ease;
+
+	outline: 1px solid rgba(184, 184, 184, 0.589);
 }
 #discoverBackGroundDiv .browseByCategoryCard img {
 	width: 30%;
@@ -997,6 +1011,11 @@ header #signIn:hover a button {
 	width: 250px;
 	margin: 0;
 	margin-right: 10px;
+	cursor: pointer;
+}
+#discoverBackGroundDiv .featuredCalendarsCard:hover {
+	outline: 1px solid rgba(187, 187, 187, 0.473);
+	transition: outline 0.3s ease;
 }
 #discoverBackGroundDiv .featuredCalendarsCard span {
 	display: none;
@@ -1031,6 +1050,8 @@ header #signIn:hover a button {
 	line-height: 1.5em;
 	padding-top: 5px;
 	font-size: small;
+	color: rgb(19 21 23 / 36%);
+	box-sizing: border-box;
 }
 
 @media (min-width: 600px) {
@@ -1043,7 +1064,6 @@ header #signIn:hover a button {
 		padding-left: 5%;
 	}
 	#discoverBackGroundDiv #eventsLocalsDiv ul li {
-		background-color: rgba(216, 216, 216, 0.473);
 		padding: 8px;
 		margin: 0;
 	}
