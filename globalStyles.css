@@ -26,6 +26,9 @@ svg {
 
 * {
 	border-color: rgb(19 21 23 / 8%);
+	font-family: -apple-system, BlinkMacSystemFont, 'Apple Color Emoji',
+		Inter, Roboto, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans',
+		sans-serif;
 }
 body {
 	margin: 0;
@@ -60,19 +63,23 @@ input,
 textarea {
 	border-radius: 7px;
 	border-width: 1px;
-	width: 100%;
 }
 textarea {
 	height: 100px;
 }
 input {
 	height: 30px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.212);
+	padding: 0 15px;
+	font-size: 17px;
 }
 button {
 	cursor: pointer;
 	background-color: rgb(19 21 23 / 4%);
 	color: rgb(19 21 23 / 64%);
 	border-radius: 7px;
+	border-width: 0;
 }
 
 a {
@@ -350,8 +357,11 @@ footer {
 	width: 100%;
 	padding: 0 5px;
 	box-sizing: border-box;
+	font-size: 14px;
 }
-
+footer * {
+	color: rgb(19 21 23 / 36%);
+}
 #footerLeftDiv {
 	padding-left: 10px;
 }
@@ -384,6 +394,7 @@ footer {
 	);
 	color: transparent;
 	background-clip: text;
+	font-size: small;
 }
 #footerBottomDiv ul {
 	background-color: transparent;
@@ -425,8 +436,6 @@ footer {
 	height: 45px;
 }
 footer #footerLeftDiv #starSvg svg {
-	color: rgb(83, 83, 83);
-
 	width: 17px;
 	height: 17px;
 }
@@ -434,13 +443,10 @@ footer #footerLeftDiv #starSvg {
 	display: none;
 }
 footer #footerLeftDiv #lumaSvg svg {
-	color: rgb(83, 83, 83);
-
 	width: 45px;
 	height: 45px;
 }
 footer #footerLeftDiv #lumaSvg {
-	color: rgb(83, 83, 83);
 	display: unset;
 	width: 45px;
 	height: 45px;
@@ -452,7 +458,6 @@ footer #footerLeftDiv #lumaSvg {
 	display: none;
 }
 #footerBottomDiv svg {
-	color: rgb(189, 189, 189);
 	width: 17px;
 	height: 17px;
 }
@@ -1072,6 +1077,7 @@ footer #footerLeftDiv #lumaSvg {
 	padding: 0;
 	margin: 0;
 	position: relative;
+	width: 100%;
 }
 
 #atlantaBackGroundDiv header {
@@ -1090,7 +1096,7 @@ footer #footerLeftDiv #lumaSvg {
 	right: 0;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 160px;
+	padding-top: 140px;
 	padding-bottom: 110px;
 	display: flex;
 	justify-content: center;
@@ -1108,6 +1114,12 @@ footer #footerLeftDiv #lumaSvg {
 }
 #atlantaBackGroundDiv #topDiv #content hr {
 	width: 100%;
+	margin: 40px 0;
+}
+
+#atlantaBackGroundDiv #topDiv #content #info {
+	line-height: 1.5;
+	padding-bottom: 30px;
 }
 
 #atlantaBackGroundDiv img {
@@ -1118,6 +1130,23 @@ footer #footerLeftDiv #lumaSvg {
 #atlantaBackGroundDiv #topDiv svg {
 	width: 15px;
 	height: 15px;
+}
+#atlantaBackGroundDiv #topDiv {
+	color: white;
+}
+#atlantaBackGroundDiv #topDiv #content #header h4,
+#atlantaBackGroundDiv #topDiv #content #header p {
+	color: rgba(255, 255, 255, 0.363);
+}
+#atlantaBackGroundDiv #topDiv #content #header p {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#atlantaBackGroundDiv #topDiv #content #header p {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 #atlantaBackGroundDiv #bottomDiv svg {
@@ -1140,9 +1169,19 @@ footer #footerLeftDiv #lumaSvg {
 }
 #atlantaBackGroundDiv #blueCircle {
 	border-radius: 100%;
-	background-color: blue;
+	background-color: rgb(47, 124, 169);
 	width: 50px;
 	height: 50px;
+}
+#atlantaBackGroundDiv #bottomDiv #rightDiv #inputDiv input {
+	background-color: rgb(19 21 23 / 4%);
+	max-width: 170px;
+}
+#atlantaBackGroundDiv #bottomDiv #rightDiv {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 600px;
 }
 #atlantaBackGroundDiv #bottomDiv {
 	padding-top: 20px;
@@ -1173,13 +1212,13 @@ footer #footerLeftDiv #lumaSvg {
 #atlantaBackGroundDiv .verticalLine {
 	height: 95%;
 	width: 5px;
-	border-left: 1px dashed gray;
+	border-left: 1px dashed rgb(19 21 23 / 15%);
 	margin-left: 2px;
 }
 #atlantaBackGroundDiv #lineCircle {
 	width: 5px;
 	height: 5px;
-	background-color: gray;
+	background-color: rgb(19 21 23 / 15%);
 	border-radius: 100%;
 }
 #atlantaBackGroundDiv #lineDiv {
@@ -1284,7 +1323,7 @@ footer #footerLeftDiv #lumaSvg {
 }
 #atlantaBackGroundDiv #calendarDiv .horizontalLine {
 	width: 100%;
-	border-top: 1px dashed gray;
+	border-top: 1px dashed rgb(19 21 23 / 15%);
 	box-sizing: border-box;
 }
 #atlantaBackGroundDiv #calendarCard {
@@ -1313,7 +1352,104 @@ footer #footerLeftDiv #lumaSvg {
 #atlantaBackGroundDiv #calendarContent {
 	padding-left: 10px;
 }
-@media (min-width: 500px) {
+#atlantaBackGroundDiv #topDiv #content #inpForm button {
+	border-radius: 20px;
+	background-color: white;
+	color: black;
+	padding: 5px 10px;
+	font-size: 17px;
+}
+#atlantaBackGroundDiv #topDiv #content #header h1 {
+	font-size: 50px;
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 10px;
+	line-height: 1;
+}
+#atlantaBackGroundDiv header {
+	color: hsl(0deg 0% 100% / 50%);
+}
+#atlantaBackGroundDiv header #signInButton {
+	color: hsl(0deg 0% 100% / 50%);
+}
+#atlantaBackGroundDiv #topDiv #content #header h4 {
+	font-size: 25px;
+	font-weight: lighter;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	padding-top: 20px;
+}
+#atlantaBackGroundDiv #topDiv #content #inpForm {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#atlantaBackGroundDiv #topDiv #content #inpForm input {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.212);
+	padding: 0 15px;
+	font-size: 17px;
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv #header button * {
+	color: rgb(44, 44, 44);
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv #header button {
+	display: flex;
+	padding: 5px 10px;
+	align-items: center;
+	color: rgb(65, 65, 65);
+	font-size: 15px;
+	font-weight: 500;
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv #eventsDiv #dateDiv .card .leftDiv p,
+#atlantaBackGroundDiv
+	#bottomDiv
+	#leftDiv
+	#eventsDiv
+	#dateDiv
+	.card
+	.leftDiv
+	.cardFooter
+	.authorsDiv
+	span,
+#atlantaBackGroundDiv
+	#bottomDiv
+	#leftDiv
+	#eventsDiv
+	#dateDiv
+	.card
+	.leftDiv
+	.cardFooter
+	.locationDiv {
+	color: rgb(19 21 23 / 36%);
+}
+#atlantaBackGroundDiv
+	#bottomDiv
+	#leftDiv
+	#calendarDiv
+	#content
+	#calendarContent
+	h2 {
+	color: rgb(19 21 23 / 36%);
+}
+#atlantaBackGroundDiv
+	#bottomDiv
+	#leftDiv
+	#calendarDiv
+	#content
+	#calendarContent
+	#calendarCard
+	h2 {
+	color: black;
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv #header div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+@media (min-width: 650px) {
 	#atlantaBackGroundDiv #bottomDiv #rightDiv {
 		display: unset;
 		width: 200px;
@@ -1343,6 +1479,18 @@ footer #footerLeftDiv #lumaSvg {
 		width: 100%;
 		height: auto;
 		border-radius: 15px;
+	}
+
+	#atlantaBackGroundDiv
+		#bottomDiv
+		#leftDiv
+		#eventsDiv
+		#dateDiv
+		.card
+		.leftDiv
+		.cardFooter
+		.authorsDiv {
+		gap: 10px;
 	}
 }
 /* header */
