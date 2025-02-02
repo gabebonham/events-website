@@ -81,7 +81,22 @@ button {
 	border-radius: 7px;
 	border-width: 0;
 }
-
+.perBtn {
+	color: rgb(40 0 46 / 64%);
+	background-color: #3b243d0a;
+	cursor: pointer;
+	border-radius: 7px;
+	padding: 0.375rem 0.5rem 0.375rem 0.5625rem;
+}
+.perBtn:hover {
+	background-color: #28002e34;
+	color: #fff;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+.grayBtn {
+	color: rgb(19 21 23 / 64%);
+	background-color: rgb(19 21 23 / 4%);
+}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -151,6 +166,13 @@ header {
 	font-size: smaller;
 	color: rgb(19 21 23 / 36%);
 }
+header #startHeaderContent button:hover .hoverW {
+	color: rgba(243, 243, 243, 0.479);
+}
+header #endHeaderContent li:hover * {
+	color: rgba(255, 255, 255, 0.774);
+}
+
 header #startHeaderContent #right,
 header #endHeaderContent #createEvent,
 header #endHeaderContent #search,
@@ -174,6 +196,11 @@ header #endHeaderContent #profile {
 	height: fit-content;
 	font-size: smaller;
 }
+
+#loggedInHeader #endHeaderContent #createEvent:hover {
+	font-weight: bold;
+	transition: font-weight 0.3s ease;
+}
 #loggedInHeader #startHeaderContent #right,
 #loggedInHeader #endHeaderContent #createEvent,
 #loggedInHeader #endHeaderContent #search,
@@ -181,6 +208,13 @@ header #endHeaderContent #profile {
 #loggedInHeader #endHeaderContent #profile {
 	display: unset;
 }
+#loggedInHeader #endHeaderContent #createEvent,
+#loggedInHeader #endHeaderContent #search,
+#loggedInHeader #endHeaderContent #bell,
+#loggedInHeader #endHeaderContent #profile {
+	cursor: pointer;
+}
+
 #loggedInHeader #startHeaderContent {
 	display: flex;
 	align-items: center;
@@ -238,16 +272,7 @@ header #endHeaderContent #profile {
 		display: unset;
 	}
 }
-#signInButton {
-	background-color: rgba(189, 189, 189, 0.164);
-	border-style: none;
-	border-radius: 20px;
-	padding-left: 13px;
-	padding-right: 13px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	color: rgb(92, 92, 92);
-}
+
 #endHeaderContent svg {
 	width: 17px;
 	height: 17px;
@@ -352,6 +377,14 @@ header #endHeaderContent #profile {
 }
 /* end */
 /* Footer */
+.hiddenLi:hover * {
+	color: rgba(0, 0, 0, 0.603);
+	transition: color 0.3s ease, fill 0.3s ease;
+}
+
+footer #footerUpperDiv {
+	padding-top: 10px;
+}
 
 footer {
 	width: 100%;
@@ -365,6 +398,7 @@ footer * {
 #footerLeftDiv {
 	padding-left: 10px;
 }
+
 #footerCenterDiv {
 	width: 100%;
 	display: flex;
@@ -536,6 +570,27 @@ footer #footerLeftDiv #lumaSvg {
 	#footer2 #footerCenterDiv {
 		display: none;
 	}
+}
+svg:hover .socialIcon {
+	color: rgba(0, 0, 0, 0.562);
+	transition: color 0.3s ease;
+}
+header #signIn a button {
+	color: rgb(255 255 255 / 64%);
+	background-color: rgb(255 255 255 / 8%);
+	padding: 5px 10px;
+	border-radius: 20px;
+}
+header #signIn:hover a button {
+	color: rgba(0, 0, 0, 0.562);
+	background-color: rgba(255, 255, 255, 0.527);
+	transition: color 0.3s ease;
+}
+#loggedInHeader #endHeaderContent #createEvent:hover *,
+#loggedInHeader #endHeaderContent #search:hover *,
+#loggedInHeader #endHeaderContent #bell:hover * {
+	color: black;
+	transition: color 0.3s ease;
 }
 /* end */
 /* Home */
@@ -1176,6 +1231,10 @@ footer #footerLeftDiv #lumaSvg {
 #atlantaBackGroundDiv #bottomDiv #rightDiv #inputDiv input {
 	background-color: rgb(19 21 23 / 4%);
 	max-width: 170px;
+	transition: background-color 0.3s ease;
+}
+#atlantaBackGroundDiv #bottomDiv #rightDiv #inputDiv input:focus {
+	background-color: rgba(255, 255, 255, 0.623);
 }
 #atlantaBackGroundDiv #bottomDiv #rightDiv {
 	position: sticky;
@@ -1194,6 +1253,15 @@ footer #footerLeftDiv #lumaSvg {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv #header button:hover {
+	background-color: rgb(29, 26, 26);
+
+	transition: background-color 0.3s ease;
+}
+#atlantaBackGroundDiv #bottomDiv #leftDiv #header button:hover * {
+	color: rgba(255, 255, 255, 0.808);
+	transition: color 0.3s ease;
 }
 #atlantaBackGroundDiv #bottomDiv #leftDiv {
 	max-width: 650px;
@@ -1249,6 +1317,11 @@ footer #footerLeftDiv #lumaSvg {
 	padding: 15px;
 	display: flex;
 	box-sizing: border-box;
+	cursor: pointer;
+}
+#atlantaBackGroundDiv .card:hover {
+	border: 1px solid rgba(75, 74, 82, 0.541);
+	transition: border 0.3s ease;
 }
 #atlantaBackGroundDiv .card h2 {
 	font-size: 20px;
@@ -1331,6 +1404,10 @@ footer #footerLeftDiv #lumaSvg {
 	align-items: center;
 	font-size: small;
 	line-height: 1;
+	padding-left: 10px;
+	max-width: 800px;
+	box-sizing: border-box;
+	cursor: pointer;
 }
 #atlantaBackGroundDiv #calendarCard #info {
 	padding-left: 10px;
@@ -1341,6 +1418,22 @@ footer #footerLeftDiv #lumaSvg {
 	padding-top: 20px;
 	padding-bottom: 90px;
 }
+#atlantaBackGroundDiv #calendarCard {
+	display: flex;
+	align-items: center;
+	font-size: small;
+	line-height: 1;
+	border-radius: 15px;
+	padding-left: 10px;
+	width: 100%;
+	max-width: 800px;
+	box-sizing: border-box;
+	flex-grow: 1;
+}
+#atlantaBackGroundDiv #calendarCard:hover {
+	background-color: rgba(132, 131, 139, 0.356);
+	transition: background-color 0.3s ease;
+}
 #atlantaBackGroundDiv #calendarDiv #lineDiv {
 	font-size: small;
 	height: auto;
@@ -1350,7 +1443,14 @@ footer #footerLeftDiv #lumaSvg {
 	height: 100%;
 }
 #atlantaBackGroundDiv #calendarContent {
+	display: flex;
+	flex-direction: column;
+	justify-items: start;
 	padding-left: 10px;
+	width: 100%;
+	max-width: 800px;
+	box-sizing: border-box;
+	flex-grow: 1;
 }
 #atlantaBackGroundDiv #topDiv #content #inpForm button {
 	border-radius: 20px;
@@ -1391,6 +1491,11 @@ footer #footerLeftDiv #lumaSvg {
 	background-color: rgba(255, 255, 255, 0.212);
 	padding: 0 15px;
 	font-size: 17px;
+	transition: background-color 0.3s ease;
+}
+
+#atlantaBackGroundDiv #topDiv #content #inpForm input:hover {
+	background-color: rgba(255, 255, 255, 0.397);
 }
 #atlantaBackGroundDiv #bottomDiv #leftDiv #header button * {
 	color: rgb(44, 44, 44);
@@ -1959,12 +2064,45 @@ footer #footerLeftDiv #lumaSvg {
 	);
 	width: 100%;
 }
+#createBackGroundDiv #mainDiv #options3 #sections hr {
+	color: #b9a8b4;
+}
 #createBackGroundDiv #mainDiv {
 	width: 100%;
 	padding: 15px;
 	box-sizing: border-box;
 	padding-bottom: 90px;
 }
+#createBackGroundDiv
+	#mainDiv
+	#imgSection
+	#buttons
+	#left
+	#leftDiv
+	#text
+	#bottom {
+	color: black;
+}
+#createBackGroundDiv
+	#mainDiv
+	#optionsWrapper
+	#options2
+	#optionsList
+	.card
+	div
+	* {
+	color: rgb(31 8 39 / 64%);
+}
+#createBackGroundDiv #mainDiv #optionsWrapper #options2 #title {
+	background-color: transparent;
+	border-width: 0;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+#createBackGroundDiv #mainDiv #optionsWrapper #options2 #title:hover {
+	outline: none;
+}
+
 #createBackGroundDiv #mainDiv #imgSection {
 	width: 100%;
 }
@@ -2054,7 +2192,6 @@ footer #footerLeftDiv #lumaSvg {
 	display: flex;
 	align-items: start;
 	gap: 10px;
-	background-color: rgba(0, 0, 0, 0.082);
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 10px;
@@ -2138,6 +2275,10 @@ footer #footerLeftDiv #lumaSvg {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-width: 0;
+}
+#createBackGroundDiv #mainDiv #createButton:hover {
+	background-color: rgb(160, 111, 144);
+	transition: background-color 0.3s ease;
 }
 #createBackGroundDiv #mainDiv #options2 #fullscreencard {
 	display: none;
@@ -2427,11 +2568,21 @@ footer #footerLeftDiv #lumaSvg {
 	}
 	#createBackGroundDiv #mainDiv #options2 #fullscreencard #rightCard {
 		background-color: rgba(100, 100, 100, 0.048);
+		cursor: pointer;
 		border-radius: 10px;
 		padding-left: 10px;
 		padding-top: 8px;
 		padding-bottom: 8px;
 		padding-right: 10px;
+	}
+	#createBackGroundDiv
+		#mainDiv
+		#options2
+		#fullscreencard
+		#rightCard:hover {
+		background-color: #28002e34;
+		color: #fff;
+		transition: color 0.3s ease, background-color 0.3s ease;
 	}
 	#createBackGroundDiv #mainDiv #options2 #fullscreencard #rightCard p {
 		padding: 0;
@@ -2451,6 +2602,9 @@ footer #footerLeftDiv #lumaSvg {
 		max-width: 450px;
 		padding: 0;
 		margin: 0;
+	}
+	#createBackGroundDiv #mainDiv #options3 #sections hr {
+		border-color: #b9a8b4;
 	}
 }
 /* header */
@@ -3030,7 +3184,7 @@ footer #footerLeftDiv #lumaSvg {
 	height: 17px;
 }
 #inactiveBackGround #createModal {
-	background-color: white;
+	background-color: #f0f0f0ee;
 	border-radius: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -3039,6 +3193,16 @@ footer #footerLeftDiv #lumaSvg {
 	max-width: 280px;
 	max-height: fit-content;
 	overflow: hidden;
+}
+#inactiveBackGround #createModal #footer button {
+	flex: 1;
+	padding: 10px 0;
+	font-size: 15px;
+}
+#inactiveBackGround #createModal #footer {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 #inactiveBackGround #createModal #icon {
 	width: 100%;
