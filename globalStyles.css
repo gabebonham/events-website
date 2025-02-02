@@ -93,10 +93,24 @@ button {
 	color: #fff;
 	transition: color 0.3s ease, background-color 0.3s ease;
 }
+.perBtn:hover * {
+	color: #fff;
+	transition: color 0.3s ease;
+}
 .grayBtn {
 	color: rgb(19 21 23 / 64%);
 	background-color: rgb(19 21 23 / 4%);
 }
+.grayBtn:hover {
+	background-color: #28002e34;
+	color: #fff;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+.grayBtn:hover * {
+	color: #fff;
+	transition: color 0.3s ease;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -3086,6 +3100,7 @@ header #signIn:hover a button {
 	padding-right: 23px;
 	padding-bottom: 10px;
 	border-radius: 7px;
+	cursor: pointer;
 }
 #eventsBackGroundDiv #mainWrapper #mainDiv #header #switchButton #leftP {
 	padding: 0;
@@ -3093,6 +3108,12 @@ header #signIn:hover a button {
 	line-height: 1;
 	padding-left: 10px;
 	padding-right: 10px;
+	color: rgb(19 21 23 / 36%);
+	cursor: pointer;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #header #switchButton #leftP:hover {
+	transition: color 0.3s ease;
+	color: black;
 }
 #eventsBackGroundDiv #mainWrapper #mainDiv #body {
 	display: flex;
@@ -3108,7 +3129,7 @@ header #signIn:hover a button {
 	margin-right: 9px;
 }
 #eventsBackGroundDiv #mainWrapper #mainDiv #body #lineDiv #line {
-	border-left: 1px dashed gray;
+	border-left: 1px dashed rgb(19 21 23 / 25%);
 	margin-left: 8px;
 	height: 100%;
 }
@@ -3117,7 +3138,7 @@ header #signIn:hover a button {
 	border-radius: 100%;
 	width: 9px;
 	height: 9px;
-	background-color: gray;
+	background-color: rgb(19 21 23 / 25%);
 	margin-left: 4px;
 	margin-bottom: 4px;
 }
@@ -3133,6 +3154,12 @@ header #signIn:hover a button {
 	justify-content: space-between;
 	width: 100%;
 	box-sizing: border-box;
+	outline: 1px solid transparent;
+	transition: outline 0.3s ease;
+	cursor: pointer;
+}
+#eventsBackGroundDiv #mainWrapper #mainDiv #body #card:hover {
+	outline: 1px solid rgba(146, 146, 146, 0.651);
 }
 
 #eventsBackGroundDiv #mainWrapper #mainDiv #body #card #left h4 {
@@ -3164,6 +3191,17 @@ header #signIn:hover a button {
 	line-height: 1;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+#eventsBackGroundDiv
+	#mainWrapper
+	#mainDiv
+	#body
+	#cards
+	#card
+	#left
+	#location
+	* {
+	color: #d69712;
 }
 #eventsBackGroundDiv #mainWrapper #mainDiv #body #cards #card #left button {
 	border-radius: 10px;
