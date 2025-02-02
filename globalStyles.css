@@ -18,6 +18,7 @@ svg {
 }
 .blackBtn {
 	background-color: #333537;
+	color: white;
 }
 .blackBtn * {
 	color: white;
@@ -55,11 +56,23 @@ ul {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-
+input,
+textarea {
+	border-radius: 7px;
+	border-width: 1px;
+	width: 100%;
+}
+textarea {
+	height: 100px;
+}
+input {
+	height: 30px;
+}
 button {
 	cursor: pointer;
 	background-color: rgb(19 21 23 / 4%);
 	color: rgb(19 21 23 / 64%);
+	border-radius: 7px;
 }
 
 a {
@@ -335,6 +348,8 @@ header #endHeaderContent #profile {
 
 footer {
 	width: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
 }
 
 #footerLeftDiv {
@@ -447,12 +462,12 @@ footer #footerLeftDiv #lumaSvg {
 #loggedFooter {
 }
 #footer1 {
-	max-width: 1100px;
+	max-width: 800px;
 	justify-self: center;
 	box-sizing: border-box;
 }
 #footer2 {
-	max-width: 950px;
+	max-width: 800px;
 	justify-self: center;
 	box-sizing: border-box;
 }
@@ -6415,6 +6430,469 @@ footer #footerLeftDiv #lumaSvg {
 		display: none;
 	}
 }
+#eventRecapModal {
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgb(248, 248, 249);
+	overflow-y: auto;
+}
+#eventRecapModal svg {
+	width: 17px;
+	height: 17px;
+}
+#eventRecapModal #modalTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	backdrop-filter: blur(5px);
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 20px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.547);
+	border-bottom: 1px solid rgb(19 21 23 / 8%);
+}
+#eventRecapModal #modalTop h3 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#eventRecapModal #modalBody h3,
+#eventRecapModal #modalBody p,
+#eventRecapModal #modalBody h4,
+#eventRecapModal #modalBody h1,
+#eventRecapModal #modalBody h2 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+#eventRecapModal #modalBody {
+	background-color: rgb(248, 248, 249);
+	padding: 20px;
+}
+#eventRecapModal hr {
+	padding: 0;
+	margin: 0;
+	margin: 20px 0;
+}
+#eventRecapModal #modalTop #leftIcon {
+	display: none;
+}
+#eventRecapModal #modalBody #basicInfo #descriptionDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#eventRecapModal #modalBody #basicInfo h3 {
+	padding-bottom: 15px;
+}
+#eventRecapModal #modalBody #basicInfo #descriptionDiv #right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+#eventRecapModal #modalBody #appearance #templates {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	overflow-x: auto;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+#eventRecapModal #modalBody #appearance #templates .templateButton {
+	width: 110px;
+	height: auto;
+	border-width: 0;
+	background-color: transparent;
+}
+#eventRecapModal #modalBody #appearance #templates .templateButton img {
+	width: 100px;
+	height: auto;
+	border-radius: 10px;
+}
+#eventRecapModal #modalBody #appearance #bottom .buttonsDiv {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+#eventRecapModal #modalBody #appearance #bottom .buttonsDiv button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 10px;
+}
+#eventRecapModal #modalBody #appearance #bottom .buttonsDiv button .left,
+#eventRecapModal #modalBody #appearance #bottom .buttonsDiv button .right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#eventRecapModal #modalBody #appearance h3 {
+	padding-bottom: 15px;
+}
+#eventRecapModal #modalBody #time #card {
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #ebeced;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#eventRecapModal #modalBody #time #card #top {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 15px 15px;
+}
+#eventRecapModal #modalBody #time #card #mid {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 15px;
+	border-bottom: 1px solid #ebeced;
+}
+#eventRecapModal #modalBody #time #card #bot {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 15px 15px;
+	gap: 10px;
+}
+#eventRecapModal #modalBody #location h3 {
+	padding-bottom: 20px;
+}
+#eventRecapModal #modalBody #location #buttons button .left .iconDiv2 {
+	background-color: #325ffa22;
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+#eventRecapModal #modalBody #location #buttons button .left .iconDiv {
+	background-color: #325ffa22;
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+#eventRecapModal #modalBody #location #buttons button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	padding: 5px 5px;
+}
+#eventRecapModal #modalBody #location #buttons {
+	display: flex;
+	gap: 15px;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 20px;
+}
+#eventRecapModal #modalBody #location #locP {
+	padding-bottom: 10px;
+}
+#eventRecapModal #modalBody #location #inpDiv {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#eventRecapModal #modalBody #location #inpDiv svg {
+	padding-left: 10px;
+}
+#eventRecapModal #modalBody #location #inpDiv input {
+	border-width: 0;
+}
+#eventRecapModal #modalBody #location #buttons button .left {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+#eventRecapModal #modalBody #location #buttons button .left .iconDiv2 svg {
+	color: #146aeb;
+}
+#eventRecapModal #modalBody #location #buttons button .left .iconDiv {
+	background-color: #3cbd2c22;
+}
+#eventRecapModal #modalBody #location #buttons button .left .iconDiv svg {
+	color: #3cbd2c;
+}
+#eventRecapModal #modalBody #location #buttons button .right svg {
+	color: #3cbd2c;
+}
+#eventRecapModal #modalBody #bottom button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 5px 10px;
+}
+#eventRecapModal {
+	display: unset;
+}
+#inactiveBackGround #eventRecapModal {
+	display: none;
+}
+#eventRecapModal #modalTop #leftIcon {
+	display: none;
+}
+@media (min-width: 600px) {
+	#eventRecapModal {
+		display: none;
+	}
+	#inactiveBackGround #eventRecapModal {
+		display: unset;
+		left: unset;
+		top: 10px;
+		right: 10px;
+		bottom: unset;
+		width: 600px;
+		box-sizing: border-box;
+		border-radius: 10px;
+		height: 600px;
+	}
+	#inactiveBackGround #eventRecapModal #modalTop #leftIcon {
+		display: unset;
+	}
+	#inactiveBackGround #eventRecapModal #modalTop #rightIcon {
+		display: none;
+	}
+	#inactiveBackGround #eventRecapModal #modalTop {
+		justify-content: start;
+		gap: 20px;
+	}
+	#inactiveBackGround #eventRecapModal #modalBody #time #card {
+		width: 300px;
+	}
+	#inactiveBackGround
+		#eventRecapModal
+		#modalBody
+		#location
+		#buttons
+		button {
+		background-color: white;
+	}
+	#inactiveBackGround
+		#eventRecapModal
+		#modalBody
+		#appearance
+		#bottom
+		.buttonsDiv
+		button
+		.left
+		#lCircle {
+		background-color: gray;
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+	}
+	#inactiveBackGround
+		#eventRecapModal
+		#modalBody
+		#appearance
+		#bottom
+		.buttonsDiv
+		button
+		.left
+		#rCircle {
+		background-color: gray;
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+	}
+}
+#calendarsBackGroundDiv svg {
+	width: 17px;
+	height: 17px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body {
+	max-width: 760px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+#calendarsBackGroundDiv #mainWrapper {
+	padding: 0 15px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard {
+	background-color: white;
+	border-radius: 10px;
+	padding: 15px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard #imgDiv {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	background-color: #f4f5f6;
+	border-radius: 10px;
+	padding: 5px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard #cardBottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#calendarsBackGroundDiv
+	#mainWrapper
+	#mainDiv
+	#body
+	#topCard
+	#cardBottom
+	#right
+	button {
+	padding: 5px 10px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #users #top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #users #top button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-width: 0;
+	padding: 5px 10px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #users #usersCard {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #subs #subsCard {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	align-items: start;
+	gap: 10px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #subs #subsCard svg {
+	width: 60px;
+	height: 60px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body hr {
+	margin: 25px 0;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #subs #subsCard #bottom * {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #users #usersCard #right * {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard #imgDiv #midIcon {
+	width: 150px;
+	height: 150px;
+}
+#calendarsBackGroundDiv #mainWrapper #mainDiv #body {
+	padding-bottom: 100px;
+}
+#calendarsBackGroundDiv header {
+	position: sticky;
+	top: 0;
+}
+#calendarsBackGroundDiv
+	#mainWrapper
+	#mainDiv
+	#body
+	#topCard
+	#cardContent
+	#cardDescription
+	#cardDesHeader
+	#rightIconDes {
+	display: none;
+}
+@media (min-width: 600px) {
+	#calendarsBackGroundDiv
+		#mainWrapper
+		#mainDiv
+		#body
+		#topCard
+		#cardContent
+		#cardDescription
+		#cardDesHeader
+		#rightIconDes {
+		display: unset;
+	}
+	#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard {
+		display: flex;
+	}
+	#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		height: auto;
+	}
+	#calendarsBackGroundDiv #mainWrapper #mainDiv #body #topCard #imgDiv {
+		width: 100px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#calendarsBackGroundDiv
+		#mainWrapper
+		#mainDiv
+		#body
+		#topCard
+		#cardContent {
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+	}
+	#calendarsBackGroundDiv
+		#mainWrapper
+		#mainDiv
+		#body
+		#topCard
+		#cardContent
+		#cardDescription
+		#cardDesHeader {
+		display: flex;
+		justify-content: space-between;
+	}
+	#calendarsBackGroundDiv
+		#mainWrapper
+		#mainDiv
+		#body
+		#topCard
+		#imgDiv
+		#rightIcon {
+		display: none;
+	}
+	#calendarsBackGroundDiv #mainWrapper #mainDiv #body #users #usersCard {
+		width: 250px;
+		box-sizing: border-box;
+	}
+	#calendarsBackGroundDiv #mainWrapper #mainDiv #body #subs #subsCard {
+		width: 250px;
+		box-sizing: border-box;
+	}
+}
+#eventRecapModal {
+	display: none;
+}
+#inactiveBackGround #eventRecapModal {
+	display: none;
+}
 #inactiveBackGround {
 	display: none;
 }
@@ -6424,6 +6902,7 @@ footer #footerLeftDiv #lumaSvg {
 #inviteModal {
 	display: none;
 }
+
 #inactiveBackGround #chooseImageModalIn {
 	display: none;
 }

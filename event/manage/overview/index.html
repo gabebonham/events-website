@@ -1682,58 +1682,467 @@
 					</div>
 				</div>
 			</div>
+
 			<!--  -->
-			<div id="editEventModal">
-				<div>
-					<div></div>
-					<div></div>
-				</div>
-				<div>
-					<div></div>
-					<div>
-						<div></div>
-						<div></div>
+			<div id="eventRecapModal">
+				<div id="modalTop">
+					<div id="leftIcon">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+						>
+							<path
+								d="m13 17 5-5-5-5M6 17l5-5-5-5"
+							></path>
+						</svg>
 					</div>
+					<h3>Event Recap</h3>
+					<div id="rightIcon">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M13 3 3 13m10 0L3 3"
+							></path>
+						</svg>
+					</div>
+				</div>
+				<div id="modalBody">
+					<div id="basicInfo">
+						<h3>Basic Info</h3>
+						<input type="text" />
+						<div id="descriptionDiv">
+							<p>Description</p>
+							<div id="right">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+									></path>
+								</svg>
+								<p>
+									Suggested
+									Description
+								</p>
+							</div>
+						</div>
+						<textarea
+							name=""
+							id=""
+						></textarea>
+					</div>
+					<hr />
+					<div id="appearance">
+						<h3>Appearance</h3>
+						<div id="templates">
+							<button
+								type="button"
+								class="templateButton"
+							>
+								<img
+									src="https://images.lumacdn.com/themes/thumb/minimal.jpg"
+									alt="Preview for Minimal"
+									class="jsx-1644095154"
+								/>
+								<div
+									class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+								>
+									Minimal
+								</div>
+							</button>
+							<button
+								type="button"
+								class="templateButton"
+							>
+								<img
+									src="https://images.lumacdn.com/themes/thumb/quantum.jpg"
+									alt="Preview for Quantum"
+									class="jsx-1644095154"
+								/>
+								<div
+									class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+								>
+									Quantum
+								</div>
+							</button>
+							<button
+								type="button"
+								class="templateButton"
+							>
+								<img
+									src="https://images.lumacdn.com/themes/thumb/warp.jpg"
+									alt="Preview for Warp"
+									class="jsx-1644095154"
+								/>
+								<div
+									class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+								>
+									Warp
+								</div>
+							</button>
+							<button
+								type="button"
+								class="templateButton"
+							>
+								<img
+									src="https://images.lumacdn.com/themes/thumb/emoji.jpg"
+									alt="Preview for Emoji"
+									class="jsx-1644095154"
+								/>
+								<div
+									class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+								>
+									Emoji
+								</div>
+							</button>
+							<button
+								type="button"
+								class="templateButton"
+							>
+								<img
+									src="https://images.lumacdn.com/themes/thumb/confetti.jpg"
+									alt="Preview for Confetti"
+									class="jsx-1644095154"
+								/>
+								<div
+									class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+								>
+									Confetti
+								</div>
+							</button>
+							<button
+								type="button"
+								class="templateButton"
+							>
+								<img
+									src="https://images.lumacdn.com/themes/thumb/pattern.jpg"
+									alt="Preview for Pattern"
+									class="jsx-1644095154"
+								/>
+								<div
+									class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+								>
+									Pattern
+								</div>
+							</button>
+							<button
+								type="button"
+								class="templateButton"
+							>
+								<img
+									src="https://images.lumacdn.com/themes/thumb/seasonal-snow.jpg"
+								/>
+								<div
+									class="templateTitle"
+								>
+									Seasonal
+								</div>
+							</button>
+						</div>
+						<div id="bottom">
+							<div class="buttonsDiv">
+								<button>
+									<div
+										class="left"
+									>
+										<div
+											id="lCircle"
+										></div>
+										<p>
+											Color
+										</p>
+									</div>
+									<div
+										class="right"
+									>
+										<p>
+											Custom
+										</p>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+											></path>
+										</svg>
+									</div>
+								</button>
+								<button>
+									<div
+										class="left"
+									>
+										<div
+											id="rCircle"
+										></div>
+										<p>
+											Style
+										</p>
+									</div>
+									<div
+										class="right"
+									>
+										<div
+											class="jsx-1948940347 value nowrap text-ellipses"
+										>
+											—
+										</div>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+											></path>
+										</svg>
+									</div>
+								</button>
+							</div>
+							<div class="buttonsDiv">
+								<button>
+									<div
+										class="left"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 88 88"
+										>
+											<path
+												fill="currentColor"
+												d="M8.202 61.544c1.972 0 3.06-.748 4.148-3.332l3.06-7.344h21.08l3.06 7.344c.884 2.244 2.04 3.4 4.352 3.332 2.652-.068 3.74-2.312 2.652-5.032L30.642 18.364c-1.02-2.448-2.652-3.468-4.624-3.468s-3.672 1.02-4.692 3.468L5.346 56.512c-1.224 2.856.136 4.964 2.856 5.032M25.95 23.6l8.16 20.944H17.79zm40.432 50.32c10.472 0 15.776-5.372 15.776-15.912V31.08c0-2.448-1.36-3.808-3.468-3.808-2.312 0-3.672 1.36-3.672 3.808v2.176c-1.836-3.74-5.984-6.12-10.948-6.12-8.976 0-14.416 6.664-14.416 16.524 0 9.792 5.44 16.524 14.416 16.524 4.896 0 9.18-2.38 11.084-6.256v4.964c0 6.12-3.128 8.976-9.316 8.976-2.992 0-6.188-.408-9.996-2.72-3.468-2.04-6.256 3.128-2.72 5.44 3.604 2.312 8.364 3.332 13.26 3.332m-.476-19.516c-5.576 0-9.112-4.216-9.112-10.744 0-6.596 3.536-10.744 9.112-10.744 5.644 0 9.18 4.08 9.18 10.744 0 6.596-3.536 10.744-9.18 10.744"
+											></path>
+										</svg>
+										<p>
+											Font
+										</p>
+									</div>
+									<div
+										class="right"
+									>
+										<p>
+											Snpro
+										</p>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+											></path>
+										</svg>
+									</div>
+								</button>
+								<button>
+									<div
+										class="left"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M2 8.024A6.024 6.024 0 0 1 8.024 2v12.048A6.024 6.024 0 0 1 2 8.024M8.024.5a7.524 7.524 0 1 0 0 15.048A7.524 7.524 0 0 0 8.024.5"
+											></path>
+										</svg>
+										<p>
+											Display
+										</p>
+									</div>
+									<div
+										class="right"
+									>
+										<p>
+											Auto
+										</p>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+											></path>
+										</svg>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<hr />
 					<div id="time">
-						<div>
-							<div></div>
-							<div></div>
-							<div></div>
+						<h2>Time</h2>
+						<div id="card">
+							<div id="top">
+								<h2>
+									Mon, Jan
+									27
+								</h2>
+							</div>
+							<div id="mid">
+								<h2>22:30</h2>
+								<h2>></h2>
+								<h2>23:30</h2>
+							</div>
+							<div id="bot">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill="currentColor"
+										fill-rule="evenodd"
+										d="M9.394 12.674c-.604 1.208-1.178 1.42-1.394 1.42s-.79-.212-1.394-1.42c-.491-.982-.85-2.368-.932-3.97h4.652c-.082 1.602-.44 2.988-.932 3.97m.932-5.377H5.674c.082-1.603.44-2.989.932-3.971C7.21 2.118 7.784 1.906 8 1.906s.79.212 1.394 1.42c.491.982.85 2.368.932 3.97m1.408 1.406c-.09 1.915-.538 3.622-1.21 4.846a6.1 6.1 0 0 0 3.53-4.846zm2.32-1.406h-2.32c-.09-1.915-.538-3.622-1.21-4.845a6.1 6.1 0 0 1 3.53 4.845m-9.788 0c.09-1.915.538-3.622 1.21-4.845a6.1 6.1 0 0 0-3.53 4.845zm-2.32 1.406a6.1 6.1 0 0 0 3.53 4.846c-.672-1.224-1.12-2.93-1.21-4.846zM15.5 8a7.5 7.5 0 1 0-15 0 7.5 7.5 0 0 0 15 0"
+									></path>
+								</svg>
+								<p>
+									GMT-03:00
+									Sao
+									Paulo
+								</p>
+							</div>
 						</div>
 					</div>
-					<div>
-						<div>
-							<div></div>
-							<div></div>
+					<hr />
+					<div id="location">
+						<h3>Location</h3>
+						<div id="buttons">
+							<button>
+								<div
+									class="left"
+								>
+									<div
+										class="iconDiv"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												fill="currentColor"
+												fill-rule="evenodd"
+												d="M12.5 13.418c-1.8 0-3.266-1.433-3.266-3.194S10.7 7.029 12.5 7.029s3.265 1.434 3.265 3.195-1.465 3.194-3.265 3.194M12.5 1C7.262 1 3 5.17 3 10.294 3 16.82 10.803 23 12.5 23S22 16.82 22 10.294C22 5.17 17.738 1 12.5 1"
+											></path>
+										</svg>
+									</div>
+									In
+									Person
+								</div>
+								<div
+									class="right"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill="currentColor"
+											fill-rule="evenodd"
+											d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m4.198-9.784a1 1 0 1 0-1.396-1.432l-4.3 4.189-1.19-1.656a1 1 0 1 0-1.624 1.166l1.866 2.6a1 1 0 0 0 1.51.133z"
+										></path>
+									</svg>
+								</div>
+							</button>
+							<button>
+								<div
+									class="left"
+								>
+									<div
+										class="iconDiv2"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												fill="currentColor"
+												d="M11.896 4c2.664 0 4.524 1.836 4.524 4.467v7.566c0 2.63-1.86 4.467-4.524 4.467H5.524C2.86 20.5 1 18.664 1 16.033V8.467C1 5.836 2.86 4 5.524 4zm8.858 2.617a1.52 1.52 0 0 1 1.51.07c.461.29.736.792.736 1.341v8.444c0 .55-.275 1.052-.736 1.341a1.523 1.523 0 0 1-1.511.07l-1.63-.822a1.79 1.79 0 0 1-.976-1.603V9.041c0-.683.374-1.297.977-1.601z"
+											></path>
+										</svg>
+									</div>
+									Virtual
+								</div>
+								<div
+									class="right"
+								></div>
+							</button>
+						</div>
+						<p id="locP">Event Location</p>
+						<div id="inpDiv">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 16 16"
+							>
+								<g
+									fill="none"
+									fill-rule="evenodd"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1.5"
+								>
+									<path
+										d="M2 6.854C2 11.02 7.04 15 8 15s6-3.98 6-8.146C14 3.621 11.314 1 8 1S2 3.62 2 6.854"
+									></path>
+									<path
+										d="M9.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+									></path>
+								</g>
+							</svg>
+							<input
+								type="text"
+								name=""
+								id=""
+							/>
 						</div>
 					</div>
-					<div>
-						<div></div>
-						<div>
-							<div></div>
-							<div></div>
-						</div>
-					</div>
-					<div><button></button></div>
-				</div>
-			</div>
-			<!--  -->
-			<div id="editEventModalImage">
-				<div></div>
-				<div></div>
-				<div>
-					<div>
-						<ul>
-							<li></li>
-						</ul>
-					</div>
-					<div>
-						<div></div>
-						<div>
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
+					<hr />
+					<div id="bottom">
+						<button class="blackBtn">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+								></path>
+								<path
+									d="M22 4 12 14.01l-3-3"
+								></path>
+							</svg>
+							Update Event
+						</button>
 					</div>
 				</div>
 			</div>
@@ -1942,6 +2351,454 @@
 							</svg>
 						</button>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div id="eventRecapModal">
+			<div id="modalTop">
+				<div id="leftIcon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+					>
+						<path
+							d="m13 17 5-5-5-5M6 17l5-5-5-5"
+						></path>
+					</svg>
+				</div>
+				<h3>Event Recap</h3>
+				<div id="rightIcon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="1.5"
+							d="M13 3 3 13m10 0L3 3"
+						></path>
+					</svg>
+				</div>
+			</div>
+			<div id="modalBody">
+				<div id="basicInfo">
+					<h3>Basic Info</h3>
+					<input type="text" />
+					<div id="descriptionDiv">
+						<p>Description</p>
+						<div id="right">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+								></path>
+							</svg>
+							<p>
+								Suggested
+								Description
+							</p>
+						</div>
+					</div>
+					<textarea name="" id=""></textarea>
+				</div>
+				<hr />
+				<div id="appearance">
+					<h3>Appearance</h3>
+					<div id="templates">
+						<button
+							type="button"
+							class="templateButton"
+						>
+							<img
+								src="https://images.lumacdn.com/themes/thumb/minimal.jpg"
+								alt="Preview for Minimal"
+								class="jsx-1644095154"
+							/>
+							<div
+								class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+							>
+								Minimal
+							</div>
+						</button>
+						<button
+							type="button"
+							class="templateButton"
+						>
+							<img
+								src="https://images.lumacdn.com/themes/thumb/quantum.jpg"
+								alt="Preview for Quantum"
+								class="jsx-1644095154"
+							/>
+							<div
+								class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+							>
+								Quantum
+							</div>
+						</button>
+						<button
+							type="button"
+							class="templateButton"
+						>
+							<img
+								src="https://images.lumacdn.com/themes/thumb/warp.jpg"
+								alt="Preview for Warp"
+								class="jsx-1644095154"
+							/>
+							<div
+								class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+							>
+								Warp
+							</div>
+						</button>
+						<button
+							type="button"
+							class="templateButton"
+						>
+							<img
+								src="https://images.lumacdn.com/themes/thumb/emoji.jpg"
+								alt="Preview for Emoji"
+								class="jsx-1644095154"
+							/>
+							<div
+								class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+							>
+								Emoji
+							</div>
+						</button>
+						<button
+							type="button"
+							class="templateButton"
+						>
+							<img
+								src="https://images.lumacdn.com/themes/thumb/confetti.jpg"
+								alt="Preview for Confetti"
+								class="jsx-1644095154"
+							/>
+							<div
+								class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+							>
+								Confetti
+							</div>
+						</button>
+						<button
+							type="button"
+							class="templateButton"
+						>
+							<img
+								src="https://images.lumacdn.com/themes/thumb/pattern.jpg"
+								alt="Preview for Pattern"
+								class="jsx-1644095154"
+							/>
+							<div
+								class="jsx-1644095154 fs-xxs text-tertiary-alpha text-center mt-2 animated"
+							>
+								Pattern
+							</div>
+						</button>
+						<button
+							type="button"
+							class="templateButton"
+						>
+							<img
+								src="https://images.lumacdn.com/themes/thumb/seasonal-snow.jpg"
+							/>
+							<div
+								class="templateTitle"
+							>
+								Seasonal
+							</div>
+						</button>
+					</div>
+					<div id="bottom">
+						<div class="buttonsDiv">
+							<button>
+								<div
+									class="left"
+								>
+									<div
+										id="lCircle"
+									></div>
+									<p>
+										Color
+									</p>
+								</div>
+								<div
+									class="right"
+								>
+									<p>
+										Custom
+									</p>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill="currentColor"
+											fill-rule="evenodd"
+											d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+										></path>
+									</svg>
+								</div>
+							</button>
+							<button>
+								<div
+									class="left"
+								>
+									<div
+										id="rCircle"
+									></div>
+									<p>
+										Style
+									</p>
+								</div>
+								<div
+									class="right"
+								>
+									<div
+										class="jsx-1948940347 value nowrap text-ellipses"
+									>
+										—
+									</div>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill="currentColor"
+											fill-rule="evenodd"
+											d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+										></path>
+									</svg>
+								</div>
+							</button>
+						</div>
+						<div class="buttonsDiv">
+							<button>
+								<div
+									class="left"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 88 88"
+									>
+										<path
+											fill="currentColor"
+											d="M8.202 61.544c1.972 0 3.06-.748 4.148-3.332l3.06-7.344h21.08l3.06 7.344c.884 2.244 2.04 3.4 4.352 3.332 2.652-.068 3.74-2.312 2.652-5.032L30.642 18.364c-1.02-2.448-2.652-3.468-4.624-3.468s-3.672 1.02-4.692 3.468L5.346 56.512c-1.224 2.856.136 4.964 2.856 5.032M25.95 23.6l8.16 20.944H17.79zm40.432 50.32c10.472 0 15.776-5.372 15.776-15.912V31.08c0-2.448-1.36-3.808-3.468-3.808-2.312 0-3.672 1.36-3.672 3.808v2.176c-1.836-3.74-5.984-6.12-10.948-6.12-8.976 0-14.416 6.664-14.416 16.524 0 9.792 5.44 16.524 14.416 16.524 4.896 0 9.18-2.38 11.084-6.256v4.964c0 6.12-3.128 8.976-9.316 8.976-2.992 0-6.188-.408-9.996-2.72-3.468-2.04-6.256 3.128-2.72 5.44 3.604 2.312 8.364 3.332 13.26 3.332m-.476-19.516c-5.576 0-9.112-4.216-9.112-10.744 0-6.596 3.536-10.744 9.112-10.744 5.644 0 9.18 4.08 9.18 10.744 0 6.596-3.536 10.744-9.18 10.744"
+										></path>
+									</svg>
+									<p>
+										Font
+									</p>
+								</div>
+								<div
+									class="right"
+								>
+									<p>
+										Snpro
+									</p>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill="currentColor"
+											fill-rule="evenodd"
+											d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+										></path>
+									</svg>
+								</div>
+							</button>
+							<button>
+								<div
+									class="left"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill="currentColor"
+											fill-rule="evenodd"
+											d="M2 8.024A6.024 6.024 0 0 1 8.024 2v12.048A6.024 6.024 0 0 1 2 8.024M8.024.5a7.524 7.524 0 1 0 0 15.048A7.524 7.524 0 0 0 8.024.5"
+										></path>
+									</svg>
+									<p>
+										Display
+									</p>
+								</div>
+								<div
+									class="right"
+								>
+									<p>
+										Auto
+									</p>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill="currentColor"
+											fill-rule="evenodd"
+											d="M4.164 10.253a1 1 0 1 0-1.328 1.494l4.5 4a1 1 0 0 0 1.328 0l4.5-4a1 1 0 0 0-1.328-1.494L8 13.662zm7.672-4.506a1 1 0 0 0 1.328-1.494l-4.5-4a1 1 0 0 0-1.328 0l-4.5 4a1 1 0 1 0 1.328 1.494L8 2.338z"
+										></path>
+									</svg>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div id="time">
+					<h2>Time</h2>
+					<div id="card">
+						<div id="top">
+							<h2>Mon, Jan 27</h2>
+						</div>
+						<div id="mid">
+							<h2>22:30</h2>
+							<h2>></h2>
+							<h2>23:30</h2>
+						</div>
+						<div id="bot">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill="currentColor"
+									fill-rule="evenodd"
+									d="M9.394 12.674c-.604 1.208-1.178 1.42-1.394 1.42s-.79-.212-1.394-1.42c-.491-.982-.85-2.368-.932-3.97h4.652c-.082 1.602-.44 2.988-.932 3.97m.932-5.377H5.674c.082-1.603.44-2.989.932-3.971C7.21 2.118 7.784 1.906 8 1.906s.79.212 1.394 1.42c.491.982.85 2.368.932 3.97m1.408 1.406c-.09 1.915-.538 3.622-1.21 4.846a6.1 6.1 0 0 0 3.53-4.846zm2.32-1.406h-2.32c-.09-1.915-.538-3.622-1.21-4.845a6.1 6.1 0 0 1 3.53 4.845m-9.788 0c.09-1.915.538-3.622 1.21-4.845a6.1 6.1 0 0 0-3.53 4.845zm-2.32 1.406a6.1 6.1 0 0 0 3.53 4.846c-.672-1.224-1.12-2.93-1.21-4.846zM15.5 8a7.5 7.5 0 1 0-15 0 7.5 7.5 0 0 0 15 0"
+								></path>
+							</svg>
+							<p>
+								GMT-03:00 Sao
+								Paulo
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div id="location">
+					<h3>Location</h3>
+					<div id="buttons">
+						<button>
+							<div class="left">
+								<div
+									class="iconDiv"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											fill-rule="evenodd"
+											d="M12.5 13.418c-1.8 0-3.266-1.433-3.266-3.194S10.7 7.029 12.5 7.029s3.265 1.434 3.265 3.195-1.465 3.194-3.265 3.194M12.5 1C7.262 1 3 5.17 3 10.294 3 16.82 10.803 23 12.5 23S22 16.82 22 10.294C22 5.17 17.738 1 12.5 1"
+										></path>
+									</svg>
+								</div>
+								In Person
+							</div>
+							<div class="right">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill="currentColor"
+										fill-rule="evenodd"
+										d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m4.198-9.784a1 1 0 1 0-1.396-1.432l-4.3 4.189-1.19-1.656a1 1 0 1 0-1.624 1.166l1.866 2.6a1 1 0 0 0 1.51.133z"
+									></path>
+								</svg>
+							</div>
+						</button>
+						<button>
+							<div class="left">
+								<div
+									class="iconDiv2"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M11.896 4c2.664 0 4.524 1.836 4.524 4.467v7.566c0 2.63-1.86 4.467-4.524 4.467H5.524C2.86 20.5 1 18.664 1 16.033V8.467C1 5.836 2.86 4 5.524 4zm8.858 2.617a1.52 1.52 0 0 1 1.51.07c.461.29.736.792.736 1.341v8.444c0 .55-.275 1.052-.736 1.341a1.523 1.523 0 0 1-1.511.07l-1.63-.822a1.79 1.79 0 0 1-.976-1.603V9.041c0-.683.374-1.297.977-1.601z"
+										></path>
+									</svg>
+								</div>
+								Virtual
+							</div>
+							<div
+								class="right"
+							></div>
+						</button>
+					</div>
+					<p id="locP">Event Location</p>
+					<div id="inpDiv">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 16 16"
+						>
+							<g
+								fill="none"
+								fill-rule="evenodd"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+							>
+								<path
+									d="M2 6.854C2 11.02 7.04 15 8 15s6-3.98 6-8.146C14 3.621 11.314 1 8 1S2 3.62 2 6.854"
+								></path>
+								<path
+									d="M9.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+								></path>
+							</g>
+						</svg>
+						<input
+							type="text"
+							name=""
+							id=""
+						/>
+					</div>
+				</div>
+				<hr />
+				<div id="bottom">
+					<button class="blackBtn">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+						>
+							<path
+								d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+							></path>
+							<path
+								d="M22 4 12 14.01l-3-3"
+							></path>
+						</svg>
+						Update Event
+					</button>
 				</div>
 			</div>
 		</div>
