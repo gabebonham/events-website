@@ -155,6 +155,9 @@ header #startHeaderContent #right button {
 	gap: 5px;
 	color: gray;
 }
+header #startHeaderContent #right button a {
+	gap: 5px;
+}
 header #startHeaderContent #headerLuma {
 	width: 45px;
 	height: 45px;
@@ -192,13 +195,31 @@ header {
 	font-size: smaller;
 	color: rgb(19 21 23 / 36%);
 }
-header #startHeaderContent button:hover .hoverW {
+header #startHeaderContent button:hover .hoverW,
+.hoverW:hover {
 	color: rgba(243, 243, 243, 0.479);
 }
 header #endHeaderContent li:hover * {
 	color: rgba(255, 255, 255, 0.774);
 }
-
+.signInB {
+	font-size: 15px;
+	padding: 7px 7px;
+	font-weight: 600;
+	border-radius: 15px;
+	color: rgb(19 21 23 / 64%);
+	background-color: rgb(19 21 23 / 4%);
+}
+.signInB:hover {
+	transition: color 0.3s ease, background-color 0.3s ease;
+	color: #fff;
+	background-color: rgb(19 21 23 / 64%);
+}
+.hoverBlack:hover * {
+	color: black;
+	fill: black;
+	transition: color 0.3s ease, fill 0.3s ease;
+}
 header #startHeaderContent #right,
 header #endHeaderContent #createEvent,
 header #endHeaderContent #search,
@@ -355,19 +376,7 @@ header #endHeaderContent #profile {
 	width: 17px;
 	height: 17px;
 }
-#secondHeader #content #bottom button {
-	display: flex;
-	align-items: center;
-	background-color: rgba(202, 202, 202, 0.39);
-	border-radius: 7px;
-	border-width: 0;
-	padding: 5px 10px;
-}
-#secondHeader #content button {
-	background-color: transparent;
-	border-radius: 10px;
-	border-width: 0;
-}
+
 #secondHeader #content #bottom button span {
 	display: none;
 }
@@ -400,6 +409,7 @@ header #endHeaderContent #profile {
 }
 #secondHeader #content #nav button {
 	color: rgb(19 21 23 / 36%);
+	background-color: transparent;
 }
 #secondHeader #content {
 	width: 100%;
@@ -1915,6 +1925,7 @@ header #signIn:hover a button {
 	font-size: 15px;
 	margin: 0;
 }
+
 #overviewBackGroundDiv #mainDiv #cards #bottomCard svg {
 	width: 20px;
 	height: 20px;
@@ -2888,8 +2899,360 @@ header #signIn:hover a button {
 	width: 100%;
 	background-color: gray;
 }
+#eventBackGroundDiv #mainDiv #leftSection #header #title {
+	display: unset;
+	font-size: 40px;
+	font-weight: 900;
+}
+#eventBackGroundDiv #mainDiv #leftSection #header #top {
+	margin-bottom: 10px;
+}
+#eventBackGroundDiv #mainDiv #leftSection #header #bottom {
+	margin-top: 10px;
+}
+#eventBackGroundDiv #mainDiv #leftSection #header #bottom button {
+	background-color: transparent;
+}
+#eventBackGroundDiv #mainDiv #leftSection #header #bottom button:hover {
+	gap: 10px;
+	transition: gap 0.3s ease;
+}
+#eventBackGroundDiv #mainDiv #leftSection #header #top button:hover {
+	background-color: gray;
+	color: black;
+	fill: black;
+	transition: color 0.3s ease, background-color 0.3s ease, fill 0.3s ease;
+}
+#eventBackGroundDiv #mainDiv #leftSection #info,
+#eventBackGroundDiv #mainDiv #leftSection #bottomSection,
+#eventBackGroundDiv #mainDiv #rightSection #header {
+	display: none;
+}
+#eventBackGroundDiv #mainDiv #rightSection #ticket #label {
+	background-color: #51171a0a;
+}
+#eventBackGroundDiv #mainDiv #rightSection #ticket {
+	background-color: rgb(255 255 255 / 32%);
+}
+#eventBackGroundDiv #mainDiv #info {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	font-size: 14px;
+	line-height: 1;
+}
+#eventBackGroundDiv #mainDiv #info img {
+	width: 35px;
+	height: 35px;
+}
+#eventBackGroundDiv #mainDiv #info #date,
+#eventBackGroundDiv #mainDiv #info #location {
+	gap: 5px;
+}
+#eventBackGroundDiv #mainDiv #info #location h4 {
+	display: flex;
+	align-items: center;
+}
+
+/*  */
+#eventBackGroundDiv #mainDiv #rightSection #location #info #top #left #title {
+	padding-bottom: 10px;
+}
+#eventBackGroundDiv #mainDiv #rightSection #location #info #top #header {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+#eventBackGroundDiv #mainDiv #rightSection #location #info #top {
+	width: 100%;
+}
+#eventBackGroundDiv #mainDiv #rightSection #location #info {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	align-items: start;
+}
+#eventBackGroundDiv #mainDiv #rightSection #location #info #top #subBtn {
+	display: unset;
+	font-size: 16px;
+	border-radius: 15px;
+	padding: 7px 7px;
+}
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#location
+	#info
+	#top
+	#header
+	#left
+	.title
+	#arrowText
+	*:hover {
+	transition: color 0.3s ease;
+	color: rgb(197, 37, 37);
+}
+
+#eventBackGroundDiv #mainDiv #rightSection #location *,
+#eventBackGroundDiv #mainDiv #rightSection #bottomSection * {
+	font-weight: 100;
+}
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#location
+	#info
+	#top
+	#header
+	#left
+	.title
+	#arrowText
+	* {
+	font-weight: 900;
+}
+#eventBackGroundDiv #mainDiv #rightSection #location #info #top #left {
+	display: unset;
+	font-size: 16px;
+	border-radius: 15px;
+	padding: 7px 7px;
+}
+#eventBackGroundDiv #mainDiv #rightSection #location #info #instaIcon *:hover {
+	color: black;
+	transition: color 0.3s ease;
+}
+#eventBackGroundDiv #mainDiv #rightSection #location #info #instaIcon {
+	padding-bottom: 20px;
+}
+#eventBackGroundDiv #mainDiv #rightSection #bottomSection #footer button {
+	background-color: transparent;
+	padding: 0;
+	padding-bottom: 10px;
+}
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#bottomSection
+	#hosted
+	#going
+	p:hover {
+	color: black;
+	transform: color 0.3s ease;
+	cursor: pointer;
+}
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#bottomSection
+	#footer
+	button
+	.label:hover {
+	transition: color 0.3s ease;
+	color: black;
+}
+
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#bottomSection
+	#footer
+	#lastButton
+	button {
+	outline: 1px solid rgba(128, 128, 128, 0.308);
+	padding: 5px;
+	border-radius: 30px;
+}
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#bottomSection
+	#footer
+	#lastButton
+	button:hover {
+	transition: outline 0.3s ease;
+	outline: 1px solid rgb(211, 67, 67);
+}
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#bottomSection
+	#footer
+	#lastButton
+	p:hover {
+	transition: color 0.3s ease;
+	color: rgb(211, 67, 67);
+}
+#eventBackGroundDiv
+	#mainDiv
+	#rightSection
+	#bottomSection
+	#footer
+	#lastButton
+	button
+	* {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
+#eventBackGroundDiv #mainDiv #rightSection #bottomSection #hosted #top *:hover {
+	transition: color 0.3s ease;
+	color: black;
+	cursor: pointer;
+}
 
 @media (min-width: 700px) {
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #left #title {
+		padding-bottom: 10px;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #header {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #top {
+		width: 100%;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info {
+		display: flex;
+		flex-direction: column;
+		text-align: start;
+		align-items: start;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #subBtn {
+		display: unset;
+		font-size: 16px;
+		border-radius: 15px;
+		padding: 7px 7px;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#info
+		#top
+		#header
+		#left
+		.title
+		#arrowText
+		*:hover {
+		transition: color 0.3s ease;
+		color: rgb(197, 37, 37);
+	}
+
+	#eventBackGroundDiv #mainDiv #leftSection *,
+	#eventBackGroundDiv #mainDiv #leftSection #bottomSection * {
+		font-weight: 100;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#info
+		#top
+		#header
+		#left
+		.title
+		#arrowText
+		* {
+		font-weight: 900;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #top #left {
+		display: unset;
+		font-size: 16px;
+		border-radius: 15px;
+		padding: 7px 7px;
+	}
+	#eventBackGroundDiv #mainDiv #leftSection #info #instaIcon *:hover {
+		color: black;
+		transition: color 0.3s ease;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#footer
+		button {
+		background-color: transparent;
+		padding: 0;
+		padding-bottom: 10px;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#going
+		p:hover {
+		color: black;
+		transform: color 0.3s ease;
+		cursor: pointer;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#footer
+		button
+		.label:hover {
+		transition: color 0.3s ease;
+		color: black;
+	}
+
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#footer
+		#lastButton
+		button {
+		outline: 1px solid rgba(128, 128, 128, 0.308);
+		padding: 5px;
+		border-radius: 30px;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#footer
+		#lastButton
+		button:hover {
+		transition: outline 0.3s ease;
+		outline: 1px solid rgb(211, 67, 67);
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#footer
+		#lastButton
+		p:hover {
+		transition: color 0.3s ease;
+		color: rgb(211, 67, 67);
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#footer
+		#lastButton
+		button
+		* {
+		line-height: 1;
+		padding: 0;
+		margin: 0;
+	}
+	#eventBackGroundDiv
+		#mainDiv
+		#leftSection
+		#bottomSection
+		#hosted
+		#top
+		*:hover {
+		transition: color 0.3s ease;
+		color: black;
+		cursor: pointer;
+	}
 	#eventBackGroundDiv #mainDiv {
 		display: flex;
 		flex-direction: row;
@@ -2901,8 +3264,7 @@ header #signIn:hover a button {
 	#eventBackGroundDiv #mainDiv #leftSection #info {
 		display: unset;
 	}
-	#eventBackGroundDiv #mainDiv #rightSection #location #info,
-	#eventBackGroundDiv #mainDiv #leftSection #header {
+	#eventBackGroundDiv #mainDiv #rightSection #location #info {
 		display: none;
 	}
 	#eventBackGroundDiv #mainDiv #leftSection #bottomSection {
@@ -2938,6 +3300,20 @@ header #signIn:hover a button {
 		height: 25px;
 		border-radius: 100%;
 	}
+	#eventBackGroundDiv #mainDiv #rightSection #header #top {
+		display: unset;
+	}
+	#eventBackGroundDiv #mainDiv #rightSection #header #title {
+		font-size: 40px;
+		font-weight: 900;
+	}
+
+	#eventBackGroundDiv #mainDiv #leftSection #header #title,
+	#eventBackGroundDiv #mainDiv #leftSection #header #top,
+	#eventBackGroundDiv #mainDiv #header #bottom button {
+		display: none;
+	}
+
 	#eventBackGroundDiv
 		#mainDiv
 		#leftSection
@@ -3017,6 +3393,22 @@ header #signIn:hover a button {
 	}
 	#eventBackGroundDiv #mainDiv #leftSection #info #instaIcon {
 		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	#eventBackGroundDiv #mainDiv #rightSection #header #title {
+		display: none;
+	}
+	#eventBackGroundDiv #mainDiv #rightSection #header,
+	#eventBackGroundDiv #mainDiv #rightSection #header #title {
+		display: unset;
+		box-sizing: border-box;
+	}
+	#eventBackGroundDiv #mainDiv #rightSection #header #top button {
+		margin-bottom: 10px;
+	}
+	#eventBackGroundDiv #mainDiv #rightSection #info {
+		flex-direction: column;
+		align-items: start;
 	}
 }
 /* header */
@@ -3335,10 +3727,11 @@ header #signIn:hover a button {
 	align-items: center;
 }
 #inactiveBackGround #approvalModal {
-	background-color: rgb(241, 241, 241);
+	background-color: #ffffffdd;
 	position: absolute;
 	border-radius: 10px;
 	color: black;
+	font-size: 12px;
 	width: 500px;
 	height: 550px;
 	right: 5px;
@@ -3360,13 +3753,19 @@ header #signIn:hover a button {
 #inactiveBackGround #approvalModal #body textarea {
 	border-radius: 10px;
 	width: 100%;
-	border-color: gray;
 	height: 100px;
 }
 #inactiveBackGround #approvalModal #body #card {
 	border-radius: 10px;
 	background-color: white;
 	padding: 15px;
+	box-shadow: 0 0 0 1px rgba(19, 21, 23, 0.08),
+		0 3.3px 2.7px rgba(0, 0, 0, 0.03),
+		0 8.3px 6.9px rgba(0, 0, 0, 0.04),
+		0 17px 14.2px rgba(0, 0, 0, 0.05),
+		0 35px 29.2px rgba(0, 0, 0, 0.06),
+		0 96px 80px rgba(0, 0, 0, 0.07),
+		0px -4px 4px 0px rgba(0, 0, 0, 0.04) inset;
 }
 #inactiveBackGround #addQuestionModal svg {
 	width: 17px;
@@ -3391,7 +3790,6 @@ header #signIn:hover a button {
 #inactiveBackGround #addQuestionModal #body button {
 	display: flex;
 	align-items: center;
-	background-color: rgba(233, 233, 233, 0.527);
 	border-radius: 5px;
 	border-width: 0;
 	gap: 10px;
@@ -3402,7 +3800,7 @@ header #signIn:hover a button {
 	padding-right: 10px;
 }
 #inactiveBackGround #shareModal {
-	background-color: white;
+	background-color: #ffffffdd;
 	border-radius: 10px;
 	padding: 15px;
 	height: auto;
@@ -3425,6 +3823,19 @@ header #signIn:hover a button {
 #inactiveBackGround #shareModal #body button {
 	border-width: 0;
 	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px 20px;
+}
+#inactiveBackGround #shareModal #body button:hover {
+	transform: background-color 0.3s ease, color 0.3s ease;
+	background-color: rgba(192, 192, 192, 0.562);
+	color: white;
+}
+#inactiveBackGround #shareModal #body button:hover * {
+	transform: color 0.3s ease;
+	color: white;
 }
 #inactiveBackGround #shareModal #icon {
 	border-radius: 100%;
@@ -3433,7 +3844,7 @@ header #signIn:hover a button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(201, 201, 201, 0.555);
+	background-color: rgba(230, 230, 230, 0.329);
 }
 #inactiveBackGround #shareModal #footer div {
 	display: flex;
@@ -3443,9 +3854,12 @@ header #signIn:hover a button {
 #inactiveBackGround #shareModal #footer div input {
 	width: 100%;
 	border-radius: 5px;
-	height: 25px;
+	height: 35px;
 	border-width: 1px;
 	border-color: rgba(128, 128, 128, 0.274);
+}
+#inactiveBackGround #shareModal #footer div input:focus {
+	outline: none;
 }
 #inactiveBackGround #shareModal #footer div button {
 	height: 100%;
@@ -3458,10 +3872,14 @@ header #signIn:hover a button {
 	width: 100%;
 }
 #inactiveBackGround #addHostModal {
-	background-color: white;
+	background-color: #ffffffdd;
 	border-radius: 15px;
 	padding: 20px;
 	width: 300px;
+}
+#inactiveBackGround #addHostModal #iconDiv #exit svg {
+	border-radius: 100%;
+	cursor: pointer;
 }
 #inactiveBackGround #addHostModal #iconDiv {
 	display: flex;
@@ -3483,17 +3901,20 @@ header #signIn:hover a button {
 #inactiveBackGround #addHostModal #inputDiv input {
 	width: 100%;
 	height: 30px;
+	box-sizing: border-box;
+	background-color: white;
 	border-width: 1px;
 	border-radius: 7px;
 	border-color: rgba(128, 128, 128, 0.377);
 }
 #inactiveBackGround #addHostModal #footer {
 	text-align: center;
+	color: #a8a8a8dd;
 }
 
 #inactiveBackGround #inviteGuestsModal {
 	position: absolute;
-	background-color: white;
+	background-color: #f1f4f7f5;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -3533,6 +3954,7 @@ header #signIn:hover a button {
 	display: flex;
 	align-items: center;
 }
+
 #inactiveBackGround
 	#inviteGuestsModal
 	#modalHeader
@@ -3591,10 +4013,16 @@ header #signIn:hover a button {
 	background-color: transparent;
 	display: flex;
 	align-items: center;
+	justify-content: start;
 	padding: 0;
 	margin: 0;
-	padding-bottom: 15px;
+	margin-bottom: 15px;
 	gap: 10px;
+	color: rgb(19 21 23 / 36%);
+}
+#inactiveBackGround #inviteGuestsModal #modalBody #left button:hover {
+	transition: color 0.3s ease;
+	color: black;
 }
 #inactiveBackGround #inviteGuestsModal #modalBody #left hr {
 	padding: 0;
@@ -3716,7 +4144,6 @@ header #signIn:hover a button {
 	padding-right: 15px;
 	padding-left: 15px;
 	border-width: 0;
-	background-color: gray;
 	border-radius: 10px;
 	display: flex;
 	align-items: center;
@@ -3765,12 +4192,12 @@ header #signIn:hover a button {
 	width: 250px;
 	border-width: 0;
 	border-radius: 10px;
-	background-color: black;
-	color: white;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0;
+	gap: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 20px;
@@ -3779,6 +4206,18 @@ header #signIn:hover a button {
 	line-height: unset;
 	padding: unset;
 	margin: unset;
+}
+#inactiveBackGround #inviteGuestsModal #modalHeader #exitBtn {
+	border-radius: 100%;
+	cursor: pointer;
+}
+#inactiveBackGround #inviteGuestsModal #modalHeader button {
+	border-radius: 40px;
+	border-color: rgba(187, 187, 187, 0.342);
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	border-width: 2px;
 }
 @media (min-width: 600px) {
 	#inactiveBackGround {
@@ -3799,7 +4238,7 @@ header #signIn:hover a button {
 	}
 	#inactiveBackGround #inviteGuestsModal {
 		border-radius: 10px;
-		background-color: white;
+		background-color: #f1f4f7f5;
 		width: 800px;
 		height: 500px;
 		position: relative;
@@ -3841,6 +4280,11 @@ header #signIn:hover a button {
 		padding: 15px;
 		border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 	}
+	#inactiveBackGround #inviteGuestsModal #modalHeader #exitBtn {
+		border-radius: 100%;
+		cursor: pointer;
+	}
+
 	#inactiveBackGround #inviteGuestsModal #modalHeader #right {
 		display: flex;
 		align-items: center;
@@ -3852,6 +4296,7 @@ header #signIn:hover a button {
 		background-color: transparent;
 		display: flex;
 		align-items: center;
+		border-width: 2px;
 	}
 	#inactiveBackGround
 		#inviteGuestsModal
@@ -3864,7 +4309,7 @@ header #signIn:hover a button {
 		outline-style: solid;
 		outline-width: 2px;
 		border-width: 0;
-		background-color: white;
+		background-color: transparent;
 		width: 11px;
 		height: 11px;
 		margin-right: 5px;
@@ -3878,7 +4323,7 @@ header #signIn:hover a button {
 	#inactiveBackGround #inviteGuestsModal #modalBody {
 		display: flex;
 		border-bottom-right-radius: 10px;
-		height: 430px;
+		height: 370px;
 		border-bottom-left-radius: 10px;
 		box-sizing: border-box;
 		flex-direction: row;
@@ -3901,9 +4346,9 @@ header #signIn:hover a button {
 		background-color: transparent;
 		display: flex;
 		align-items: center;
-		padding: 0;
+		padding: 7px;
 		margin: 0;
-		padding-bottom: 15px;
+		margin-bottom: 15px;
 		gap: 10px;
 	}
 	#inactiveBackGround #inviteGuestsModal #modalBody #left hr {
@@ -3918,6 +4363,10 @@ header #signIn:hover a button {
 		height: 100%;
 		flex-direction: column;
 		width: 350px;
+	}
+	#inactiveBackGround #inviteGuestsModal #modalBody #left button:hover {
+		transition: background-color 0.3s ease;
+		background-color: rgba(187, 187, 187, 0.5);
 	}
 	#inactiveBackGround #inviteGuestsModal #modalBody #left button p {
 		line-height: 1;
@@ -4077,8 +4526,6 @@ header #signIn:hover a button {
 		width: 250px;
 		border-width: 0;
 		border-radius: 10px;
-		background-color: black;
-		color: white;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -4204,12 +4651,13 @@ header #signIn:hover a button {
 	z-index: 100;
 	background-color: white;
 	border-radius: 15px;
+	box-sizing: border-box;
 }
 #inactiveBackGround #addQuestion2Modal #iconDiv {
 	gap: 15px;
 }
 #inactiveBackGround #addQuestion2Modal #iconDiv #left {
-	background-color: gray;
+	background-color: rgb(19 21 23 / 4%);
 	padding: 8px;
 	border-radius: 5px;
 }
@@ -4230,8 +4678,8 @@ header #signIn:hover a button {
 	justify-content: space-between;
 }
 #inactiveBackGround #addQuestion2Modal #body button {
-	background-color: black;
-	color: white;
+	padding: 10px;
+	justify-content: center;
 }
 #inactiveBackGround #addQuestion2Modal #modalTop #iconDiv #right h4,
 #inactiveBackGround #addQuestion2Modal #modalTop #iconDiv #right p {
@@ -4240,21 +4688,30 @@ header #signIn:hover a button {
 	line-height: 1;
 	padding-bottom: 5px;
 }
-#inactiveBackGround #addQuestion2Modal input,
-#inactiveBackGround #addQuestion2Modal button {
-	width: 100%;
+#inactiveBackGround #addQuestion2Modal #modalTop #top .icon {
+	background-color: rgb(19 21 23 / 4%);
+	padding: 5px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+#inactiveBackGround #addQuestion2Modal input {
 	border-radius: 7px;
 	border-width: 1px;
 	border-color: rgba(202, 202, 202, 0.445);
+	width: 100%;
+	box-sizing: border-box;
+}
+#inactiveBackGround #addQuestion2Modal #body button {
+	width: 100%;
+	border-radius: 7px;
+	border-width: 1px;
+	font: 15px;
+	text-align: center;
 }
 #inactiveBackGround #addQuestion2Modal input {
 	height: 30px;
 }
 
-#inactiveBackGround #addQuestion2Modal button {
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
 #inactiveBackGround #addQuestion2Modal #body #checkButton #back {
 	border-radius: 40px;
 	width: 40px;
@@ -4290,9 +4747,18 @@ header #signIn:hover a button {
 #inactiveBackGround #addQuestion2Modal #body {
 	padding: 20px;
 }
+#inactiveBackGround #addQuestion2Modal #body #platform,
+#inactiveBackGround #addQuestion2Modal #body #question {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#inactiveBackGround #addQuestion2Modal #body #description {
+	font-size: 12px;
+}
 
 #inactiveBackGround #editTicketModal {
-	background-color: white;
+	background-color: #ffffffdd;
 	z-index: 100;
 	border-radius: 15px;
 	padding: 20px;
@@ -4300,6 +4766,7 @@ header #signIn:hover a button {
 #inactiveBackGround #editTicketModal input {
 	width: 100%;
 	height: 30px;
+	box-sizing: border-box;
 	border-radius: 7px;
 	border-width: 1px;
 	border-color: rgba(175, 175, 175, 0.589);
@@ -4308,9 +4775,22 @@ header #signIn:hover a button {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+#inactiveBackGround #editTicketModal #iconDiv #icon {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(19 21 23 / 4%);
+	border-radius: 100%;
+}
 #inactiveBackGround #editTicketModal #iconDiv #icon svg {
 	width: 35px;
 	height: 35px;
+}
+#inactiveBackGround #editTicketModal #exitIcon svg {
+	border-radius: 100%;
+	cursor: pointer;
 }
 #inactiveBackGround #editTicketModal p,
 #inactiveBackGround #editTicketModal h3,
@@ -4351,7 +4831,7 @@ header #signIn:hover a button {
 	border-style: solid;
 	border-color: rgba(196, 196, 196, 0.432);
 	width: 70px;
-	height: 32px;
+	height: 28px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -4361,10 +4841,14 @@ header #signIn:hover a button {
 }
 #inactiveBackGround #editTicketModal #dateTime input {
 	border-radius: 7px;
-	border-color: gray;
-	border-right: 1px solid gray;
+	border-color: rgba(196, 196, 196, 0.473);
+	border-right: 1px solid rgba(196, 196, 196, 0.473);
 	border-top-right-radius: unset;
 	border-bottom-right-radius: unset;
+}
+#inactiveBackGround #editTicketModal button {
+	border-radius: 7px;
+	justify-content: center;
 }
 #checkButton #back {
 	border-radius: 40px;
@@ -4404,13 +4888,12 @@ header #signIn:hover a button {
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: black;
-	color: white;
+
 	border-radius: 7px;
 }
 
 #inactiveBackGround #addQuestion3Modal {
-	background-color: white;
+	background-color: #ffffffdd;
 	border-radius: 15px;
 	width: 400px;
 	max-width: 400px;
@@ -4442,17 +4925,38 @@ header #signIn:hover a button {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+#inactiveBackGround #addQuestion3Modal svg {
+	width: 17px;
+	height: 17px;
+	padding: 5px;
+	margin: 0;
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 100%;
+}
+#inactiveBackGround #addQuestion3Modal #iconDiv svg {
+	width: 17px;
+	height: 17px;
+	padding: 5px;
+	margin: 0;
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 10px;
+}
 #inactiveBackGround #addQuestion3Modal #body .inpDiv h4 {
 	padding-bottom: 10px;
 }
-#inactiveBackGround #addQuestion3Modal #body .inpDiv input {
-	padding-bottom: 10px;
+#inactiveBackGround #addQuestion3Modal #body .inpDiv {
 	width: 100%;
-	border-radius: 7px;
-	height: 20px;
+	box-sizing: border-box;
+}
+#inactiveBackGround #addQuestion3Modal #body .inpDiv input {
+	width: 100%;
+	border-radius: 10px;
 	border-width: 1px;
 	border-color: rgba(196, 196, 196, 0.418);
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+	box-sizing: border-box;
 }
 #inactiveBackGround #addQuestion3Modal #body #description {
 	padding-bottom: 15px;
@@ -4463,7 +4967,7 @@ header #signIn:hover a button {
 #inactiveBackGround #addQuestion3Modal #body #switchButton {
 	display: flex;
 	justify-content: space-evenly;
-	background-color: gray;
+	background-color: rgb(19 21 23 / 4%);
 	align-items: center;
 	border-radius: 7px;
 	padding: 2px;
@@ -4501,8 +5005,7 @@ header #signIn:hover a button {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	border-radius: 7px;
-	background-color: black;
-	color: white;
+	justify-content: center;
 	border-width: 0;
 	width: 100%;
 }
@@ -5123,6 +5626,10 @@ header #signIn:hover a button {
 #moreBackGroundDiv #mainDivWrapper #mainDiv #clone button {
 	padding: 10px 15px;
 }
+#moreBackGroundDiv #mainDivWrapper #mainDiv #clone {
+	padding-bottom: 30px;
+	padding-top: 5px;
+}
 #moreBackGroundDiv #mainDivWrapper #mainDiv #page #bottom #inputDiv button {
 	border-radius: 10px;
 	display: flex;
@@ -5384,6 +5891,11 @@ header #signIn:hover a button {
 	justify-content: space-between;
 }
 
+#guestsBackGroundDiv #mainDivWrapper #mainDiv #body #bottom #top #right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
 #guestsBackGroundDiv #mainDivWrapper #mainDiv #body #guestsDiv {
 	text-align: center;
 	display: flex;
@@ -6888,14 +7400,32 @@ header #signIn:hover a button {
 	background-color: rgb(248, 248, 249);
 	overflow-y: auto;
 }
+#eventRecapModal #modalBody #basicInfo input {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: white;
+	border-radius: 7px;
+	height: 35px;
+}
+#eventRecapModal #modalBody #basicInfo textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+}
 #eventRecapModal svg {
 	width: 17px;
 	height: 17px;
+	cursor: pointer;
+
+	border-radius: 100%;
 }
 #eventRecapModal #modalTop {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-weight: 100;
+	font-size: 14px;
 	backdrop-filter: blur(5px);
 	position: sticky;
 	top: 0;
@@ -6960,6 +7490,9 @@ header #signIn:hover a button {
 	height: auto;
 	border-width: 0;
 	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 #eventRecapModal #modalBody #appearance #templates .templateButton img {
 	width: 100px;
@@ -7035,6 +7568,7 @@ header #signIn:hover a button {
 	align-items: center;
 	flex: 1;
 	padding: 5px 5px;
+	background-color: white;
 }
 #eventRecapModal #modalBody #location #buttons {
 	display: flex;
@@ -7058,6 +7592,13 @@ header #signIn:hover a button {
 }
 #eventRecapModal #modalBody #location #inpDiv input {
 	border-width: 0;
+	outline: none;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 18px;
+}
+#eventRecapModal #modalBody #location #inpDiv input :focus {
+	outline: none;
 }
 #eventRecapModal #modalBody #location #buttons button .left {
 	display: flex;
@@ -7080,7 +7621,20 @@ header #signIn:hover a button {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	padding: 5px 10px;
+	padding: 7px 10px;
+	font-size: 18px;
+	justify-content: center;
+}
+#eventRecapModal #modalBody #bottom button:hover {
+	background-color: rgba(128, 128, 128, 0.548);
+	transition: background-color 0.3s ease;
+}
+#eventRecapModal #modalBody #bottom button .left #lCircle {
+	padding: 7px;
+	border-radius: 100%;
+	width: 14px;
+	height: 14px;
+	background-color: rgb(143, 6, 198);
 }
 #eventRecapModal {
 	display: unset;
@@ -7127,20 +7681,7 @@ header #signIn:hover a button {
 		button {
 		background-color: white;
 	}
-	#inactiveBackGround
-		#eventRecapModal
-		#modalBody
-		#appearance
-		#bottom
-		.buttonsDiv
-		button
-		.left
-		#lCircle {
-		background-color: gray;
-		width: 20px;
-		height: 20px;
-		border-radius: 100%;
-	}
+
 	#inactiveBackGround
 		#eventRecapModal
 		#modalBody
@@ -7401,7 +7942,7 @@ header #signIn:hover a button {
 	display: none;
 }
 #inactiveBackGround {
-	display: none;
+	display: flex;
 }
 #inviteModalEmails {
 	display: none;
@@ -7440,7 +7981,7 @@ header #signIn:hover a button {
 	display: none;
 }
 #inactiveBackGround #shareModal {
-	display: none;
+	display: unset;
 }
 #inactiveBackGround #addHostModal {
 	display: none;
@@ -7454,5 +7995,8 @@ header #signIn:hover a button {
 		width: 100%;
 		max-width: 800px;
 		margin: 0 auto;
+	}
+	#inactiveBackGround {
+		background-color: #b3b5b799;
 	}
 }
