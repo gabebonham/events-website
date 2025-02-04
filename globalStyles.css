@@ -1424,6 +1424,7 @@ svg:hover .socialIcon {
 	display: flex;
 	box-sizing: border-box;
 	cursor: pointer;
+	border: 1px solid transparent;
 }
 #atlantaBackGroundDiv .card:hover {
 	border: 1px solid rgba(75, 74, 82, 0.541);
@@ -1685,6 +1686,8 @@ svg:hover .socialIcon {
 	#atlantaBackGroundDiv #bottomDiv #rightDiv #inputDiv button {
 		border-radius: 20px;
 		height: 35px;
+		display: flex;
+		justify-content: center;
 	}
 	#atlantaBackGroundDiv #bottomDiv #rightDiv img {
 		width: 100%;
@@ -5756,6 +5759,10 @@ svg:hover .socialIcon {
 	padding-bottom: 10px;
 	justify-content: center;
 	gap: 10px;
+}
+#moreBackGroundDiv #mainDivWrapper #mainDiv #bottomPage button:hover {
+	background-color: #a03034;
+	transition: background-color 0.3s ease;
 }
 #moreBackGroundDiv #mainDivWrapper #mainDiv #bottomPage button svg {
 	color: white;
